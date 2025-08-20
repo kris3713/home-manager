@@ -158,20 +158,29 @@
     # '')
   ];
 
-  # # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # # plain files is through 'home.file'.
-  # home.file = {
-  #   # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-  #   # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-  #   # # symlink to the Nix store copy.
-  #   # ".screenrc".source = dotfiles/screenrc;
-  #
-  #   # # You can also set the file content immediately.
-  #   # ".gradle/gradle.properties".text = ''
-  #   #   org.gradle.console=verbose
-  #   #   org.gradle.daemon.idletimeout=3600000
-  #   # '';
-  # };
+  # Home Manager is pretty good at managing dotfiles. The primary way to manage
+  # plain files is through 'home.file'.
+  home.file = {
+    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
+    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
+    # # symlink to the Nix store copy.
+    # ".screenrc".source = dotfiles/screenrc;
+
+    # # You can also set the file content immediately.
+    # ".gradle/gradle.properties".text = ''
+    #   org.gradle.console=verbose
+    #   org.gradle.daemon.idletimeout=3600000
+    # '';
+    ".config/fish/themes" = {
+      recursive = true;
+      source = (pkgs.fetchFromGitHub {
+        owner = "catppuccin";
+        repo = "fish";
+        rev = "main";
+        sha256 = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
+      }) + "/themes";
+    };
+  };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
@@ -191,19 +200,7 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
-    NH_NO_CHECKS = "1";
-  };
-
-  home.file = {
-    ".config/fish/themes" = {
-      recursive = true;
-      source = (pkgs.fetchFromGitHub {
-        owner = "catppuccin";
-        repo = "fish";
-        rev = "main";
-        sha256 = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
-      }) + "/themes";
-    };
+    NH_NO_CHECKS = 1;
   };
 
   # Let Home Manager install and manage itself.
@@ -212,12 +209,31 @@
   programs.fish = {
     enable = true;
     shellInit = ''
+      # source other fish config
       source "${config.home.homeDirectory}/.config/fish/config.backup.fish"
+
+      ## Shell completions creation
+      # gut
+      gut completion fish > $__fish_config_dir/completions/gut.fish
+
+      # git-machete
+      git machete completion fish > $__fish_config_dir/completions/git-machete.fish
+      ## end of Shell completions creation
     '';
 
-    # Always set new plugin hashes to 0000000000000000000000000000000000000000000000000000
-    # in order to get the corrent hash from home-manager
+
+    # NOTE: Always set new plugin hashes to 0000000000000000000000000000000000000000000000000000
+    # in order to get the actual hash
     plugins = [
+      {
+        name = "nix";
+        src = pkgs.fetchFromGitHub {
+          owner = "kidonng";
+          repo = "nix.fish";
+          rev = "master";
+          hash = "sha256-GMV0GyORJ8Tt2S9wTCo2lkkLtetYv0rc19aA5KJbo48=";
+        };
+      }
       {
         name = "replay";
         src = pkgs.fetchFromGitHub {
@@ -233,4 +249,7 @@
       }
     ];
   };
+
+  # Don't allow home-manager to modify mimeapps.list
+  xdg.mime.enable = false;
 }
