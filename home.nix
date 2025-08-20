@@ -58,103 +58,55 @@ in
     source-sans-pro
     source-serif
     source-serif-pro
+    twitter-color-emoji
 
     ## others
-    # adbtuifm
     adbtuifm
-    # azure-cli
     azure-cli
-    # broot
     broot
-    # cargo-cache
     cargo-cache
-    # cargo-update
     cargo-update
-    # clipboard-jh
-    clipboard-jh
-    # cod
+    clipboard-jh # cb
     cod
-    # complgen
     complgen
-    # direnv
     direnv
-    # dnslookup
     dnslookup
-    # dragon-drop
     dragon-drop
-    # eza
     eza
-    # fh
-    fh
-    # gpufetch
+    fh # FlakeHub CLI
     gpufetch
-    # hyfetch
     hyfetch
-    # lftp
     lftp
-    # librespeed-cli
     librespeed-cli
-    # linux_logo
     linux_logo
-    # lsp-ai
     lsp-ai
-    # lurk
     lurk
-    # mc
-    mc
-    # neovim-unwrapped
+    mc # Midnight Commander
     neovim-unwrapped
-    # netscanner
     netscanner
-    # nh
     nh
-    # nil
     nil
-    # nix-info
     nix-info
-    # nix-init
     nix-init
-    # niv
     niv
-    # nmap
     nmap
-    # obs-cmd
     obs-cmd
-    # omnix
     omnix
-    # ookla-speedtest
     ookla-speedtest
-    # php
     php
-    # quickemu
     quickemu
-    # ramfetch
     ramfetch
-    # ripdrag
     ripdrag
-    # ruby
     ruby
-    # smap
     smap
-    # termscp
     termscp
-    # texliveMedium
-    texliveMedium
-    # tinyxxd
+    texliveMedium # texlive
     tinyxxd
-    # ttop
     ttop
-    # twitter-color-emoji
-    twitter-color-emoji
-    # usql
     usql
-    # vimv
     vimv
-    # vtracer
     vtracer
-    # watchman
     watchman
-    # yt-dlp
     yt-dlp
 
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -188,7 +140,7 @@ in
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/fish/themes/catppuccin" = {
+    ".config/fish/themes" = {
       recursive = true;
       source = catppuccinFishTheme + "/themes";
     };
