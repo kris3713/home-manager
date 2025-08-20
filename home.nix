@@ -14,6 +14,8 @@
   home.homeDirectory = "/home/kris";
 
   home.activation = {
+    # For some reason, home-manager keeps messing with mimeapps.list
+    # To counter this, we'll just back up the file and restore it afterwards
     backupAndRestoreMimeAppsList = lib.hm.dag.entryAfter [ "checkLinkTargets" ] ''
       MIME_APPS_LIST="${config.home.homeDirectory}/.config/mimeapps.list"
 
