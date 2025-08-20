@@ -14,14 +14,20 @@
   home.homeDirectory = "/home/kris";
 
   home.activation = {
+    backupAndRestoreMimeAppsList = lib.hm.dag.entryAfter [ "checkLinkTargets" ] ''
+      MIME_APPS_LIST="${config.home.homeDirectory}/.config/mimeapps.list"
+
+      if [ ! -f "$MIME_APPS_LIST.bak" ]; then
+        cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
+      fi
+
+      mv -f "$MIME_APPS_LIST.bak" "$MIME_APPS_LIST"
+      cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
+    '';
+
     updateFontCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
       run /usr/bin/fc-cache -fv &> /dev/null
     '';
-
-    # rebuildKdeCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-    #   source "${builtins.getEnv "HOME"}/.bash_profile"
-    #   run /usr/bin/kbuildsycoca6 --noincremental
-    # '';
   };
 
   # This value determines the Home Manager release that your configuration is
@@ -214,10 +220,7 @@
 
       ## Shell completions creation
       # gut
-      gut completion fish > $__fish_config_dir/completions/gut.fish
-
-      # git-machete
-      git machete completion fish > $__fish_config_dir/completions/git-machete.fish
+      gut completion fish > "${config.home.homeDirectory}/.config/fish/completions/gut.fish"
       ## end of Shell completions creation
     '';
 
