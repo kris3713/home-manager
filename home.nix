@@ -2,9 +2,18 @@
   config,
   pkgs,
   lib,
+  xdg,
   ...
 }:
 
+let
+  catppuccinFishTheme = pkgs.fetchFromGitHub {
+    owner = "catppuccin";
+    repo = "fish";
+    rev = "main";
+    sha256 = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
+  };
+in
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -16,8 +25,8 @@
   home.activation = {
     # For some reason, home-manager keeps messing with mimeapps.list
     # To counter this, we'll just back up the file and restore it afterwards
-    backupAndRestoreMimeAppsList = lib.hm.dag.entryAfter [ "checkLinkTargets" ] ''
-      MIME_APPS_LIST="${config.home.homeDirectory}/.config/mimeapps.list"
+    backupAndRestoreMimeAppsList = lib.hm.dag.entryBefore [ "checkLinkTargets" ] ''
+      MIME_APPS_LIST='${config.home.homeDirectory}/.config/mimeapps.list'
 
       if [ ! -f "$MIME_APPS_LIST.bak" ]; then
         cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
@@ -27,9 +36,9 @@
       cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
     '';
 
-    updateFontCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-      run /usr/bin/fc-cache -fv &> /dev/null
-    '';
+    # updateFontCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    #   run /usr/bin/fc-cache -fv &> /dev/null
+    # '';
   };
 
   # This value determines the Home Manager release that your configuration is
@@ -179,14 +188,9 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/fish/themes" = {
+    ".config/fish/themes/catppuccin" = {
       recursive = true;
-      source = (pkgs.fetchFromGitHub {
-        owner = "catppuccin";
-        repo = "fish";
-        rev = "main";
-        sha256 = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
-      }) + "/themes";
+      source = catppuccinFishTheme + "/themes";
     };
   };
 
@@ -218,11 +222,11 @@
     enable = true;
     shellInit = ''
       # source other fish config
-      source "${config.home.homeDirectory}/.config/fish/config.backup.fish"
+      source '${config.home.homeDirectory}/.config/fish/config.backup.fish'
 
       ## Shell completions creation
       # gut
-      gut completion fish > "${config.home.homeDirectory}/.config/fish/completions/gut.fish"
+      gut completion fish > '${config.home.homeDirectory}/.config/fish/completions/gut.fish'
       ## end of Shell completions creation
     '';
 
