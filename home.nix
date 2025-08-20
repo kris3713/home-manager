@@ -95,6 +95,7 @@ in
     omnix
     ookla-speedtest
     php
+    php84Packages.phan
     quickemu
     ramfetch
     ripdrag
