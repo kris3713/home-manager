@@ -74,6 +74,7 @@ in
     dragon-drop
     eza
     fh # FlakeHub CLI
+    git-machete
     gpufetch
     hyfetch
     lftp
