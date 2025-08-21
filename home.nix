@@ -185,16 +185,16 @@ in
     '';
 
 
-    # NOTE: Always set new plugin hashes to 0000000000000000000000000000000000000000000000000000
+    # NOTE: Always set new plugin hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
     # in order to get the actual hash
     plugins = [
       {
         name = "nix";
         src = pkgs.fetchFromGitHub {
-          owner = "kidonng";
+          owner = "Animeshz"; # Using a fork since the original repo is not maintained anymore
           repo = "nix.fish";
           rev = "master";
-          hash = "sha256-GMV0GyORJ8Tt2S9wTCo2lkkLtetYv0rc19aA5KJbo48=";
+          hash = "sha256-3M0dU30SrdjInp6MWEC0q7MTInrZNtY6Z9mhBw43PKs=";
         };
       }
       {
