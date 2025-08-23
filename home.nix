@@ -60,6 +60,7 @@ in
     twitter-color-emoji
 
     ## others
+    alejandra
     adbtuifm
     azure-cli
     broot
