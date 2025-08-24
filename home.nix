@@ -70,6 +70,7 @@ in
     cod
     complgen
     direnv
+    deno
     dnslookup
     dragon-drop
     eza
