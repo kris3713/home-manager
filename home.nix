@@ -6,11 +6,21 @@
 }:
 
 let
-  catppuccinFishTheme = pkgs.fetchFromGitHub {
+  # important variables
+  fetchFromGitHub = pkgs.fetchFromGitHub;
+  hm = lib.hm;
+  configHome = config.home;
+
+  # other variables
+  fishPlugins = pkgs.fishPlugins;
+
+  # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  # in order to get the actual hash
+  catppuccinFishTheme = fetchFromGitHub {
     owner = "catppuccin";
     repo = "fish";
     rev = "main";
-    sha256 = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
+    hash = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
   };
 in
 {
@@ -24,8 +34,8 @@ in
   home.activation = {
     # For some reason, home-manager keeps messing with mimeapps.list
     # To counter this, we'll just back up the file and restore it afterwards
-    backupAndRestoreMimeAppsList = lib.hm.dag.entryBefore [ "checkLinkTargets" ] ''
-      MIME_APPS_LIST='${config.home.homeDirectory}/.config/mimeapps.list'
+    backupAndRestoreMimeAppsList = hm.dag.entryBefore [ "checkLinkTargets" ] ''
+      MIME_APPS_LIST='${configHome.homeDirectory}/.config/mimeapps.list'
 
       if [ ! -f "$MIME_APPS_LIST.bak" ]; then
         cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
@@ -143,7 +153,7 @@ in
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/fish/themes" = {
+    "${configHome.homeDirectory}/.config/fish/themes" = {
       recursive = true;
       source = catppuccinFishTheme + "/themes";
     };
@@ -177,21 +187,20 @@ in
     enable = true;
     shellInit = ''
       # source other fish config
-      source '${config.home.homeDirectory}/.config/fish/config.backup.fish'
+      source '${configHome.homeDirectory}/.config/fish/config.backup.fish'
 
       ## Shell completions creation
       # gut
-      gut completion fish > '${config.home.homeDirectory}/.config/fish/completions/gut.fish'
+      gut completion fish > '${configHome.homeDirectory}/.config/fish/completions/gut.fish'
       ## end of Shell completions creation
     '';
 
-
-    # NOTE: Always set new plugin hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+    # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
     # in order to get the actual hash
     plugins = [
       {
         name = "nix";
-        src = pkgs.fetchFromGitHub {
+        src = fetchFromGitHub {
           owner = "Animeshz"; # Using a fork since the original repo is not maintained anymore
           repo = "nix.fish";
           rev = "master";
@@ -200,16 +209,16 @@ in
       }
       {
         name = "replay";
-        src = pkgs.fetchFromGitHub {
+        src = fetchFromGitHub {
           owner = "jorgebucaran";
           repo = "replay.fish";
           rev = "main";
-          sha256 = "sha256-TzQ97h9tBRUg+A7DSKeTBWLQuThicbu19DHMwkmUXdg=";
+          hash = "sha256-TzQ97h9tBRUg+A7DSKeTBWLQuThicbu19DHMwkmUXdg=";
         };
       }
       {
         name = "sdkman-for-fish";
-        src = pkgs.fishPlugins.sdkman-for-fish;
+        src = fishPlugins.sdkman-for-fish;
       }
     ];
   };
