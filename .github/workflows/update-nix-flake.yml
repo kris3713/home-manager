@@ -29,7 +29,6 @@ jobs:
       - name: 'Update Nix flake'
         shell: bash
         run: |
-          echo '----- Creating a new environment with helper programs -----'
           echo '> nix flake update --verbose'
           nix flake update --verbose
 
