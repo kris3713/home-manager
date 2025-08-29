@@ -12,11 +12,11 @@ let
   configHome = config.home;
 
   # other variables
-  fishPlugins = pkgs.fishPlugins;
+  # fishPlugins = pkgs.fishPlugins;
 
   # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   # in order to get the actual hash
-  catppuccinFishTheme = fetchFromGitHub {
+  catppuccin-fish-theme = fetchFromGitHub {
     owner = "catppuccin";
     repo = "fish";
     rev = "main";
@@ -116,6 +116,7 @@ in
     texliveMedium # texlive
     tinyxxd
     ttop
+    update-nix-fetchgit
     usql
     vimv
     vtracer
@@ -155,7 +156,7 @@ in
     # '';
     "${configHome.homeDirectory}/.config/fish/themes" = {
       recursive = true;
-      source = catppuccinFishTheme + "/themes";
+      source = "${catppuccin-fish-theme}/themes";
     };
   };
 
@@ -215,10 +216,6 @@ in
           rev = "main";
           hash = "sha256-TzQ97h9tBRUg+A7DSKeTBWLQuThicbu19DHMwkmUXdg=";
         };
-      }
-      {
-        name = "sdkman-for-fish";
-        src = fishPlugins.sdkman-for-fish;
       }
     ];
   };
