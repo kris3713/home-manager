@@ -72,7 +72,7 @@ in
     ## others
     alejandra
     adbtuifm
-    azure-cli
+    # azure-cli
     broot
     cargo-cache
     cargo-update
