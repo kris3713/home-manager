@@ -74,6 +74,7 @@ in
     adbtuifm
     # azure-cli
     broot
+    cobra-cli
     cargo-cache
     cargo-update
     clipboard-jh # cb
@@ -87,6 +88,8 @@ in
     fh # FlakeHub CLI
     git-machete
     gpufetch
+    gofumpt
+    golangci-lint
     hyfetch
     lftp
     librespeed-cli
