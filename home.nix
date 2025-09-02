@@ -84,6 +84,7 @@ in
     deno
     dnslookup
     dragon-drop
+    dogedns
     eza
     fh # FlakeHub CLI
     git-machete
