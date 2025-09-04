@@ -2,12 +2,15 @@
   config,
   pkgs,
   lib,
+  catppuccin-fish-theme,
+  nix-fish,
+  replay-fish,
   ...
 }:
 
 let
   # important variables
-  fetchFromGitHub = pkgs.fetchFromGitHub;
+  # fetchFromGitHub = pkgs.fetchFromGitHub;
   hm = lib.hm;
   configHome = config.home;
 
@@ -16,12 +19,6 @@ let
 
   # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   # in order to get the actual hash
-  catppuccin-fish-theme = fetchFromGitHub {
-    owner = "catppuccin";
-    repo = "fish";
-    rev = "main";
-    hash = "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=";
-  };
 in
 {
   nixpkgs.config.allowUnfree = true;
@@ -205,21 +202,11 @@ in
     plugins = [
       {
         name = "nix";
-        src = fetchFromGitHub {
-          owner = "Animeshz"; # Using a fork since the original repo is not maintained anymore
-          repo = "nix.fish";
-          rev = "master";
-          hash = "sha256-3M0dU30SrdjInp6MWEC0q7MTInrZNtY6Z9mhBw43PKs=";
-        };
+        src = nix-fish;
       }
       {
         name = "replay";
-        src = fetchFromGitHub {
-          owner = "jorgebucaran";
-          repo = "replay.fish";
-          rev = "main";
-          hash = "sha256-TzQ97h9tBRUg+A7DSKeTBWLQuThicbu19DHMwkmUXdg=";
-        };
+        src = replay-fish;
       }
     ];
   };

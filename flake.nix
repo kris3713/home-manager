@@ -4,9 +4,26 @@
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Add fish plugins as inputs
+    catppuccin-fish-theme = {
+      url = "github:catppuccin/fish";
+      flake = false;
+    };
+
+    nix-fish = {
+      url = "github:Animeshz/nix.fish";
+      flake = false;
+    };
+
+    replay-fish = {
+      url = "github:jorgebucaran/replay.fish";
+      flake = false;
     };
   };
 
@@ -14,6 +31,9 @@
     {
       nixpkgs,
       home-manager,
+      catppuccin-fish-theme,
+      nix-fish,
+      replay-fish,
       ...
     }:
 
@@ -31,6 +51,9 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+        extraSpecialArgs = {
+          inherit catppuccin-fish-theme nix-fish replay-fish;
+        };
       };
     };
 }
