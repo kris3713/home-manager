@@ -10,15 +10,14 @@
 
 let
   # important variables
+  # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+  # in order to get the actual hash
   # fetchFromGitHub = pkgs.fetchFromGitHub;
   hm = lib.hm;
   configHome = config.home;
 
   # other variables
   # fishPlugins = pkgs.fishPlugins;
-
-  # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
-  # in order to get the actual hash
 in
 {
   nixpkgs.config.allowUnfree = true;
