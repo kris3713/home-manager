@@ -100,6 +100,7 @@ in
     nil
     nix-info
     nix-init
+    nix-your-shell
     niv
     nmap
     obs-cmd
