@@ -106,6 +106,7 @@ in
     omnix
     ookla-speedtest
     php
+    php84Packages.composer
     php84Packages.phan
     quickemu
     ramfetch
