@@ -197,8 +197,6 @@ in
       ## end of Shell completions creation
     '';
 
-    # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
-    # in order to get the actual hash
     plugins = [
       {
         name = "nix";
