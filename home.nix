@@ -115,7 +115,6 @@ in
     ruby
     smap
     termscp
-    texliveMedium # texlive
     tinyxxd
     ttop
     update-nix-fetchgit
