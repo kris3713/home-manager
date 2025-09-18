@@ -73,7 +73,6 @@ in
     cobra-cli
     cargo-cache
     cargo-update
-    clipboard-jh # cb
     cod
     complgen
     direnv
