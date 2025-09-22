@@ -81,6 +81,7 @@ in
     dragon-drop
     dogedns
     eza
+    element-desktop
     fh # FlakeHub CLI
     git-machete
     gpufetch
