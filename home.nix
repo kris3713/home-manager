@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  lib,
+  # lib,
   catppuccin-fish-theme,
   nix-fish,
   replay-fish,
@@ -13,7 +13,8 @@ let
   # NOTE: Always set new hashes to "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
   # in order to get the actual hash
   # fetchFromGitHub = pkgs.fetchFromGitHub;
-  hm = lib.hm;
+
+  # hm = lib.hm;
   configHome = config.home;
 
   # other variables
@@ -28,21 +29,17 @@ in
   home.homeDirectory = "/home/kris";
 
   home.activation = {
-    # For some reason, home-manager keeps messing with mimeapps.list
-    # To counter this, we'll just back up the file and restore it afterwards
-    backupAndRestoreMimeAppsList = hm.dag.entryBefore [ "checkLinkTargets" ] ''
-      MIME_APPS_LIST='${configHome.homeDirectory}/.config/mimeapps.list'
-
-      if [ ! -f "$MIME_APPS_LIST.bak" ]; then
-        cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
-      fi
-
-      mv -f "$MIME_APPS_LIST.bak" "$MIME_APPS_LIST"
-      cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
-    '';
-
-    # updateFontCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-    #   run /usr/bin/fc-cache -fv &> /dev/null
+    # # For some reason, home-manager keeps messing with mimeapps.list
+    # # To counter this, we'll just back up the file and restore it afterwards
+    # backupAndRestoreMimeAppsList = hm.dag.entryBefore [ "checkLinkTargets" ] ''
+    #   MIME_APPS_LIST='${configHome.homeDirectory}/.config/mimeapps.list'
+    #
+    #   if [ ! -f "$MIME_APPS_LIST.bak" ]; then
+    #     cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
+    #   fi
+    #
+    #   mv -f "$MIME_APPS_LIST.bak" "$MIME_APPS_LIST"
+    #   cp -f "$MIME_APPS_LIST" "$MIME_APPS_LIST.bak"
     # '';
   };
 
