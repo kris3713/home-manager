@@ -63,17 +63,19 @@ in
     twitter-color-emoji
 
     ## others
-    alejandra
     adbtuifm
+    alejandra
     # azure-cli
     broot
     cobra-cli
     cargo-cache
     cargo-update
+    checkstyle
     cod
     complgen
     direnv
     deno
+    deadnix
     dnslookup
     dragon-drop
     dogedns
@@ -90,6 +92,7 @@ in
     linux_logo
     lsp-ai
     lurk
+    ktlint
     mc # Midnight Commander
     neovim-unwrapped
     netscanner
