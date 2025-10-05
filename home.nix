@@ -103,6 +103,7 @@ in
     nix-your-shell
     niv
     nmap
+    nvtopPackages.intel
     obs-cmd
     omnix
     ookla-speedtest
