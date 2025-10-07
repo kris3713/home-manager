@@ -65,6 +65,7 @@ in
     ## others
     adbtuifm
     alejandra
+    atuin
     # azure-cli
     broot
     cobra-cli
