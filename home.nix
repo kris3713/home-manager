@@ -63,15 +63,21 @@ in
     twitter-color-emoji
 
     ## others
+    actionlint
     adbtuifm
     alejandra
     atuin
+    argc
     # azure-cli
+    babelfish
+    biome
+    bit
     broot
     cobra-cli
     cargo-cache
     cargo-update
     checkstyle
+    cheat
     cod
     complgen
     direnv
@@ -80,21 +86,39 @@ in
     dnslookup
     dragon-drop
     dogedns
+    doggo
+    dprint
     eza
     element-desktop
+    f2
+    fastfetch
+    fd
+    ferron
     fh # FlakeHub CLI
+    gh
     git-machete
+    git-town
     gpufetch
     gofumpt
     golangci-lint
+    grex
+    gut
     hyfetch
+    lazydocker
+    lazygit
+    lazysql
     lftp
     librespeed-cli
     linux_logo
     lsp-ai
+    lua-language-server
     lurk
     ktlint
+    macchina
+    markdown-oxide
     mc # Midnight Commander
+    micro
+    most
     neovim-unwrapped
     netscanner
     nh
@@ -108,6 +132,10 @@ in
     obs-cmd
     omnix
     ookla-speedtest
+    oxker
+    pdfcpu
+    peco
+    pfetch-rs
     php
     php84Packages.composer
     php84Packages.phan
@@ -115,15 +143,31 @@ in
     ramfetch
     ripdrag
     ruby
+    sad
+    screenfetch
+    sd
+    shfmt
     smap
+    static-web-server
+    statix
+    stylua
+    sshpass
+    tailspin
     termscp
+    trzsz-ssh
     tinyxxd
     ttop
+    tre-command
+    trippy
     update-nix-fetchgit
     usql
+    uncrustify
     vimv
     vtracer
     watchman
+    yamlfmt
+    yazi-unwrapped
+    yq-go
     yt-dlp
 
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -195,7 +239,7 @@ in
 
       ## Shell completions creation
       # gut
-      gut completion fish > '${configHome.homeDirectory}/.config/fish/completions/gut.fish'
+      gut completion fish | source
       ## end of Shell completions creation
     '';
 
