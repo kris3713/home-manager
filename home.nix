@@ -88,6 +88,8 @@ in
     dogedns
     doggo
     dprint
+    duf
+    dust
     eza
     element-desktop
     f2
