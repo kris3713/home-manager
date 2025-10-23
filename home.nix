@@ -105,7 +105,6 @@ in
     golangci-lint
     grex
     gut
-    hyfetch
     lazydocker
     lazygit
     lazysql
@@ -149,6 +148,7 @@ in
     screenfetch
     sd
     shfmt
+    shellcheck
     smap
     static-web-server
     statix
