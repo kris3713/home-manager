@@ -155,6 +155,7 @@ in
     stylua
     sshpass
     tailspin
+    television
     termscp
     trzsz-ssh
     tinyxxd
