@@ -25,6 +25,12 @@
       url = "github:jorgebucaran/replay.fish";
       flake = false;
     };
+
+    # For Ghostty
+    catppuccin-ghostty-theme = {
+      url = "github:catppuccin/ghostty";
+      flake = false;
+    };
   };
 
   outputs =
@@ -34,6 +40,7 @@
       catppuccin-fish-theme,
       nix-fish,
       replay-fish,
+      catppuccin-ghostty-theme,
       ...
     }:
 
@@ -52,7 +59,7 @@
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
         extraSpecialArgs = {
-          inherit catppuccin-fish-theme nix-fish replay-fish;
+          inherit catppuccin-fish-theme nix-fish replay-fish catppuccin-ghostty-theme;
         };
       };
     };

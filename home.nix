@@ -5,6 +5,7 @@
   catppuccin-fish-theme,
   nix-fish,
   replay-fish,
+  catppuccin-ghostty-theme,
   ...
 }:
 
@@ -204,10 +205,17 @@ in
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+
     "${configHome.homeDirectory}/.config/fish/themes" = {
       recursive = true;
       source = "${catppuccin-fish-theme}/themes";
     };
+
+    "${configHome.homeDirectory}/.config/ghostty/themes" = {
+      recursive = true;
+      source = "${catppuccin-ghostty-theme}/themes";
+    };
+
   };
 
   # Home Manager can also manage your environment variables through

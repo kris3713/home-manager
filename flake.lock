@@ -16,6 +16,22 @@
         "type": "github"
       }
     },
+    "catppuccin-ghostty-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761059674,
+        "narHash": "sha256-j0HCakM9R/xxEjWd5A0j8VVlg0vQivjlAYHRW/4OpGU=",
+        "owner": "catppuccin",
+        "repo": "ghostty",
+        "rev": "0eeefa637affe0b5f29d7005cfe4e143c244a781",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "ghostty",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -87,6 +103,7 @@
     "root": {
       "inputs": {
         "catppuccin-fish-theme": "catppuccin-fish-theme",
+        "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "home-manager": "home-manager",
         "nix-fish": "nix-fish",
         "nixpkgs": "nixpkgs",
