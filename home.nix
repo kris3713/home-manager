@@ -169,7 +169,7 @@ in
     vimv
     vtracer
     watchman
-    xdg-terminal-exec
+    xdg-terminal-exec-mkhl
     yamlfmt
     yazi-unwrapped
     yq-go
