@@ -79,7 +79,7 @@ in
     cargo-update
     checkstyle
     cheat
-    cod
+    # cod
     complgen
     direnv
     deno
