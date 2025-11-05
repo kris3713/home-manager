@@ -67,7 +67,7 @@ in
     actionlint
     adbtuifm
     alejandra
-    atuin
+    # atuin
     argc
     # azure-cli
     babelfish
