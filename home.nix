@@ -13,6 +13,7 @@
   catppuccin-bat-theme,
   catppuccin-atuin-theme,
   catppuccin-lsd-theme,
+  catppuccin-delta-theme,
   ...
 }:
 
@@ -226,7 +227,6 @@ in
       source = "${pkgs.dogedns}/bin/doge";
     };
 
-
     "${fishDir}/themes" = {
       recursive = true;
       source = "${catppuccin-fish-theme}/themes";
@@ -253,6 +253,10 @@ in
 
     "${userConfigDir}/lsd/colors.yaml" = {
       source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
+    };
+
+    "${configHome.homeDirectory}/catppuccin-delta-theme.gitconfig" = {
+      source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
     };
   };
 

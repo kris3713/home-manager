@@ -48,6 +48,22 @@
         "type": "github"
       }
     },
+    "catppuccin-delta-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760466394,
+        "narHash": "sha256-NjqqB/BHqduiNWKeksiRZUMfjRUodJlsVu1yaEIZRsM=",
+        "owner": "catppuccin",
+        "repo": "delta",
+        "rev": "74b47a345638a2f19b3e5bdb9d7e4984066f9ac7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "delta",
+        "type": "github"
+      }
+    },
     "catppuccin-fish-theme": {
       "flake": false,
       "locked": {
@@ -217,6 +233,7 @@
         "catppuccin-atuin-theme": "catppuccin-atuin-theme",
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",
+        "catppuccin-delta-theme": "catppuccin-delta-theme",
         "catppuccin-fish-theme": "catppuccin-fish-theme",
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "catppuccin-lsd-theme": "catppuccin-lsd-theme",

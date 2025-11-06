@@ -72,6 +72,12 @@
         url = "github:catppuccin/lsd";
         flake = false;
       };
+
+      # delta
+      catppuccin-delta-theme = {
+        url = "github:catppuccin/delta";
+        flake = false;
+      };
     };
 
   outputs =
@@ -89,6 +95,7 @@
       catppuccin-bat-theme,
       catppuccin-atuin-theme,
       catppuccin-lsd-theme,
+      catppuccin-delta-theme,
       ...
     }:
 
@@ -119,7 +126,8 @@
             catppuccin-btop-theme
             catppuccin-bat-theme
             catppuccin-atuin-theme
-            catppuccin-lsd-theme;
+            catppuccin-lsd-theme
+            catppuccin-delta-theme;
         };
       };
     };
