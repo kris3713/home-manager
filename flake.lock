@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "autopair": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656950411,
+        "narHash": "sha256-qt3t1iKRRNuiLWiVoiAYOu+9E7jsyECyIqZJ/oRIT1A=",
+        "owner": "jorgebucaran",
+        "repo": "autopair.fish",
+        "rev": "4d1752ff5b39819ab58d7337c69220342e9de0e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jorgebucaran",
+        "repo": "autopair.fish",
+        "type": "github"
+      }
+    },
     "catppuccin-atuin-theme": {
       "flake": false,
       "locked": {
@@ -230,6 +246,7 @@
     },
     "root": {
       "inputs": {
+        "autopair": "autopair",
         "catppuccin-atuin-theme": "catppuccin-atuin-theme",
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",
