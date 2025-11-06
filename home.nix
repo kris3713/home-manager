@@ -23,7 +23,7 @@ let
   configHome = config.home;
 
   # other variables
-  # fishPlugins = pkgs.fishPlugins;
+  fishPlugins = pkgs.fishPlugins;
   fishDir = "${configHome.homeDirectory}/.config/fish";
 in
 {
@@ -286,6 +286,10 @@ in
       {
         name = "replay";
         src = replay-fish;
+      }
+      {
+        name = "puffer";
+        src = fishPlugins.puffer;
       }
     ];
   };
