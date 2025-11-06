@@ -232,9 +232,8 @@ in
       source = "${catppuccin-bat-theme}/themes";
     };
 
-    "${configHome.homeDirectory}/.config/atuin/themes" = {
-      recursive = true;
-      source = "${catppuccin-atuin-theme}/themes/macchiato";
+    "${configHome.homeDirectory}/.config/atuin/themes/catppuccin-macchiato-blue.toml" = {
+      source = "${catppuccin-atuin-theme}/themes/macchiato/catppuccin-macchiato-blue.toml";
     };
 
     "${configHome.homeDirectory}/.config/lsd/colors.yaml" = {
