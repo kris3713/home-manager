@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "autopair": {
+    "autopair_fish": {
       "flake": false,
       "locked": {
         "lastModified": 1656950411,
@@ -246,7 +246,7 @@
     },
     "root": {
       "inputs": {
-        "autopair": "autopair",
+        "autopair_fish": "autopair_fish",
         "catppuccin-atuin-theme": "catppuccin-atuin-theme",
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",

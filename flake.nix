@@ -12,7 +12,7 @@
       };
 
       # Add fish plugins as inputs
-      autopair = {
+      autopair_fish = {
         url = "github:jorgebucaran/autopair.fish";
         flake = false;
       };
@@ -89,7 +89,7 @@
     {
       nixpkgs,
       home-manager,
-      autopair,
+      autopair_fish,
       fishPlugin-bass,
       fisher,
       replay_fish,
@@ -122,7 +122,7 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit
-            autopair
+            autopair_fish
             fishPlugin-bass
             fisher
             replay_fish

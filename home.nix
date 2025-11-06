@@ -2,7 +2,7 @@
   config,
   pkgs,
   # lib,
-  autopair,
+  autopair_fish,
   fishPlugin-bass,
   fisher,
   replay_fish,
@@ -301,7 +301,7 @@ in
     plugins = [
       { # autopair
         name = "autopair";
-        src = autopair;
+        src = autopair_fish;
       }
       { # bass
         name = "bass";
