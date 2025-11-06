@@ -6,6 +6,7 @@
   nix-fish,
   replay-fish,
   catppuccin-ghostty-theme,
+  catppuccin-btop-theme,
   ...
 }:
 
@@ -218,6 +219,10 @@ in
       source = "${catppuccin-ghostty-theme}/themes";
     };
 
+    "${configHome.homeDirectory}/.config/btop/themes" = {
+      recursive = true;
+      source = "${catppuccin-btop-theme}/themes";
+    };
   };
 
   # Home Manager can also manage your environment variables through
