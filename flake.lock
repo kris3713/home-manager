@@ -96,6 +96,22 @@
         "type": "github"
       }
     },
+    "fisher": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725984266,
+        "narHash": "sha256-pR5RKU+zIb7CS0Y6vjx2QIZ8Iu/3ojRfAcAdjCOxl1U=",
+        "owner": "jorgebucaran",
+        "repo": "fisher",
+        "rev": "1f0dc2b4970da160605638cb0f157079660d6e04",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jorgebucaran",
+        "repo": "fisher",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -188,6 +204,7 @@
         "catppuccin-fish-theme": "catppuccin-fish-theme",
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "catppuccin-lsd-theme": "catppuccin-lsd-theme",
+        "fisher": "fisher",
         "home-manager": "home-manager",
         "nix-completions-fish": "nix-completions-fish",
         "nix-fish": "nix-fish",

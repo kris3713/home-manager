@@ -2,9 +2,10 @@
   config,
   pkgs,
   # lib,
+  fisher,
+  replay-fish,
   nix-completions-fish,
   nix-fish,
-  replay-fish,
   catppuccin-fish-theme,
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
@@ -281,16 +282,20 @@ in
 
     plugins = [
       {
+        name = "fisher";
+        src = fisher;
+      }
+      {
+        name = "replay";
+        src = replay-fish;
+      }
+      {
         name = "nix-completions";
         src = nix-completions-fish;
       }
       {
         name = "nix";
         src = nix-fish;
-      }
-      {
-        name = "replay";
-        src = replay-fish;
       }
     ];
   };
