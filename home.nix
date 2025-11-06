@@ -299,7 +299,7 @@ in
     '';
 
     plugins = [
-      { # autopair
+      { # autopair.fish
         name = "autopair";
         src = autopair_fish;
       }
