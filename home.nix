@@ -2,11 +2,12 @@
   config,
   pkgs,
   # lib,
-  catppuccin-fish-theme,
   nix-fish,
   replay-fish,
+  catppuccin-fish-theme,
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
+  catppuccin-bat-theme,
   ...
 }:
 
@@ -222,6 +223,11 @@ in
     "${configHome.homeDirectory}/.config/btop/themes" = {
       recursive = true;
       source = "${catppuccin-btop-theme}/themes";
+    };
+
+    "${configHome.homeDirectory}/.config/bat/themes" = {
+      recursive = true;
+      source = "${catppuccin-bat-theme}/themes";
     };
   };
 

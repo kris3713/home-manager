@@ -11,6 +11,7 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
+      # Add fish plugins as inputs
       nix-fish = {
         url = "github:Animeshz/nix.fish";
         flake = false;
@@ -21,21 +22,26 @@
         flake = false;
       };
 
-      # Add fish plugins as inputs
       catppuccin-fish-theme = {
         url = "github:catppuccin/fish";
         flake = false;
       };
 
-      # For Ghostty
+      # Ghostty
       catppuccin-ghostty-theme = {
         url = "github:catppuccin/ghostty";
         flake = false;
       };
 
-      # For btop
+      # btop
       catppuccin-btop-theme = {
         url = "github:catppuccin/btop";
+        flake = false;
+      };
+
+      # bat
+      catppuccin-bat-theme = {
+        url = "github:catppuccin/bat";
         flake = false;
       };
     };
@@ -49,6 +55,7 @@
       catppuccin-fish-theme,
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
+      catppuccin-bat-theme,
       ...
     }:
 
@@ -71,7 +78,8 @@
             catppuccin-fish-theme
             nix-fish replay-fish
             catppuccin-ghostty-theme
-            catppuccin-btop-theme;
+            catppuccin-btop-theme
+            catppuccin-bat-theme;
         };
       };
     };
