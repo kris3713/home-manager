@@ -2,6 +2,7 @@
   config,
   pkgs,
   # lib,
+  autopair,
   fishPlugin-bass,
   fisher,
   replay_fish,
@@ -227,10 +228,6 @@ in
       source = "${pkgs.dogedns}/bin/doge";
     };
 
-    "${fishDir}/themes" = {
-      recursive = true;
-      source = "${catppuccin-fish-theme}/themes";
-    };
 
     "${userConfigDir}/ghostty/themes" = {
       recursive = true;
@@ -257,6 +254,11 @@ in
 
     "${configHome.homeDirectory}/catppuccin-delta-theme.gitconfig" = {
       source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
+    };
+
+    "${fishDir}/themes" = {
+      recursive = true;
+      source = "${catppuccin-fish-theme}/themes";
     };
   };
 
@@ -297,6 +299,10 @@ in
     '';
 
     plugins = [
+      { # autopair
+        name = "autopair";
+        src = autopair;
+      }
       { # bass
         name = "bass";
         src = fishPlugin-bass;
