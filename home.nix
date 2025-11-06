@@ -287,10 +287,6 @@ in
         name = "replay";
         src = replay-fish;
       }
-      {
-        name = "puffer";
-        src = fishPlugins.puffer;
-      }
     ];
   };
 
