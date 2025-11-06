@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "catppuccin-atuin-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1745283812,
+        "narHash": "sha256-t/Pq+hlCcdSigtk5uzw3n7p5ey0oH/D5S8GO/0wlpKA=",
+        "owner": "catppuccin",
+        "repo": "atuin",
+        "rev": "abfab12de743aa73cf20ac3fa61e450c4d96380c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "atuin",
+        "type": "github"
+      }
+    },
     "catppuccin-bat-theme": {
       "flake": false,
       "locked": {
@@ -61,6 +77,22 @@
       "original": {
         "owner": "catppuccin",
         "repo": "ghostty",
+        "type": "github"
+      }
+    },
+    "catppuccin-lsd-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732764700,
+        "narHash": "sha256-lf6VawCgK9VlKO+PAzPD/WqPjxoqw2j000b5ZlEXj/Y=",
+        "owner": "catppuccin",
+        "repo": "lsd",
+        "rev": "7085155432c7fe53a7acd7b0c004955368aa0fba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "lsd",
         "type": "github"
       }
     },
@@ -134,10 +166,12 @@
     },
     "root": {
       "inputs": {
+        "catppuccin-atuin-theme": "catppuccin-atuin-theme",
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",
         "catppuccin-fish-theme": "catppuccin-fish-theme",
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
+        "catppuccin-lsd-theme": "catppuccin-lsd-theme",
         "home-manager": "home-manager",
         "nix-fish": "nix-fish",
         "nixpkgs": "nixpkgs",

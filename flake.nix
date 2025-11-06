@@ -44,6 +44,18 @@
         url = "github:catppuccin/bat";
         flake = false;
       };
+
+      # atuin
+      catppuccin-atuin-theme = {
+        url = "github:catppuccin/atuin";
+        flake = false;
+      };
+
+      # lsd
+      catppuccin-lsd-theme = {
+        url = "github:catppuccin/lsd";
+        flake = false;
+      };
     };
 
   outputs =
@@ -56,6 +68,8 @@
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
       catppuccin-bat-theme,
+      catppuccin-atuin-theme,
+      catppuccin-lsd-theme,
       ...
     }:
 
@@ -79,7 +93,9 @@
             nix-fish replay-fish
             catppuccin-ghostty-theme
             catppuccin-btop-theme
-            catppuccin-bat-theme;
+            catppuccin-bat-theme
+            catppuccin-atuin-theme
+            catppuccin-lsd-theme;
         };
       };
     };

@@ -8,6 +8,8 @@
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
   catppuccin-bat-theme,
+  catppuccin-atuin-theme,
+  catppuccin-lsd-theme,
   ...
 }:
 
@@ -228,6 +230,15 @@ in
     "${configHome.homeDirectory}/.config/bat/themes" = {
       recursive = true;
       source = "${catppuccin-bat-theme}/themes";
+    };
+
+    "${configHome.homeDirectory}/.config/atuin/themes" = {
+      recursive = true;
+      source = "${catppuccin-atuin-theme}/themes/macchiato";
+    };
+
+    "${configHome.homeDirectory}/.config/lsd/colors.yaml" = {
+      source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
     };
   };
 
