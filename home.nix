@@ -315,7 +315,4 @@ in
       }
     ];
   };
-
-  # Don't allow home-manager to modify mimeapps.list
-  xdg.mime.enable = false;
 }
