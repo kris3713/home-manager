@@ -20,6 +20,7 @@ let
 
   # other variables
   # fishPlugins = pkgs.fishPlugins;
+  fishDir = "${configHome.homeDirectory}/.config/fish";
 in
 {
   nixpkgs.config.allowUnfree = true;
@@ -207,7 +208,7 @@ in
     #   org.gradle.daemon.idletimeout=3600000
     # '';
 
-    "${configHome.homeDirectory}/.config/fish/themes" = {
+    "${fishDir}/themes" = {
       recursive = true;
       source = "${catppuccin-fish-theme}/themes";
     };
@@ -247,7 +248,7 @@ in
     enable = true;
     shellInit = ''
       # source other fish config
-      source '${configHome.homeDirectory}/.config/fish/config.backup.fish'
+      source '${fishDir}/config.backup.fish'
 
       ## Shell completions creation
       # gut
