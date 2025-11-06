@@ -26,8 +26,9 @@ let
   configHome = config.home;
 
   # other variables
-  # fishPlugins = pkgs.fishPlugins;
-  fishDir = "${configHome.homeDirectory}/.config/fish";
+  userBinDir = "${configHome.homeDirectory}/.local/bin";
+  userConfigDir = "${configHome.homeDirectory}/.config";
+  fishDir = "${userConfigDir}/fish";
 in
 {
   nixpkgs.config.allowUnfree = true;
@@ -215,31 +216,42 @@ in
     #   org.gradle.daemon.idletimeout=3600000
     # '';
 
+    # lazygit alias
+    "${userBinDir}/lg" = {
+      source = "${pkgs.lazygit}/bin/lazygit";
+    };
+
+    # doge alias
+    "${userBinDir}/dog" = {
+      source = "${pkgs.dogedns}/bin/doge";
+    };
+
+
     "${fishDir}/themes" = {
       recursive = true;
       source = "${catppuccin-fish-theme}/themes";
     };
 
-    "${configHome.homeDirectory}/.config/ghostty/themes" = {
+    "${userConfigDir}/ghostty/themes" = {
       recursive = true;
       source = "${catppuccin-ghostty-theme}/themes";
     };
 
-    "${configHome.homeDirectory}/.config/btop/themes" = {
+    "${userConfigDir}/btop/themes" = {
       recursive = true;
       source = "${catppuccin-btop-theme}/themes";
     };
 
-    "${configHome.homeDirectory}/.config/bat/themes" = {
+    "${userConfigDir}/bat/themes" = {
       recursive = true;
       source = "${catppuccin-bat-theme}/themes";
     };
 
-    "${configHome.homeDirectory}/.config/atuin/themes/catppuccin-macchiato-blue.toml" = {
+    "${userConfigDir}/atuin/themes/catppuccin-macchiato-blue.toml" = {
       source = "${catppuccin-atuin-theme}/themes/macchiato/catppuccin-macchiato-blue.toml";
     };
 
-    "${configHome.homeDirectory}/.config/lsd/colors.yaml" = {
+    "${userConfigDir}/lsd/colors.yaml" = {
       source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
     };
   };
