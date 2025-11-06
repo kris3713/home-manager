@@ -111,6 +111,7 @@ in
     golangci-lint
     grex
     gut
+    ktlint
     lazydocker
     lazygit
     lazysql
@@ -120,7 +121,6 @@ in
     lsp-ai
     lua-language-server
     lurk
-    ktlint
     macchina
     markdown-oxide
     mc # Midnight Commander
