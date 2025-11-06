@@ -96,6 +96,22 @@
         "type": "github"
       }
     },
+    "fishPlugin-bass": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1702770652,
+        "narHash": "sha256-3d/qL+hovNA4VMWZ0n1L+dSM1lcz7P5CQJyy+/8exTc=",
+        "owner": "edc",
+        "repo": "bass",
+        "rev": "79b62958ecf4e87334f24d6743e5766475bcf4d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edc",
+        "repo": "bass",
+        "type": "github"
+      }
+    },
     "fisher": {
       "flake": false,
       "locked": {
@@ -132,7 +148,7 @@
         "type": "github"
       }
     },
-    "nix-completions-fish": {
+    "nix-completions_fish": {
       "flake": false,
       "locked": {
         "lastModified": 1660830551,
@@ -148,7 +164,7 @@
         "type": "github"
       }
     },
-    "nix-fish": {
+    "nix_fish": {
       "flake": false,
       "locked": {
         "lastModified": 1704266727,
@@ -180,7 +196,7 @@
         "type": "github"
       }
     },
-    "replay-fish": {
+    "replay_fish": {
       "flake": false,
       "locked": {
         "lastModified": 1719805987,
@@ -204,12 +220,13 @@
         "catppuccin-fish-theme": "catppuccin-fish-theme",
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "catppuccin-lsd-theme": "catppuccin-lsd-theme",
+        "fishPlugin-bass": "fishPlugin-bass",
         "fisher": "fisher",
         "home-manager": "home-manager",
-        "nix-completions-fish": "nix-completions-fish",
-        "nix-fish": "nix-fish",
+        "nix-completions_fish": "nix-completions_fish",
+        "nix_fish": "nix_fish",
         "nixpkgs": "nixpkgs",
-        "replay-fish": "replay-fish"
+        "replay_fish": "replay_fish"
       }
     }
   },

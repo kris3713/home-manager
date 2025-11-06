@@ -12,22 +12,27 @@
       };
 
       # Add fish plugins as inputs
+      fishPlugin-bass = {
+        url = "github:edc/bass";
+        flake = false;
+      };
+
       fisher = {
         url = "github:jorgebucaran/fisher";
         flake = false;
       };
 
-      replay-fish = {
+      replay_fish = {
         url = "github:jorgebucaran/replay.fish";
         flake = false;
       };
 
-      nix-completions-fish = {
+      nix-completions_fish = {
         url = "github:kidonng/nix-completions.fish";
         flake = false;
       };
 
-      nix-fish = {
+      nix_fish = {
         url = "github:Animeshz/nix.fish";
         flake = false;
       };
@@ -73,10 +78,11 @@
     {
       nixpkgs,
       home-manager,
+      fishPlugin-bass,
       fisher,
-      replay-fish,
-      nix-completions-fish,
-      nix-fish,
+      replay_fish,
+      nix-completions_fish,
+      nix_fish,
       catppuccin-fish-theme,
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
@@ -103,10 +109,11 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit
+            fishPlugin-bass
             fisher
-            replay-fish
-            nix-completions-fish
-            nix-fish
+            replay_fish
+            nix-completions_fish
+            nix_fish
             catppuccin-fish-theme
             catppuccin-ghostty-theme
             catppuccin-btop-theme

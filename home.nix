@@ -2,10 +2,11 @@
   config,
   pkgs,
   # lib,
+  fishPlugin-bass,
   fisher,
-  replay-fish,
-  nix-completions-fish,
-  nix-fish,
+  replay_fish,
+  nix-completions_fish,
+  nix_fish,
   catppuccin-fish-theme,
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
@@ -280,21 +281,25 @@ in
     '';
 
     plugins = [
-      {
+      { # bass
+        name = "bass";
+        src = fishPlugin-bass;
+      }
+      { # fisher
         name = "fisher";
         src = fisher;
       }
-      {
+      { # replay.fish
         name = "replay";
-        src = replay-fish;
+        src = replay_fish;
       }
-      {
+      { # nix-completions.fish
         name = "nix-completions";
-        src = nix-completions-fish;
+        src = nix-completions_fish;
       }
-      {
+      { # nix.fish
         name = "nix";
-        src = nix-fish;
+        src = nix_fish;
       }
     ];
   };
