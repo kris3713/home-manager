@@ -12,6 +12,11 @@
       };
 
       # Add fish plugins as inputs
+      nix-completions-fish = {
+        url = "github:kidonng/nix-completions.fish";
+        flake = false;
+      };
+
       nix-fish = {
         url = "github:Animeshz/nix.fish";
         flake = false;
@@ -62,6 +67,7 @@
     {
       nixpkgs,
       home-manager,
+      nix-completions-fish,
       nix-fish,
       replay-fish,
       catppuccin-fish-theme,
@@ -90,7 +96,9 @@
         extraSpecialArgs = {
           inherit
             catppuccin-fish-theme
-            nix-fish replay-fish
+            nix-completions-fish
+            nix-fish
+            replay-fish
             catppuccin-ghostty-theme
             catppuccin-btop-theme
             catppuccin-bat-theme

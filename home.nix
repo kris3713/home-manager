@@ -2,6 +2,7 @@
   config,
   pkgs,
   # lib,
+  nix-completions-fish,
   nix-fish,
   replay-fish,
   catppuccin-fish-theme,
@@ -23,7 +24,7 @@ let
   configHome = config.home;
 
   # other variables
-  fishPlugins = pkgs.fishPlugins;
+  # fishPlugins = pkgs.fishPlugins;
   fishDir = "${configHome.homeDirectory}/.config/fish";
 in
 {
@@ -279,6 +280,10 @@ in
     '';
 
     plugins = [
+      {
+        name = "nix-completions";
+        src = nix-completions-fish;
+      }
       {
         name = "nix";
         src = nix-fish;

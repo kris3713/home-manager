@@ -116,6 +116,22 @@
         "type": "github"
       }
     },
+    "nix-completions-fish": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660830551,
+        "narHash": "sha256-spnLmde41qQt8uJZFwiH0igFuVqZ6SvkwdA9Kbe2yz8=",
+        "owner": "kidonng",
+        "repo": "nix-completions.fish",
+        "rev": "cd8a43bed96e0acc02228bc77502be8ba5fa0548",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kidonng",
+        "repo": "nix-completions.fish",
+        "type": "github"
+      }
+    },
     "nix-fish": {
       "flake": false,
       "locked": {
@@ -173,6 +189,7 @@
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "catppuccin-lsd-theme": "catppuccin-lsd-theme",
         "home-manager": "home-manager",
+        "nix-completions-fish": "nix-completions-fish",
         "nix-fish": "nix-fish",
         "nixpkgs": "nixpkgs",
         "replay-fish": "replay-fish"
