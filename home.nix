@@ -181,6 +181,7 @@ in
     vtracer
     watchman
     xdg-terminal-exec-mkhl
+    xxh
     yamlfmt
     yazi-unwrapped
     yq-go
