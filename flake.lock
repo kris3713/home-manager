@@ -199,15 +199,15 @@
     "nix-completions_fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1757970506,
-        "narHash": "sha256-njripFyQlAHOOZBZ6d6Z9BgJ1At3j6aT09Vq9hJDqV8=",
-        "owner": "dmitrii-galantsev",
+        "lastModified": 1762639078,
+        "narHash": "sha256-9MOEVa0nmLYiAKFBHl6bI4gWF8lcZ4f3b5QrK8MqFJ4=",
+        "owner": "kris3713",
         "repo": "nix-completions.fish",
-        "rev": "ab60214924650bfea78c8d7542a63d2d1f010c1e",
+        "rev": "7cb64e90e8792759238f4fa09fdd8227c300ab6a",
         "type": "github"
       },
       "original": {
-        "owner": "dmitrii-galantsev",
+        "owner": "kris3713",
         "repo": "nix-completions.fish",
         "type": "github"
       }

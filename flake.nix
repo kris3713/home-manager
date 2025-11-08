@@ -38,7 +38,7 @@
       };
 
       nix-completions_fish = {
-        url = "github:dmitrii-galantsev/nix-completions.fish";
+        url = "github:kris3713/nix-completions.fish";
         flake = false;
       };
 
