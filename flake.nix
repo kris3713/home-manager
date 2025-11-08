@@ -11,9 +11,14 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
-      # Add fish plugins as inputs
+      ## FISH plugins
       autopair_fish = {
         url = "github:jorgebucaran/autopair.fish";
+        flake = false;
+      };
+
+      completions_fish = {
+        url = "github:kidonng/completions.fish";
         flake = false;
       };
 
@@ -42,7 +47,14 @@
         flake = false;
       };
 
+      sdkman-for-fish = {
+        url = "github:reitzig/sdkman-for-fish";
+        flake = false;
+      };
+      ## end of FISH plugins
 
+      ## Catppuccin themes
+      # fish
       catppuccin-fish-theme = {
         url = "github:catppuccin/fish";
         flake = false;
@@ -83,6 +95,7 @@
         url = "github:catppuccin/delta";
         flake = false;
       };
+      ## end of Catppuccin themes
     };
 
   outputs =
@@ -90,11 +103,13 @@
       nixpkgs,
       home-manager,
       autopair_fish,
+      completions_fish,
       fishPlugin-bass,
       fisher,
       replay_fish,
       nix-completions_fish,
       nix_fish,
+      sdkman-for-fish,
       catppuccin-fish-theme,
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
@@ -123,11 +138,13 @@
         extraSpecialArgs = {
           inherit
             autopair_fish
+            completions_fish
             fishPlugin-bass
             fisher
             replay_fish
             nix-completions_fish
             nix_fish
+            sdkman-for-fish
             catppuccin-fish-theme
             catppuccin-ghostty-theme
             catppuccin-btop-theme

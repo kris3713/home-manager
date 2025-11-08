@@ -3,11 +3,13 @@
   pkgs,
   # lib,
   autopair_fish,
+  completions_fish,
   fishPlugin-bass,
   fisher,
   replay_fish,
   nix-completions_fish,
   nix_fish,
+  sdkman-for-fish,
   catppuccin-fish-theme,
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
@@ -304,6 +306,10 @@ in
         name = "autopair";
         src = autopair_fish;
       }
+      { # completions.fish
+        name = "completions";
+        src = completions_fish;
+      }
       { # bass
         name = "bass";
         src = fishPlugin-bass;
@@ -323,6 +329,10 @@ in
       { # nix.fish
         name = "nix";
         src = nix_fish;
+      }
+      { # sdkman-for-fish
+        name = "sdkman";
+        src = sdkman-for-fish;
       }
     ];
   };
