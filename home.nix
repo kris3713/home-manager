@@ -117,6 +117,7 @@ in
     golangci-lint
     grex
     gut
+    intelli-shell
     ktlint
     lazydocker
     lazygit
