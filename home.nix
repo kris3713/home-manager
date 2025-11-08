@@ -152,7 +152,6 @@ in
     php
     php84Packages.composer
     php84Packages.phan
-    # pnpm-shell-completion
     quickemu
     ramfetch
     ripdrag
