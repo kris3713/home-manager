@@ -117,6 +117,7 @@ in
     gpufetch
     gofumpt
     golangci-lint
+    golangci-lint-langserver
     grex
     gut
     intelli-shell
