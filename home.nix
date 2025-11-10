@@ -153,6 +153,7 @@ in
     omnix
     ookla-speedtest
     oxker
+    p7zip-rar
     pdfcpu
     peco
     pfetch-rs
@@ -161,6 +162,7 @@ in
     php84Packages.phan
     quickemu
     ramfetch
+    rar
     ripdrag
     ruby
     sad
