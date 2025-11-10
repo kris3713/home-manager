@@ -153,7 +153,7 @@ in
     omnix
     ookla-speedtest
     oxker
-    p7zip-rar
+    p7zip
     pdfcpu
     peco
     pfetch-rs
