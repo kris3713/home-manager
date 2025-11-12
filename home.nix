@@ -105,7 +105,6 @@ in
     duf
     dust
     eza
-    element-desktop
     f2
     fastfetch
     fd
