@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  # flakehub-cli,
   # lib,
   autopair_fish,
   completions_fish,
@@ -28,6 +29,7 @@ let
   homeDirectory = configHome.homeDirectory;
 
   # other variables
+  # flakehub-cli_pkg = flakehub-cli.packages.${pkgs.system}.default;
   userBinDir = "${homeDirectory}/.local/bin";
   userConfigDir = "${homeDirectory}/.config";
   fishDir = "${userConfigDir}/fish";
