@@ -11,10 +11,6 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
-      # flakehub-cli = {
-      #   url = "https://flakehub.com/f/DeterminateSystems/fh/0.1.*";
-      # };
-
       ## FISH plugins
       autopair_fish = {
         url = "github:jorgebucaran/autopair.fish";
@@ -106,7 +102,6 @@
     {
       nixpkgs,
       home-manager,
-      # flakehub-cli,
       autopair_fish,
       completions_fish,
       fishPlugin-bass,
@@ -142,7 +137,6 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit
-            # flakehub-cli
             autopair_fish
             completions_fish
             fishPlugin-bass
