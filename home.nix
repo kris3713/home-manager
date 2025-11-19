@@ -160,6 +160,7 @@ in
       stylua
       sshpass
       tailspin
+      taplo
       termscp
       trzsz-ssh
       tinyxxd
