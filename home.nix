@@ -29,6 +29,7 @@ let
 
   # other variables
   userBinDir = "${homeDirectory}/.local/bin";
+  # userDataDir = "${homeDirectory}/.local/share";
   userConfigDir = "${homeDirectory}/.config";
   fishDir = "${userConfigDir}/fish";
 in
@@ -129,6 +130,7 @@ in
       nil
       nix-info
       nix-init
+      nix.man
       nix-your-shell
       niv
       nmap
