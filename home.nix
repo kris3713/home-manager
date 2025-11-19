@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  determinate-nix,
+  determinateNixManual,
   # lib,
   autopair_fish,
   completions_fish,
@@ -84,7 +84,7 @@ in
       complgen
       deadnix
       deno
-      determinate-nix.man
+      determinateNixManual
       dnslookup
       dragon-drop
       dogedns

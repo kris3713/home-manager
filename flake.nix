@@ -126,7 +126,7 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      determinate-nix = determinate-nix-src.packages.${system}.nix;
+      determinateNixManual = determinate-nix-src.packages.${system}.nix-manual;
       homeManagerLib = home-manager.lib;
     in
     {
@@ -141,7 +141,7 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit
-            determinate-nix
+            determinateNixManual
             autopair_fish
             completions_fish
             fishPlugin-bass
