@@ -1,5 +1,5 @@
 {
-  # flakes
+  ## flakes
   config,
   pkgs,
   # flake-utils,
@@ -134,6 +134,7 @@ in
       netscanner
       nh
       nil
+      nixd
       nix-info
       nix-init
       nix-your-shell
