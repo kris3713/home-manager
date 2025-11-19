@@ -6,6 +6,8 @@
       # Specify the source of Home Manager and Nixpkgs.
       nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
 
+      determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/3.*";
+
       home-manager = {
         url = "https://flakehub.com/f/nix-community/home-manager/0.1.*";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -101,6 +103,7 @@
   outputs =
     {
       nixpkgs,
+      determinate-nix-src,
       home-manager,
       autopair_fish,
       completions_fish,
@@ -123,6 +126,7 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      determinate-nix = determinate-nix-src.packages.${system}.nix;
       homeManagerLib = home-manager.lib;
     in
     {
@@ -137,6 +141,7 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit
+            determinate-nix
             autopair_fish
             completions_fish
             fishPlugin-bass

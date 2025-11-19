@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  determinate-nix,
   # lib,
   autopair_fish,
   completions_fish,
@@ -81,8 +82,9 @@ in
       cheat
       # cod
       complgen
-      deno
       deadnix
+      deno
+      determinate-nix.man
       dnslookup
       dragon-drop
       dogedns
@@ -130,7 +132,6 @@ in
       nil
       nix-info
       nix-init
-      nix.man
       nix-your-shell
       niv
       nmap
