@@ -1,8 +1,12 @@
 {
+  # flakes
   config,
   pkgs,
-  determinateNixManual,
+  # flake-utils,
   # lib,
+  ## user-defined variables
+  determinateNixManual,
+  ## non-flakes
   autopair_fish,
   completions_fish,
   fishPlugin-bass,

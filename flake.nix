@@ -3,10 +3,11 @@
 
   inputs =
     {
-      # Specify the source of Home Manager and Nixpkgs.
       nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
 
       determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/3.*";
+
+      flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
 
       home-manager = {
         url = "https://flakehub.com/f/nix-community/home-manager/0.1.*";
@@ -102,9 +103,12 @@
 
   outputs =
     {
+      ## flakes
       nixpkgs,
       determinate-nix-src,
       home-manager,
+      flake-utils,
+      ## non-flakes
       autopair_fish,
       completions_fish,
       fishPlugin-bass,
@@ -141,7 +145,11 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit
+            ## flakes
+            flake-utils
+            ## variables
             determinateNixManual
+            ## non-flakes
             autopair_fish
             completions_fish
             fishPlugin-bass
