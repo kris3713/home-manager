@@ -134,7 +134,7 @@ in
       netscanner
       nh
       nil
-      nixd
+      # nixd
       nix-info
       nix-init
       nix-your-shell
@@ -145,7 +145,6 @@ in
       omnix
       ookla-speedtest
       oxker
-      # p7zip
       pdfcpu
       peco
       pfetch-rs
@@ -154,7 +153,6 @@ in
       php84Packages.phan
       quickemu
       ramfetch
-      # rar
       ripdrag
       ruby
       sad
@@ -230,6 +228,7 @@ in
         source = "${pkgs.dogedns}/bin/doge";
       };
 
+      ## others
       "${userConfigDir}/ghostty/themes" = {
         recursive = true;
         source = "${catppuccin-ghostty-theme}/themes";
@@ -257,6 +256,7 @@ in
         source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
       };
 
+      ## FISH Themes
       "${fishDir}/themes" = {
         recursive = true;
         source = "${catppuccin-fish-theme}/themes";
@@ -289,6 +289,7 @@ in
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
 
+    # Manage direnv using Nix and Home Manager.
     direnv = {
       enable = true;
       enableBashIntegration = true;
