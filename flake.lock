@@ -427,11 +427,11 @@
     "sdkman-for-fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1762195754,
-        "narHash": "sha256-N1Mxj328/xIDHbjl4evFdP9Oe9yYoYVHfRQWtzsy9rY=",
+        "lastModified": 1763599226,
+        "narHash": "sha256-0xj7L+8rjW9c14DB2Vo+8mETGFrpE5qYsAjXYNHEDSc=",
         "owner": "reitzig",
         "repo": "sdkman-for-fish",
-        "rev": "2d6e7c1b36a9a4ef4d675072f8975d14cfadeeaf",
+        "rev": "c875fb047e633c15c4548e50e669eeef0dcef858",
         "type": "github"
       },
       "original": {
