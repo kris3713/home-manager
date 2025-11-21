@@ -296,11 +296,11 @@
     "nix-completions_fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1762639078,
-        "narHash": "sha256-9MOEVa0nmLYiAKFBHl6bI4gWF8lcZ4f3b5QrK8MqFJ4=",
+        "lastModified": 1763704598,
+        "narHash": "sha256-NXA/S+ORwrWKViwPW2sP3VGsQ6vkFrgX3o3b7+9ylbU=",
         "owner": "kris3713",
         "repo": "nix-completions.fish",
-        "rev": "7cb64e90e8792759238f4fa09fdd8227c300ab6a",
+        "rev": "b48b0d1fe4854cd43e51ea729020ece6bcf8d6c7",
         "type": "github"
       },
       "original": {
