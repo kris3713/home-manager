@@ -102,6 +102,7 @@ in
       fd
       ferron
       fh # FlakeHub CLI
+      fzf
       gh
       git-machete
       git-town
@@ -124,6 +125,7 @@ in
       lua5_4
       lua54Packages.luarocks
       lurk
+      lsd
       macchina
       markdown-oxide
       mc # Midnight Commander
@@ -154,6 +156,7 @@ in
       quickemu
       ramfetch
       ripdrag
+      ripgrep
       ruby
       sad
       screenfetch
@@ -179,6 +182,7 @@ in
       vimv
       vtracer
       watchman
+      wikiman
       xdg-terminal-exec-mkhl
       xxh
       yamlfmt

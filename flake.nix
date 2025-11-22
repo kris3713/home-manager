@@ -129,12 +129,13 @@
 
     let
       system = "x86_64-linux";
+      username = "kris";
       pkgs = nixpkgs.legacyPackages.${system};
       determinateNixManual = determinate-nix-src.packages.${system}.nix-manual;
       homeManagerLib = home-manager.lib;
     in
     {
-      homeConfigurations."kris" = homeManagerLib.homeManagerConfiguration {
+      homeConfigurations.${username} = homeManagerLib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
