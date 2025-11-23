@@ -10,7 +10,7 @@
       flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
 
       home-manager = {
-        url = "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.1.5800%2Brev-9a5042a88caea9b729a1d3bc981069159de4fc49/019aad5f-2e71-70c6-9be7-2cd7a25bab53/source.tar.gz";
+        url = "https://flakehub.com/f/nix-community/home-manager/0.1.*";
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
