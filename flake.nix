@@ -5,7 +5,7 @@
     {
       nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
 
-      determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/3.*";
+      determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/0.1.*";
 
       flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
 
