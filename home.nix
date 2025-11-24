@@ -84,6 +84,7 @@ in
       cargo-update
       checkstyle
       cheat
+      cht-sh
       # cod
       complgen
       deadnix
@@ -118,15 +119,15 @@ in
       lazydocker
       lazygit
       lazysql
-      lftp
       librespeed-cli
       linux_logo
+      lnav
+      lsd
       lsp-ai
       lua-language-server
       lua5_4
       lua54Packages.luarocks
       lurk
-      lsd
       macchina
       markdown-oxide
       mc # Midnight Commander
