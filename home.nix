@@ -101,7 +101,7 @@ in
       fastfetch
       fd
       ferron
-      # ffmpeg-full
+      ffmpeg-full
       fh # FlakeHub CLI
       fzf
       gh
