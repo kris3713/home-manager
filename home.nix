@@ -177,7 +177,6 @@ in
       tinyxxd
       ttop
       tre-command
-      trippy
       update-nix-fetchgit
       usql
       uncrustify
