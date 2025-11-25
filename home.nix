@@ -156,6 +156,7 @@ in
       php
       php84Packages.composer
       php84Packages.phan
+      pixi
       quickemu
       ramfetch
       ripdrag
@@ -174,7 +175,6 @@ in
       tailspin
       taplo
       termscp
-      # trzsz-ssh
       tinyxxd
       ttop
       tre-command
