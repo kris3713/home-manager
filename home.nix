@@ -174,7 +174,7 @@ in
       tailspin
       taplo
       termscp
-      trzsz-ssh
+      # trzsz-ssh
       tinyxxd
       ttop
       tre-command
