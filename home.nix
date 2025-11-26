@@ -34,9 +34,10 @@ let
 
   # other variables
   userBinDir = "${homeDirectory}/.local/bin";
-  # userDataDir = "${homeDirectory}/.local/share";
+  userDataDir = "${homeDirectory}/.local/share";
+  userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
-  fishDir = "${userConfigDir}/fish";
+  fishDir = "${homeDirectory}/fish";
 in
 {
   nixpkgs.config.allowUnfree = true;
@@ -288,6 +289,17 @@ in
     sessionVariables = {
       # EDITOR = "emacs";
       NH_NO_CHECKS = 1;
+      # XDG_CONFIG_HOME
+      XDG_CONFIG_HOME = userConfigDir;
+      # XDG_DATA_HOME
+      XDG_DATA_HOME = userDataDir;
+      # XDG_STATE_HOME
+      XDG_STATE_HOME = userStateDir;
+      # XDG_DATA_DIRS
+      XDG_DATA_DIRS = "$XDG_DATA_DIRS:
+        ${userDataDir}/flatpak/exports/share:
+        /var/lib/flatpak/exports/share:
+        ${homeDirectory}/.nix-profile/share";
     };
   };
 
