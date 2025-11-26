@@ -37,7 +37,7 @@ let
   userDataDir = "${homeDirectory}/.local/share";
   userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
-  fishDir = "${homeDirectory}/fish";
+  fishDir = "${userConfigDir}/fish";
 in
 {
   nixpkgs.config.allowUnfree = true;
