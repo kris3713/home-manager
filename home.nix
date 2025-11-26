@@ -86,7 +86,6 @@ in
       checkstyle
       cheat
       cht-sh
-      # cod
       complgen
       deadnix
       deno
@@ -189,7 +188,6 @@ in
       xdg-terminal-exec-mkhl
       xxh
       yamlfmt
-      yazi-unwrapped
       yq-go
       yt-dlp
 
@@ -259,7 +257,7 @@ in
         source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
       };
 
-      "${configHome.homeDirectory}/catppuccin-delta-theme.gitconfig" = {
+      "${homeDirectory}/catppuccin-delta-theme.gitconfig" = {
         source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
       };
 
