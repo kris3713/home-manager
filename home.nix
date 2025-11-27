@@ -293,11 +293,6 @@ in
       XDG_DATA_HOME = userDataDir;
       # XDG_STATE_HOME
       XDG_STATE_HOME = userStateDir;
-      # XDG_DATA_DIRS
-      XDG_DATA_DIRS = "$XDG_DATA_DIRS:
-        ${userDataDir}/flatpak/exports/share:
-        /var/lib/flatpak/exports/share:
-        ${homeDirectory}/.nix-profile/share";
     };
   };
 
