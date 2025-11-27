@@ -149,6 +149,7 @@ in
       obs-cmd
       omnix
       ookla-speedtest
+      ov
       oxker
       pdfcpu
       peco
