@@ -83,11 +83,11 @@
     "catppuccin-fish-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1740843741,
-        "narHash": "sha256-Oc0emnIUI4LV7QJLs4B2/FQtCFewRFVp7EDv8GawFsA=",
+        "lastModified": 1764362944,
+        "narHash": "sha256-KD/sWXSXYVlV+n7ft4vKFYpIMBB3PSn6a6jz+ZIMZvQ=",
         "owner": "catppuccin",
         "repo": "fish",
-        "rev": "6a85af2ff722ad0f9fbc8424ea0a5c454661dfed",
+        "rev": "af622a6e247806f6260c00c6d261aa22680e5201",
         "type": "github"
       },
       "original": {
