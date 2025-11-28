@@ -99,11 +99,11 @@
     "catppuccin-ghostty-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1761059674,
-        "narHash": "sha256-j0HCakM9R/xxEjWd5A0j8VVlg0vQivjlAYHRW/4OpGU=",
+        "lastModified": 1764347662,
+        "narHash": "sha256-Y+f/kRYxZrkwcQrNEfEunpWjYHf1pqdS5RSXVfpI+KI=",
         "owner": "catppuccin",
         "repo": "ghostty",
-        "rev": "0eeefa637affe0b5f29d7005cfe4e143c244a781",
+        "rev": "c4c0f8e64378d27d26967acb16c3c080190d07c2",
         "type": "github"
       },
       "original": {
