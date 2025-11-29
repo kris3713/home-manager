@@ -57,11 +57,6 @@
       ## end of FISH plugins
 
       ## Catppuccin themes
-      # fish
-      catppuccin-fish-theme = {
-        url = "github:catppuccin/fish";
-        flake = false;
-      };
 
       # Ghostty
       catppuccin-ghostty-theme = {
@@ -117,7 +112,6 @@
       nix-completions_fish,
       nix_fish,
       sdkman-for-fish,
-      catppuccin-fish-theme,
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
       catppuccin-bat-theme,
@@ -159,7 +153,6 @@
             nix-completions_fish
             nix_fish
             sdkman-for-fish
-            catppuccin-fish-theme
             catppuccin-ghostty-theme
             catppuccin-btop-theme
             catppuccin-bat-theme

@@ -80,22 +80,6 @@
         "type": "github"
       }
     },
-    "catppuccin-fish-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1764362944,
-        "narHash": "sha256-KD/sWXSXYVlV+n7ft4vKFYpIMBB3PSn6a6jz+ZIMZvQ=",
-        "owner": "catppuccin",
-        "repo": "fish",
-        "rev": "af622a6e247806f6260c00c6d261aa22680e5201",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "fish",
-        "type": "github"
-      }
-    },
     "catppuccin-ghostty-theme": {
       "flake": false,
       "locked": {
@@ -408,7 +392,6 @@
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",
         "catppuccin-delta-theme": "catppuccin-delta-theme",
-        "catppuccin-fish-theme": "catppuccin-fish-theme",
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "catppuccin-lsd-theme": "catppuccin-lsd-theme",
         "completions_fish": "completions_fish",

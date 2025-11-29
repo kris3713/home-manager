@@ -15,7 +15,6 @@
   nix-completions_fish,
   nix_fish,
   sdkman-for-fish,
-  catppuccin-fish-theme,
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
   catppuccin-bat-theme,
@@ -259,12 +258,6 @@ in
 
       "${homeDirectory}/catppuccin-delta-theme.gitconfig" = {
         source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
-      };
-
-      ## FISH Themes
-      "${fishDir}/themes" = {
-        recursive = true;
-        source = "${catppuccin-fish-theme}/themes";
       };
     };
 
