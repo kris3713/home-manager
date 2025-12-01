@@ -57,7 +57,6 @@
       ## end of FISH plugins
 
       ## Catppuccin themes
-
       # Ghostty
       catppuccin-ghostty-theme = {
         url = "github:catppuccin/ghostty";
@@ -93,6 +92,12 @@
         url = "github:catppuccin/delta";
         flake = false;
       };
+
+      # micro
+      catppuccin-micro-theme = {
+        url = "github:catppuccin/micro";
+        flake = false;
+      };
       ## end of Catppuccin themes
     };
 
@@ -118,6 +123,7 @@
       catppuccin-atuin-theme,
       catppuccin-lsd-theme,
       catppuccin-delta-theme,
+      catppuccin-micro-theme,
       ...
     }:
 
@@ -158,7 +164,8 @@
             catppuccin-bat-theme
             catppuccin-atuin-theme
             catppuccin-lsd-theme
-            catppuccin-delta-theme;
+            catppuccin-delta-theme
+            catppuccin-micro-theme;
         };
       };
     };

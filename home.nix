@@ -21,6 +21,7 @@
   catppuccin-atuin-theme,
   catppuccin-lsd-theme,
   catppuccin-delta-theme,
+  catppuccin-micro-theme,
   ...
 }:
 
@@ -259,6 +260,11 @@ in
       "${homeDirectory}/catppuccin-delta-theme.gitconfig" = {
         source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
       };
+
+      "${userConfigDir}/micro/colorschemes" = {
+        recursive = true;
+        source = "${catppuccin-micro-theme}/themes";
+      };
     };
 
     # Home Manager can also manage your environment variables through
@@ -280,6 +286,7 @@ in
     sessionVariables = {
       # EDITOR = "emacs";
       NH_NO_CHECKS = 1;
+      MICRO_TRUECOLOR = 1;
       # XDG_CONFIG_HOME
       XDG_CONFIG_HOME = userConfigDir;
       # XDG_DATA_HOME
