@@ -286,7 +286,6 @@ in
     sessionVariables = {
       # EDITOR = "emacs";
       NH_NO_CHECKS = 1;
-      MICRO_TRUECOLOR = 1;
       # XDG_CONFIG_HOME
       XDG_CONFIG_HOME = userConfigDir;
       # XDG_DATA_HOME
