@@ -115,11 +115,11 @@
     "completions_fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1763339244,
-        "narHash": "sha256-YVHpannSmFmB1TPpS84TTc8b9pDb6Cn32qJh1Utu6VY=",
+        "lastModified": 1764549179,
+        "narHash": "sha256-6a5SUXBx/jvoCkIUIdGetkC0jTDzerY8ZWrmQ9DEe5w=",
         "owner": "kidonng",
         "repo": "completions.fish",
-        "rev": "56651dbff38f05086550da14b4941ad489eea6cf",
+        "rev": "f66d43f2a4f3e1a7d2a755cb3d1aeeb34d78b447",
         "type": "github"
       },
       "original": {
@@ -265,12 +265,12 @@
         ]
       },
       "locked": {
-        "lastModified": 1764534535,
-        "narHash": "sha256-TkAB7JTfQXq8wpBcCZ8cH/Dlkd/96J0VjFKqwhKl7kI=",
-        "rev": "784a83782ce00985bee65c588d4c315ec0b5a172",
-        "revCount": 5849,
+        "lastModified": 1764544324,
+        "narHash": "sha256-GVBGjO7UsmzLrlOJV8NlKSxukHaHencrJqWkCA6FkqI=",
+        "rev": "e4e25a8c310fa45f2a8339c7972dc43d2845a612",
+        "revCount": 5851,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.1.5849%2Brev-784a83782ce00985bee65c588d4c315ec0b5a172/019ad675-e12d-729d-903c-bfdec5479914/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.1.5851%2Brev-e4e25a8c310fa45f2a8339c7972dc43d2845a612/019ad70a-97fd-7836-819a-fb8489eefa57/source.tar.gz"
       },
       "original": {
         "type": "tarball",
