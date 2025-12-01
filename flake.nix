@@ -75,12 +75,6 @@
         flake = false;
       };
 
-      # atuin
-      catppuccin-atuin-theme = {
-        url = "github:catppuccin/atuin";
-        flake = false;
-      };
-
       # lsd
       catppuccin-lsd-theme = {
         url = "github:catppuccin/lsd";
@@ -120,7 +114,6 @@
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
       catppuccin-bat-theme,
-      catppuccin-atuin-theme,
       catppuccin-lsd-theme,
       catppuccin-delta-theme,
       catppuccin-micro-theme,
@@ -162,7 +155,6 @@
             catppuccin-ghostty-theme
             catppuccin-btop-theme
             catppuccin-bat-theme
-            catppuccin-atuin-theme
             catppuccin-lsd-theme
             catppuccin-delta-theme
             catppuccin-micro-theme;

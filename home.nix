@@ -18,7 +18,6 @@
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
   catppuccin-bat-theme,
-  catppuccin-atuin-theme,
   catppuccin-lsd-theme,
   catppuccin-delta-theme,
   catppuccin-micro-theme,
