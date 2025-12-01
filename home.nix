@@ -249,10 +249,6 @@ in
         source = "${catppuccin-bat-theme}/themes";
       };
 
-      "${userConfigDir}/atuin/themes/catppuccin-macchiato-blue.toml" = {
-        source = "${catppuccin-atuin-theme}/themes/macchiato/catppuccin-macchiato-blue.toml";
-      };
-
       "${userConfigDir}/lsd/colors.yaml" = {
         source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
       };
