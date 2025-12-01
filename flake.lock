@@ -16,22 +16,6 @@
         "type": "github"
       }
     },
-    "catppuccin-atuin-theme": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1745283812,
-        "narHash": "sha256-t/Pq+hlCcdSigtk5uzw3n7p5ey0oH/D5S8GO/0wlpKA=",
-        "owner": "catppuccin",
-        "repo": "atuin",
-        "rev": "abfab12de743aa73cf20ac3fa61e450c4d96380c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "atuin",
-        "type": "github"
-      }
-    },
     "catppuccin-bat-theme": {
       "flake": false,
       "locked": {
@@ -404,7 +388,6 @@
     "root": {
       "inputs": {
         "autopair_fish": "autopair_fish",
-        "catppuccin-atuin-theme": "catppuccin-atuin-theme",
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",
         "catppuccin-delta-theme": "catppuccin-delta-theme",
