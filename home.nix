@@ -156,6 +156,7 @@ in
       php
       php84Packages.composer
       php84Packages.phan
+      pixi
       quickemu
       ramfetch
       ripdrag
