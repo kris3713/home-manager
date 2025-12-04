@@ -99,7 +99,7 @@ in
       dust
       eza
       f2
-      fastfetch
+      # fastfetch
       fd
       ferron
       ffmpeg-full
