@@ -99,7 +99,6 @@ in
       dust
       eza
       f2
-      # fastfetch
       fd
       ferron
       ffmpeg-full
@@ -138,7 +137,6 @@ in
       netscanner
       nh
       nil
-      # nixd
       nix-info
       nix-init
       nix-your-shell
@@ -156,7 +154,6 @@ in
       php
       php84Packages.composer
       php84Packages.phan
-      # pixi
       quickemu
       ramfetch
       ripdrag
