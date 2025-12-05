@@ -137,12 +137,12 @@
         "nixpkgs-regression": "nixpkgs-regression"
       },
       "locked": {
-        "lastModified": 1764953549,
-        "narHash": "sha256-fTT8OqXXhpvL+IdDf2eafw0XQKenE7QZ701/uQnuziA=",
-        "rev": "3765b1aab13bc7b49f4e974e294070ede5b22ecf",
-        "revCount": 23341,
+        "lastModified": 1764960410,
+        "narHash": "sha256-OqipHXCx37Wb7FmZ+BOnpn9RqJeyci2Gcsnjvr/7Pmo=",
+        "rev": "7bcc712c2175efcc4b486828b6a65df67e5050c9",
+        "revCount": 23354,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nix-src/0.1.23341%2Brev-3765b1aab13bc7b49f4e974e294070ede5b22ecf/019aef91-11d2-7fbb-b39f-145150a9c76c/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nix-src/0.1.23354%2Brev-7bcc712c2175efcc4b486828b6a65df67e5050c9/019af000-1523-7549-bd1c-239be47ec388/source.tar.gz"
       },
       "original": {
         "type": "tarball",
