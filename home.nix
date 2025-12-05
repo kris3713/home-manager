@@ -170,7 +170,6 @@ in
       stylua
       sshpass
       tailspin
-      taplo
       termscp
       tinyxxd
       ttop
