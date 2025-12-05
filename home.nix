@@ -158,7 +158,6 @@ in
       ramfetch
       ripdrag
       ripgrep
-      ruby
       sad
       screenfetch
       sd
