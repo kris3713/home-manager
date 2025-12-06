@@ -328,10 +328,10 @@ in
           name = "fzf";
           src = fzf-fish.src;
         }
-        { # fifc
-          name = "fifc";
-          src = fifc.src;
-        }
+        # { # fifc
+        #   name = "fifc";
+        #   src = fifc.src;
+        # }
         ## fish plugins not packaged in nixpkgs
         { # completions.fish
           name = "completions";
