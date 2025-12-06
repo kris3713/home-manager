@@ -7,14 +7,11 @@
   ## user-defined variables
   determinateNixManual,
   ## non-flakes
-  autopair_fish,
   completions_fish,
-  fishPlugin-bass,
   fisher,
   replay_fish,
   nix-completions_fish,
   nix_fish,
-  sdkman-for-fish,
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
   catppuccin-bat-theme,
@@ -32,6 +29,7 @@ let
   homeDirectory = configHome.homeDirectory;
 
   # other variables
+  fishPlugins = pkgs.fishPlugins;
   userBinDir = "${homeDirectory}/.local/bin";
   userDataDir = "${homeDirectory}/.local/share";
   userStateDir = "${homeDirectory}/.local/state";
@@ -312,18 +310,28 @@ in
         ## end of Shell completions creation
       '';
 
-      plugins = [
+      plugins = with fishPlugins; [
+        ## fish plugins packaged in nixpkgs
         { # autopair.fish
           name = "autopair";
-          src = autopair_fish;
-        }
-        { # completions.fish
-          name = "completions";
-          src = completions_fish;
+          src = autopair.src;
         }
         { # bass
           name = "bass";
-          src = fishPlugin-bass;
+          src = bass.src;
+        }
+        { # sdkman-for-fish
+          name = "sdkman";
+          src = sdkman-for-fish.src;
+        }
+        { # fzf.fish
+          name = "fzf";
+          src = fzf-fish.src;
+        }
+        ## fish plugins not packaged in nixpkgs
+        { # completions.fish
+          name = "completions";
+          src = completions_fish;
         }
         { # fisher
           name = "fisher";
@@ -340,10 +348,6 @@ in
         { # nix.fish
           name = "nix";
           src = nix_fish;
-        }
-        { # sdkman-for-fish
-          name = "sdkman";
-          src = sdkman-for-fish;
         }
       ];
     };

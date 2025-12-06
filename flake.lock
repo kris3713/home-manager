@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "autopair_fish": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656950411,
-        "narHash": "sha256-qt3t1iKRRNuiLWiVoiAYOu+9E7jsyECyIqZJ/oRIT1A=",
-        "owner": "jorgebucaran",
-        "repo": "autopair.fish",
-        "rev": "4d1752ff5b39819ab58d7337c69220342e9de0e2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jorgebucaran",
-        "repo": "autopair.fish",
-        "type": "github"
-      }
-    },
     "catppuccin-bat-theme": {
       "flake": false,
       "locked": {
@@ -147,22 +131,6 @@
       "original": {
         "type": "tarball",
         "url": "https://flakehub.com/f/DeterminateSystems/nix-src/0.1.%2A"
-      }
-    },
-    "fishPlugin-bass": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1702770652,
-        "narHash": "sha256-3d/qL+hovNA4VMWZ0n1L+dSM1lcz7P5CQJyy+/8exTc=",
-        "owner": "edc",
-        "repo": "bass",
-        "rev": "79b62958ecf4e87334f24d6743e5766475bcf4d0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edc",
-        "repo": "bass",
-        "type": "github"
       }
     },
     "fisher": {
@@ -387,7 +355,6 @@
     },
     "root": {
       "inputs": {
-        "autopair_fish": "autopair_fish",
         "catppuccin-bat-theme": "catppuccin-bat-theme",
         "catppuccin-btop-theme": "catppuccin-btop-theme",
         "catppuccin-delta-theme": "catppuccin-delta-theme",
@@ -396,31 +363,13 @@
         "catppuccin-micro-theme": "catppuccin-micro-theme",
         "completions_fish": "completions_fish",
         "determinate-nix-src": "determinate-nix-src",
-        "fishPlugin-bass": "fishPlugin-bass",
         "fisher": "fisher",
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "nix-completions_fish": "nix-completions_fish",
         "nix_fish": "nix_fish",
         "nixpkgs": "nixpkgs_2",
-        "replay_fish": "replay_fish",
-        "sdkman-for-fish": "sdkman-for-fish"
-      }
-    },
-    "sdkman-for-fish": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1764626563,
-        "narHash": "sha256-Da9+qe84o2q7HKm3VyeMbjGtvESfDLg4CGEGIQmA5NY=",
-        "owner": "reitzig",
-        "repo": "sdkman-for-fish",
-        "rev": "ef3ea8f1c795e5f7baa6f9cb6aef3185bc624103",
-        "type": "github"
-      },
-      "original": {
-        "owner": "reitzig",
-        "repo": "sdkman-for-fish",
-        "type": "github"
+        "replay_fish": "replay_fish"
       }
     },
     "systems": {

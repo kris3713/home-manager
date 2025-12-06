@@ -15,18 +15,8 @@
       };
 
       ## FISH plugins
-      autopair_fish = {
-        url = "github:jorgebucaran/autopair.fish";
-        flake = false;
-      };
-
       completions_fish = {
         url = "github:kidonng/completions.fish";
-        flake = false;
-      };
-
-      fishPlugin-bass = {
-        url = "github:edc/bass";
         flake = false;
       };
 
@@ -47,11 +37,6 @@
 
       nix_fish = {
         url = "github:Animeshz/nix.fish";
-        flake = false;
-      };
-
-      sdkman-for-fish = {
-        url = "github:reitzig/sdkman-for-fish";
         flake = false;
       };
       ## end of FISH plugins
@@ -103,14 +88,11 @@
       home-manager,
       flake-utils,
       ## non-flakes
-      autopair_fish,
       completions_fish,
-      fishPlugin-bass,
       fisher,
       replay_fish,
       nix-completions_fish,
       nix_fish,
-      sdkman-for-fish,
       catppuccin-ghostty-theme,
       catppuccin-btop-theme,
       catppuccin-bat-theme,
@@ -144,14 +126,11 @@
             ## variables
             determinateNixManual
             ## non-flakes
-            autopair_fish
             completions_fish
-            fishPlugin-bass
             fisher
             replay_fish
             nix-completions_fish
             nix_fish
-            sdkman-for-fish
             catppuccin-ghostty-theme
             catppuccin-btop-theme
             catppuccin-bat-theme
