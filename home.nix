@@ -275,7 +275,7 @@ in
     #  /etc/profiles/per-user/kris/etc/profile.d/hm-session-vars.sh
     #
     sessionVariables = {
-      # EDITOR = "emacs";
+      NIXPKGS_ALLOW_UNFREE = 1;
       NH_NO_CHECKS = 1;
       # XDG_CONFIG_HOME
       XDG_CONFIG_HOME = userConfigDir;
