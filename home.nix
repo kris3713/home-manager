@@ -154,6 +154,8 @@ in
       php
       php84Packages.composer
       php84Packages.phan
+      powershell
+      powershell-editor-services
       quickemu
       ramfetch
       ripdrag
