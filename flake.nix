@@ -106,7 +106,7 @@
       system = "x86_64-linux";
       username = "kris";
       pkgs = nixpkgs.legacyPackages.${system};
-      determinateNixManual = determinate-nix-src.packages.${system}.nix-manual;
+      determinateNixManual = determinate-nix-src.packages.${system}.nix.man;
       homeManagerLib = home-manager.lib;
     in
     {
