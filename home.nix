@@ -95,6 +95,7 @@ in
       dprint
       duf
       dust
+      emmylua-ls
       eza
       f2
       fd
