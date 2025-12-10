@@ -145,7 +145,6 @@ in
       nmap
       nvtopPackages.intel
       obs-cmd
-      omnix
       ookla-speedtest
       ov
       oxker
@@ -182,7 +181,6 @@ in
       vimv
       vtracer
       watchman
-      wikiman
       xdg-terminal-exec-mkhl
       xxh
       yamlfmt
