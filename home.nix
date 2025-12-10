@@ -123,6 +123,9 @@ in
       lnav
       lsd
       lsp-ai
+      lua-language-server
+      lua5_4
+      lua54Packages.luarocks
       lurk
       macchina
       markdown-oxide
