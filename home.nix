@@ -133,6 +133,7 @@ in
       mc # Midnight Commander
       micro
       most
+      navi
       neofetch
       neovim-unwrapped
       netscanner
