@@ -78,6 +78,7 @@ in
       bit
       broot
       cobra-cli
+      cargo-binstall
       cargo-cache
       cargo-update
       checkstyle
