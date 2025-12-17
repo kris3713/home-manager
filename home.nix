@@ -70,7 +70,7 @@ in
       actionlint
       adbtuifm
       alejandra
-      # atuin
+      atuin
       argc
       # azure-cli
       babelfish
@@ -114,6 +114,7 @@ in
       golangci-lint-langserver
       grex
       gut
+      helix
       intelli-shell
       jless
       ktlint
