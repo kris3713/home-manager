@@ -113,6 +113,7 @@ in
       golangci-lint-langserver
       grex
       gut
+      hadolint
       helix
       intelli-shell
       jless
@@ -163,6 +164,7 @@ in
       ramfetch
       ripdrag
       ripgrep
+      ruff
       sad
       screenfetch
       sd
