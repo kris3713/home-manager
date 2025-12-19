@@ -157,7 +157,7 @@ in
       php
       php84Packages.composer
       php84Packages.phan
-      pixi
+      # pixi
       powershell
       powershell-editor-services
       quickemu
