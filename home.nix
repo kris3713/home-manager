@@ -5,6 +5,7 @@
   # flake-utils,
   # lib,
   ## user-defined variables
+  appleFonts,
   determinateNixManual,
   ## non-flakes
   completions_fish,
@@ -60,6 +61,9 @@ in
     # environment.
     packages = with pkgs; [
       ## fonts
+      appleFonts.sf-compact
+      appleFonts.sf-pro
+      appleFonts.ny
       source-sans
       source-sans-pro
       source-serif

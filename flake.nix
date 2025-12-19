@@ -14,6 +14,12 @@
         inputs.nixpkgs.follows = "nixpkgs";
       };
 
+      # San Francisco Fonts | Apple Fonts
+      apple-fonts = {
+        url = "github:Lyndeno/apple-fonts.nix";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+
       ## FISH plugins
       completions_fish = {
         url = "github:kidonng/completions.fish";
@@ -87,6 +93,7 @@
       determinate-nix-src,
       home-manager,
       flake-utils,
+      apple-fonts,
       ## non-flakes
       completions_fish,
       fisher,
@@ -107,6 +114,7 @@
       username = "kris";
       pkgs = nixpkgs.legacyPackages.${system};
       determinateNixManual = determinate-nix-src.packages.${system}.nix.man;
+      appleFonts = apple-fonts.packages.${system};
       homeManagerLib = home-manager.lib;
     in
     {
@@ -124,6 +132,7 @@
             ## flakes
             flake-utils
             ## variables
+            appleFonts
             determinateNixManual
             ## non-flakes
             completions_fish
