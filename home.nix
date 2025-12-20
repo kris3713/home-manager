@@ -180,6 +180,7 @@ in
       statix
       stylua
       sshpass
+      systemd-lsp
       tailspin
       termscp
       tinyxxd
