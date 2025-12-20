@@ -168,6 +168,7 @@ in
       ramfetch
       ripdrag
       ripgrep
+      ruby_3_4
       ruff
       sad
       screenfetch
