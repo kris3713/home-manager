@@ -298,6 +298,13 @@ in
     };
   };
 
+  # Silence news completely.
+  news = {
+    display = "silent";
+    json = lib.mkForce { };
+    entries = lib.mkForce [ ];
+  };
+
   programs = {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
