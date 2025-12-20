@@ -3,7 +3,7 @@
   config,
   pkgs,
   # flake-utils,
-  # lib,
+  lib,
   ## user-defined variables
   appleFonts,
   determinateNixManual,
