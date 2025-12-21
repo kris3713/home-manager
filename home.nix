@@ -102,11 +102,9 @@ in
       emmylua-ls
       eza
       f2
-      fd
       ferron
       ffmpeg-full
       fh # FlakeHub CLI
-      fzf
       fx
       gh
       git-machete
