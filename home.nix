@@ -26,11 +26,11 @@ let
   # important variables
   # hm = lib.hm;
   configHome = config.home;
-  username = configHome.username;
-  homeDirectory = configHome.homeDirectory;
+  inherit (configHome) username;
+  inherit (configHome) homeDirectory;
 
   # other variables
-  fishPlugins = pkgs.fishPlugins;
+  inherit (pkgs) fishPlugins;
   userBinDir = "${homeDirectory}/.local/bin";
   userDataDir = "${homeDirectory}/.local/share";
   userStateDir = "${homeDirectory}/.local/state";
@@ -171,6 +171,7 @@ in
       sad
       screenfetch
       sd
+      selene
       shfmt
       shellcheck
       smap
