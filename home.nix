@@ -135,6 +135,7 @@ in
       lua5_4
       lua54Packages.luarocks
       lurk
+      ltex-ls-plus
       macchina
       markdown-oxide
       mc # Midnight Commander
