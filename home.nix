@@ -170,6 +170,7 @@ in
       ripdrag
       ripgrep
       ruby_3_4
+      rubyPackages_3_4.psych
       ruff
       sad
       screenfetch
