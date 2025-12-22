@@ -89,6 +89,7 @@ in
       cht-sh
       complgen
       deadnix
+      delve
       deno
       determinateNixManual
       dnslookup
@@ -113,11 +114,13 @@ in
       gofumpt
       golangci-lint
       golangci-lint-langserver
+      gomodifytags
       grex
       gut
       hadolint
       helix
-      intelli-shell
+      impl
+      # intelli-shell
       jless
       ktlint
       lazydocker
