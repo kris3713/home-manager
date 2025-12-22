@@ -71,7 +71,6 @@ in
       twitter-color-emoji
 
       ## others
-      actionlint
       adbtuifm
       alejandra
       argc
