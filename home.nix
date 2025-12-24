@@ -140,7 +140,7 @@ in
       lurk
       ltex-ls-plus
       macchina
-      marksman
+      # marksman
       markdown-oxide
       mc # Midnight Commander
       micro
