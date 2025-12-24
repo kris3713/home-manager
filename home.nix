@@ -124,6 +124,7 @@ in
       # intelli-shell
       jless
       ktlint
+      kakoune-lsp
       kakoune-unwrapped
       lazydocker
       lazygit
