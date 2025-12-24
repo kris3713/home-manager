@@ -93,6 +93,7 @@ in
       determinateNixManual
       dnslookup
       dragon-drop
+      docker-language-server
       dogedns
       doggo
       doxx
