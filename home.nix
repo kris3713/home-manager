@@ -114,6 +114,7 @@ in
       golangci-lint
       golangci-lint-langserver
       gomodifytags
+      gopls
       grex
       gut
       hadolint
