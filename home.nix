@@ -206,6 +206,7 @@ in
       yamlfmt
       yq-go
       yt-dlp
+      zigfetch
 
       # # Adds the 'hello' command to your environment. It prints a friendly
       # # "Hello, world!" when run.
