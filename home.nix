@@ -377,7 +377,7 @@ in
           src = replay_fish;
         }
         { # nix-completions.fish
-          name = "nix-completions";
+          name = "nix_completions";
           src = nix-completions_fish;
         }
         { # nix.fish
