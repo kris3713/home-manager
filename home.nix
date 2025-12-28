@@ -188,6 +188,7 @@ in
       statix
       stylua
       sshpass
+      superhtml
       systemd-lsp
       tailspin
       termscp
