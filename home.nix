@@ -132,8 +132,7 @@ in
       librespeed-cli
       linux_logo
       lnav
-      lsd
-      lsp-ai
+      lsd 
       lua-language-server
       lua5_4
       lua54Packages.luarocks
