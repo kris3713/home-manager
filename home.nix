@@ -87,6 +87,7 @@ in
       cheat
       cht-sh
       complgen
+      curlFull
       deadnix
       delve
       deno
