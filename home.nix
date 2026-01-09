@@ -20,9 +20,7 @@
   catppuccin-delta-theme,
   catppuccin-micro-theme,
   ...
-}:
-
-let
+}: let
   # important variables
   # hm = lib.hm;
   configHome = config.home;
@@ -36,8 +34,7 @@ let
   userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
   fishDir = "${userConfigDir}/fish";
-in
-{
+in {
   nixpkgs.config.allowUnfree = true;
 
   home = {
@@ -313,8 +310,8 @@ in
   # Silence news completely.
   news = {
     display = "silent";
-    json = lib.mkForce { };
-    entries = lib.mkForce [ ];
+    json = lib.mkForce {};
+    entries = lib.mkForce [];
   };
 
   programs = {
@@ -345,19 +342,23 @@ in
 
       plugins = with fishPlugins; [
         ## fish plugins packaged in nixpkgs
-        { # autopair.fish
+        {
+          # autopair.fish
           name = "autopair";
           src = autopair.src;
         }
-        { # bass
+        {
+          # bass
           name = "bass";
           src = bass.src;
         }
-        { # sdkman-for-fish
+        {
+          # sdkman-for-fish
           name = "sdkman";
           src = sdkman-for-fish.src;
         }
-        { # fzf.fish
+        {
+          # fzf.fish
           name = "fzf";
           src = fzf-fish.src;
         }
@@ -366,23 +367,28 @@ in
         #   src = fifc.src;
         # }
         ## fish plugins not packaged in nixpkgs
-        { # completions.fish
+        {
+          # completions.fish
           name = "completions";
           src = completions_fish;
         }
-        { # fisher
+        {
+          # fisher
           name = "fisher";
           src = fisher;
         }
-        { # replay.fish
+        {
+          # replay.fish
           name = "replay";
           src = replay_fish;
         }
-        { # nix-completions.fish
+        {
+          # nix-completions.fish
           name = "nix_completions";
           src = nix-completions_fish;
         }
-        { # nix.fish
+        {
+          # nix.fish
           name = "nix";
           src = nix_fish;
         }
