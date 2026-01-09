@@ -98,6 +98,7 @@ in {
       dprint
       duf
       dust
+      editorconfig-checker
       emmylua-ls
       eza
       f2
