@@ -104,6 +104,7 @@ in
       emmylua-ls
       eza
       f2
+      fcp
       ferron
       ffmpeg-full
       fh # FlakeHub CLI
