@@ -119,13 +119,10 @@ in {
       grex
       gut
       hadolint
-      helix
       impl
       # intelli-shell
       jless
       ktlint
-      kakoune-lsp
-      kakoune-unwrapped
       lazydocker
       lazygit
       lazysql
