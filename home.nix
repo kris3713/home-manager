@@ -123,7 +123,6 @@ in {
       # intelli-shell
       jless
       ktlint
-      lazydocker
       lazygit
       lazysql
       librespeed-cli
@@ -156,7 +155,6 @@ in {
       obs-cmd
       ookla-speedtest
       ov
-      oxker
       pdfcpu
       peco
       pfetch-rs
