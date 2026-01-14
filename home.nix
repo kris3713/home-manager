@@ -399,4 +399,8 @@ in {
       ];
     };
   };
+
+  services = {
+    emacs.enable = true;
+  };
 }
