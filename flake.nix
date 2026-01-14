@@ -13,7 +13,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # San Francisco Fonts | Apple Fonts
+    nix-doom-emacs-unstraightened = {
+      url = "github:marienz/nix-doom-emacs-unstraightened";
+      inputs.nixpkgs.follows = "";
+    };
+
+    # Apple Fonts
     apple-fonts = {
       url = "github:Lyndeno/apple-fonts.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -89,8 +94,9 @@
     ## flakes
     nixpkgs,
     determinate-nix-src,
-    home-manager,
     flake-utils,
+    home-manager,
+    nix-doom-emacs-unstraightened,
     apple-fonts,
     ## non-flakes
     completions_fish,
@@ -118,7 +124,10 @@
 
       # Specify your home configuration modules here, for example,
       # the path to your home.nix.
-      modules = [./home.nix];
+      modules = [
+        nix-doom-emacs-unstraightened.homeModule
+        ./home.nix
+      ];
 
       # Optionally use extraSpecialArgs
       # to pass through arguments to home.nix

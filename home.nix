@@ -313,6 +313,12 @@ in {
   };
 
   programs = {
+    # DOOM Emacs
+    doom-emacs = {
+      enable = true;
+      doomDir = ./doom;
+    };
+
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
 
