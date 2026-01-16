@@ -151,7 +151,6 @@ in {
       nix-your-shell
       niv
       nmap
-      nvtopPackages.intel
       obs-cmd
       ookla-speedtest
       ov
