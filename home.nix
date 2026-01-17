@@ -23,6 +23,7 @@
 }: let
   # important variables
   # hm = lib.hm;
+  inherit (lib) mkForce;
   configHome = config.home;
   inherit (configHome) username;
   inherit (configHome) homeDirectory;
@@ -104,13 +105,12 @@ in {
       f2
       fcp
       ferron
-      ffmpeg-full
       fh # FlakeHub CLI
       fx
       gh
       git-machete
       git-town
-      gpufetch
+      # gpufetch
       gofumpt
       golangci-lint
       golangci-lint-langserver
@@ -305,8 +305,8 @@ in {
   # Silence news completely.
   news = {
     display = "silent";
-    json = lib.mkForce {};
-    entries = lib.mkForce [];
+    json = mkForce {};
+    entries = mkForce [];
   };
 
   programs = {
