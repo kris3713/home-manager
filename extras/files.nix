@@ -57,7 +57,7 @@ in {
       source = "${catppuccin-bat-theme}/themes";
     };
 
-    "${userConfigDir}/bat/config".text = ''
+    "${userConfigDir}/bat/config".text = /* sh */ ''
       --theme='Catppuccin Macchiato'
       --style='numbers'
     '';
