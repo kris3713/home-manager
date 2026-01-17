@@ -28,6 +28,7 @@
     bit
     broot
     cobra-cli
+    cachix
     # cargo-binstall
     cargo-cache
     cargo-update
@@ -60,7 +61,6 @@
     gh
     git-machete
     git-town
-    # gpufetch
     gofumpt
     golangci-lint
     golangci-lint-langserver
