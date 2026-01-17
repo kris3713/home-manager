@@ -127,6 +127,7 @@
       # the path to your `home.nix`
       modules = [
         nix-doom-emacs-unstraightened.homeModule
+        ./doom/config.nix
         ./extras/files.nix
         ./extras/fish.nix
         ./extras/pkgs.nix

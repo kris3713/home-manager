@@ -75,12 +75,6 @@ in {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
 
-    # DOOM Emacs
-    doom-emacs = {
-      enable = true;
-      doomDir = ./doom;
-    };
-
     # Manage direnv using Nix and Home Manager.
     direnv = {
       enable = true;
