@@ -1,15 +1,8 @@
 {
   ## flakes
   config,
-  pkgs,
   # flake-utils,
   lib,
-  ## non-flakes
-  completions_fish,
-  fisher,
-  replay_fish,
-  nix-completions_fish,
-  nix_fish,
   ...
 }: let
   # important variables
@@ -20,11 +13,9 @@
   inherit (configHome) homeDirectory;
 
   # other variables
-  inherit (pkgs) fishPlugins;
   userDataDir = "${homeDirectory}/.local/share";
   userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
-  fishDir = "${userConfigDir}/fish";
 in {
   nixpkgs.config.allowUnfree = true;
 
@@ -81,14 +72,14 @@ in {
   };
 
   programs = {
+    # Let Home Manager install and manage itself.
+    home-manager.enable = true;
+
     # DOOM Emacs
     doom-emacs = {
       enable = true;
       doomDir = ./doom;
     };
-
-    # Let Home Manager install and manage itself.
-    home-manager.enable = true;
 
     # Manage direnv using Nix and Home Manager.
     direnv = {
@@ -97,74 +88,6 @@ in {
 
       # nix-direnv
       nix-direnv.enable = true;
-    };
-
-    # Manage the fish shell using Nix and Home Manager.
-    fish = {
-      enable = true;
-      shellInit = ''
-        # source other fish config
-        source '${fishDir}/config.backup.fish'
-
-        ## Shell completions creation
-        # gut
-        gut completion fish | source
-        ## end of Shell completions creation
-      '';
-
-      plugins = with fishPlugins; [
-        ## fish plugins packaged in nixpkgs
-        {
-          # autopair.fish
-          name = "autopair";
-          src = autopair.src;
-        }
-        {
-          # bass
-          name = "bass";
-          src = bass.src;
-        }
-        {
-          # sdkman-for-fish
-          name = "sdkman";
-          src = sdkman-for-fish.src;
-        }
-        {
-          # fzf.fish
-          name = "fzf";
-          src = fzf-fish.src;
-        }
-        # { # fifc
-        #   name = "fifc";
-        #   src = fifc.src;
-        # }
-        ## fish plugins not packaged in nixpkgs
-        {
-          # completions.fish
-          name = "completions";
-          src = completions_fish;
-        }
-        {
-          # fisher
-          name = "fisher";
-          src = fisher;
-        }
-        {
-          # replay.fish
-          name = "replay";
-          src = replay_fish;
-        }
-        {
-          # nix-completions.fish
-          name = "nix_completions";
-          src = nix-completions_fish;
-        }
-        {
-          # nix.fish
-          name = "nix";
-          src = nix_fish;
-        }
-      ];
     };
   };
 }
