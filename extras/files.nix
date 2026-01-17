@@ -57,6 +57,11 @@ in {
       source = "${catppuccin-bat-theme}/themes";
     };
 
+    "${userConfigDir}/bat/config".text = ''
+      --theme='Catppuccin Macchiato'
+      --style='numbers'
+    '';
+
     "${userConfigDir}/lsd/colors.yaml" = {
       source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
     };
