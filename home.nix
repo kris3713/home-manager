@@ -4,7 +4,7 @@
   # flake-utils,
   lib,
   # user-defined variables
-  pkgs,
+  # pkgs,
   # determinateNix,
   ...
 }: let
@@ -21,18 +21,6 @@
   userConfigDir = "${homeDirectory}/.config";
 in {
   nixpkgs.config.allowUnfree = true;
-
-  nix = {
-    package = pkgs.nix;
-    settings = {
-      substituters = [
-        "https://cache.nixos-cuda.org"
-      ];
-      trusted-public-keys = [
-        "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
-      ];
-    };
-  };
 
   home = {
     # Home Manager needs a bit of information about you and the paths it should

@@ -3,6 +3,7 @@
   config,
   ## user-defined variables
   pkgs,
+  # determinateNix,
   ## non-flakes
   catppuccin-ghostty-theme,
   catppuccin-btop-theme,
@@ -18,6 +19,18 @@
   userBinDir = "${homeDirectory}/.local/bin";
   userConfigDir = "${homeDirectory}/.config";
 in {
+  nix = {
+    package = pkgs.nix;
+    settings = {
+      substituters = [
+        "https://cache.nixos-cuda.org"
+      ];
+      trusted-public-keys = [
+        "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
+      ];
+    };
+  };
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
