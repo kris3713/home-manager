@@ -123,15 +123,16 @@
       inherit pkgs;
 
       # Specify your home configuration modules here, for example,
-      # the path to your home.nix.
+      # the path to your `home.nix`
       modules = [
         nix-doom-emacs-unstraightened.homeModule
+        ./extras/files.nix
         ./extras/pkgs.nix
         ./home.nix
       ];
 
       # Optionally use extraSpecialArgs
-      # to pass through arguments to home.nix
+      # to pass through arguments to your configuration modules
       extraSpecialArgs = {
         inherit
           ## flakes
