@@ -1,6 +1,7 @@
 {
   ## flakes
   config,
+  ## user-defined variables
   pkgs,
   ## non-flakes
   completions_fish,

@@ -115,7 +115,7 @@
     system = "x86_64-linux";
     username = "kris";
     pkgs = nixpkgs.legacyPackages.${system};
-    determinateNixManual = determinate-nix-src.packages.${system}.nix.man;
+    determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
     homeManagerLib = home-manager.lib;
     inherit (homeManagerLib) homeManagerConfiguration;
@@ -142,7 +142,7 @@
           flake-utils
           ## variables
           appleFonts
-          determinateNixManual
+          determinateNix
           ## non-flakes
           completions_fish
           fisher

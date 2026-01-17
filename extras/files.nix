@@ -1,6 +1,7 @@
 {
   ## flakes
   config,
+  ## user-defined variables
   pkgs,
   ## non-flakes
   catppuccin-ghostty-theme,

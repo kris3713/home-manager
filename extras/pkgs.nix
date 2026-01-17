@@ -1,8 +1,8 @@
 {
-  pkgs,
   ## user-defined variables
+  pkgs,
   appleFonts,
-  determinateNixManual,
+  determinateNix,
   ...
 }: {
   # The home.packages option allows you to install Nix packages into your
@@ -40,7 +40,7 @@
     deadnix
     delve
     deno
-    determinateNixManual
+    determinateNix.nix.man
     dnslookup
     dragon-drop
     docker-language-server
