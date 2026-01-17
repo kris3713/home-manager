@@ -118,8 +118,9 @@
     determinateNixManual = determinate-nix-src.packages.${system}.nix.man;
     appleFonts = apple-fonts.packages.${system};
     homeManagerLib = home-manager.lib;
+    inherit (homeManagerLib) homeManagerConfiguration;
   in {
-    homeConfigurations.${username} = homeManagerLib.homeManagerConfiguration {
+    homeConfigurations.${username} = homeManagerConfiguration {
       inherit pkgs;
 
       # Specify your home configuration modules here, for example,
@@ -127,6 +128,7 @@
       modules = [
         nix-doom-emacs-unstraightened.homeModule
         ./extras/files.nix
+        ./extras/fish.nix
         ./extras/pkgs.nix
         ./home.nix
       ];
