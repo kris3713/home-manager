@@ -3,7 +3,6 @@
   config,
   pkgs,
   ## non-flakes
-  ## non-flakes
   completions_fish,
   fisher,
   replay_fish,
