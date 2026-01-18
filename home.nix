@@ -10,6 +10,7 @@
   # important variables
   # hm = lib.hm;
   inherit (lib) mkForce;
+
   configHome = config.home;
   inherit (configHome) username;
   inherit (configHome) homeDirectory;
