@@ -12,8 +12,7 @@
   inherit (lib) mkForce;
 
   configHome = config.home;
-  inherit (configHome) username;
-  inherit (configHome) homeDirectory;
+  inherit (configHome) username homeDirectory;
 
   # other variables
   userDataDir = "${homeDirectory}/.local/share";
