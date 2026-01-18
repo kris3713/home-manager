@@ -1,7 +1,6 @@
 {
-  ## flakes
+  ## defaults
   config,
-  # flake-utils,
   lib,
   # user-defined variables
   # pkgs,

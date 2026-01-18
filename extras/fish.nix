@@ -1,14 +1,10 @@
 {
-  ## flakes
+  ## defaults
   config,
+  ## extras
+  inputs,
   ## user-defined variables
   pkgs,
-  ## non-flakes
-  completions_fish,
-  fisher,
-  replay_fish,
-  nix-completions_fish,
-  nix_fish,
   ...
 }: let
   configHome = config.home;
@@ -31,58 +27,62 @@ in {
       ## end of Shell completions creation
     '';
 
-    plugins = with fishPlugins; [
+    plugins =
       ## fish plugins packaged in nixpkgs
-      {
-        # autopair.fish
-        name = "autopair";
-        src = autopair.src;
-      }
-      {
-        # bass
-        name = "bass";
-        src = bass.src;
-      }
-      {
-        # sdkman-for-fish
-        name = "sdkman";
-        src = sdkman-for-fish.src;
-      }
-      {
-        # fzf.fish
-        name = "fzf";
-        src = fzf-fish.src;
-      }
-      # { # fifc
-      #   name = "fifc";
-      #   src = fifc.src;
-      # }
+      (with fishPlugins; [
+        {
+          # autopair.fish
+          name = "autopair";
+          src = autopair.src;
+        }
+        {
+          # bass
+          name = "bass";
+          src = bass.src;
+        }
+        {
+          # sdkman-for-fish
+          name = "sdkman";
+          src = sdkman-for-fish.src;
+        }
+        {
+          # fzf.fish
+          name = "fzf";
+          src = fzf-fish.src;
+        }
+        # { # fifc
+        #   name = "fifc";
+        #   src = fifc.src;
+        # }
+      ])
+      ++
       ## fish plugins not packaged in nixpkgs
-      {
-        # completions.fish
-        name = "completions";
-        src = completions_fish;
-      }
-      {
-        # fisher
-        name = "fisher";
-        src = fisher;
-      }
-      {
-        # replay.fish
-        name = "replay";
-        src = replay_fish;
-      }
-      {
-        # nix-completions.fish
-        name = "nix_completions";
-        src = nix-completions_fish;
-      }
-      {
-        # nix.fish
-        name = "nix";
-        src = nix_fish;
-      }
-    ];
+      (with inputs; [
+        {
+          # completions.fish
+          name = "completions";
+          src = completions_fish;
+        }
+        {
+          # fisher
+          name = "fisher";
+          src = fisher;
+        }
+        {
+          # replay.fish
+          name = "replay";
+          src = replay_fish;
+        }
+        {
+          # nix-completions.fish
+          name = "nix_completions";
+          src = nix-completions_fish;
+        }
+        {
+          # nix.fish
+          name = "nix";
+          src = nix_fish;
+        }
+      ]);
   };
 }

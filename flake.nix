@@ -2,6 +2,7 @@
   description = "Home Manager configuration of kris";
 
   inputs = {
+    ### Flakes
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
 
     determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/*";
@@ -24,6 +25,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ### Non-Flakes
     ## FISH plugins
     completions_fish = {
       url = "github:kidonng/completions.fish";
@@ -90,33 +92,23 @@
     ## end of Catppuccin themes
   };
 
-  outputs = {
-    ## flakes
-    nixpkgs,
-    determinate-nix-src,
-    flake-utils,
-    home-manager,
-    nix-doom-emacs-unstraightened,
-    apple-fonts,
-    ## non-flakes
-    completions_fish,
-    fisher,
-    replay_fish,
-    nix-completions_fish,
-    nix_fish,
-    catppuccin-ghostty-theme,
-    catppuccin-btop-theme,
-    catppuccin-bat-theme,
-    catppuccin-lsd-theme,
-    catppuccin-delta-theme,
-    catppuccin-micro-theme,
-    ...
-  }: let
+  outputs = inputs: let
+    inherit
+      (inputs)
+      nixpkgs
+      determinate-nix-src
+      apple-fonts
+      home-manager
+      nix-doom-emacs-unstraightened
+      ;
+
     system = "x86_64-linux";
     username = "kris";
+
     pkgs = nixpkgs.legacyPackages.${system};
     determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
+
     homeManagerLib = home-manager.lib;
     inherit (homeManagerLib) homeManagerConfiguration;
   in {
@@ -138,23 +130,11 @@
       # to pass through arguments to your configuration modules
       extraSpecialArgs = {
         inherit
-          ## flakes
-          flake-utils
-          ## variables
+          ## extras
+          inputs
+          ## user-defined variables
           appleFonts
           determinateNix
-          ## non-flakes
-          completions_fish
-          fisher
-          replay_fish
-          nix-completions_fish
-          nix_fish
-          catppuccin-ghostty-theme
-          catppuccin-btop-theme
-          catppuccin-bat-theme
-          catppuccin-lsd-theme
-          catppuccin-delta-theme
-          catppuccin-micro-theme
           ;
       };
     };
