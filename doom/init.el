@@ -89,6 +89,7 @@
        ;;grammar           ; tasing grammar mistake every you make
 
        :tools
+       lsp
        ;;ansible
        ;;biblio            ; Writes a PhD for you (citation needed)
        ;;collab            ; buffers with friends
