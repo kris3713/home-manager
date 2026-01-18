@@ -3,5 +3,8 @@ _: {
   programs.doom-emacs = {
     enable = true;
     doomDir = ./.;
+    extraPackages = epkgs: with epkgs; [
+      catppuccin-theme
+    ];
   };
 }
