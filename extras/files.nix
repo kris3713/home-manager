@@ -21,10 +21,28 @@
 in {
   nix = {
     package = pkgs.nix;
+    registry = {
+      nixpkgs = {
+        from = { type = "indirect"; id = "nixpkgs"; };
+        to = {
+          type = "tarball";
+          url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
+        };
+      };
+
+      home-manager = {
+        from = { type = "indirect"; id = "home-manager"; };
+        to = {
+          type = "tarball";
+          url = "https://flakehub.com/f/nix-community/home-manager/0.1.*";
+        };
+      };
+    };
     settings = {
       extra-substituters = [
         "https://cache.nixos-cuda.org"
       ];
+
       extra-trusted-public-keys = [
         "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
       ];
