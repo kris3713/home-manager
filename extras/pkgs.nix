@@ -147,7 +147,7 @@
     watchman
     xdg-terminal-exec-mkhl
     xxh
-    # yazi-unwrapped
+    yazi-unwrapped
     yq-go
     yt-dlp
     zigfetch
