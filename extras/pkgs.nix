@@ -26,6 +26,7 @@
     babelfish
     biome
     bit
+    bun
     broot
     cobra-cli
     cachix
