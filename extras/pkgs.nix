@@ -134,6 +134,7 @@
     superhtml
     systemd-lsp
     tailspin
+    tealdeer
     termscp
     tinyxxd
     ttop
