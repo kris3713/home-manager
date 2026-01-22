@@ -127,11 +127,11 @@
     "completions_fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1768955401,
-        "narHash": "sha256-h81nwRpkkGZTVKQzSMtQnQkDUG00AP/xHFEEawYu/b0=",
+        "lastModified": 1769041879,
+        "narHash": "sha256-8/meWI0x3McRGV8mNl2xi8FBpjIPUyM+9Y0afXfmNUY=",
         "owner": "kidonng",
         "repo": "completions.fish",
-        "rev": "1ac2e19b74eae6c2638529a68540d3634270d53c",
+        "rev": "a6f9285d5c8a34e232cd6c28718dea9683d88e43",
         "type": "github"
       },
       "original": {
