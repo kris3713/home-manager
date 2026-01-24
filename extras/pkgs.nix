@@ -88,7 +88,6 @@
     ltex-ls-plus
     macchina
     # marksman
-    markdown-oxide
     mc # Midnight Commander
     micro
     most
