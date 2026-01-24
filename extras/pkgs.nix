@@ -70,7 +70,6 @@
     grex
     gut
     hadolint
-    hwinfo
     impl
     # intelli-shell
     jless
