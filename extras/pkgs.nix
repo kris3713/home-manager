@@ -151,6 +151,7 @@
       tinyxxd
       ttop
       tre-command
+      ty
       update-nix-fetchgit
       usql
       uncrustify
@@ -164,6 +165,7 @@
       yq-go
       yt-dlp
       zigfetch
+      zuban
     ]);
 
   # # Adds the 'hello' command to your environment. It prints a friendly
