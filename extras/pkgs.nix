@@ -125,6 +125,7 @@
       powershell-editor-services
       quickemu
       ramfetch
+      resvg
       ripdrag
       ripgrep
       # ruby_3_4
