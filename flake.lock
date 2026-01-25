@@ -203,11 +203,11 @@
     "fisher": {
       "flake": false,
       "locked": {
-        "lastModified": 1769231799,
-        "narHash": "sha256-9PFJm4kZLtl5Xn7LeijBLuFyHv3xd/UlAXZxXUAvTkc=",
+        "lastModified": 1769312465,
+        "narHash": "sha256-kBrrCm6aHqVdtQ1mbwDu2rBdvvvTTkam6ZEzch2mgRg=",
         "owner": "jorgebucaran",
         "repo": "fisher",
-        "rev": "fa13a1636fcba826a0b7cf871d9d65b2dcea0485",
+        "rev": "c29a94577ff8d47ffc40aad619cdbbfb0217f449",
         "type": "github"
       },
       "original": {
