@@ -99,6 +99,7 @@
       mc # Midnight Commander
       micro
       most
+      moor
       navi
       neofetch
       neovim-unwrapped
@@ -184,7 +185,7 @@
   # (pkgs.writeShellScriptBin "my-hello" ''
   #   echo "Hello, ${config.home.username}!"
   # '')
-  
+
   programs = {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
