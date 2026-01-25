@@ -72,18 +72,4 @@ in {
     json = mkForce {};
     entries = mkForce [];
   };
-
-  programs = {
-    # Let Home Manager install and manage itself.
-    home-manager.enable = true;
-
-    # Manage direnv using Nix and Home Manager.
-    direnv = {
-      enable = true;
-      enableBashIntegration = true;
-
-      # nix-direnv
-      nix-direnv.enable = true;
-    };
-  };
 }

@@ -123,6 +123,7 @@
       # pixi
       powershell
       powershell-editor-services
+      pyrefly
       quickemu
       ramfetch
       resvg
@@ -181,4 +182,18 @@
   # (pkgs.writeShellScriptBin "my-hello" ''
   #   echo "Hello, ${config.home.username}!"
   # '')
+  
+  programs = {
+    # Let Home Manager install and manage itself.
+    home-manager.enable = true;
+
+    # Manage direnv using Nix and Home Manager.
+    direnv = {
+      enable = true;
+      enableBashIntegration = true;
+
+      # nix-direnv
+      nix-direnv.enable = true;
+    };
+  };
 }
