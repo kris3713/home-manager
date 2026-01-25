@@ -15,9 +15,9 @@
       ny
     ])
     ++
-    ## determinate nix src
+    ## determinate-nix src packages
     (with determinateNix; [
-      # nix man pages
+      # determinate-nix man pages
       nix.man
     ])
     ++
@@ -33,7 +33,6 @@
       adbtuifm
       alejandra
       argc
-      # azure-cli
       babelfish
       biome
       bit
