@@ -95,7 +95,7 @@
       lurk
       ltex-ls-plus
       macchina
-      # marksman
+      marksman
       mc # Midnight Commander
       micro
       most
