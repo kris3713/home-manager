@@ -37,11 +37,6 @@
       flake = false;
     };
 
-    flutter-fish-completions = {
-      url = "github:qiuxiang/flutter-fish-completions";
-      flake = false;
-    };
-
     replay_fish = {
       url = "github:jorgebucaran/replay.fish";
       flake = false;

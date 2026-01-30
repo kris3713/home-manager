@@ -64,11 +64,6 @@ in {
           src = completions_fish;
         }
         {
-          # flutter-fish-completions
-          name = "flutter-completions";
-          src = flutter-fish-completions;
-        }
-        {
           # fisher
           name = "fisher";
           src = fisher;
