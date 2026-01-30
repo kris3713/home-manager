@@ -269,6 +269,22 @@
         "url": "https://flakehub.com/f/numtide/flake-utils/0.%2A"
       }
     },
+    "flutter-fish-completions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760060468,
+        "narHash": "sha256-usTrU91vptkeLrz7QDrOj2vdjpfv0yi3unK4RXCK7sc=",
+        "owner": "qiuxiang",
+        "repo": "flutter-fish-completions",
+        "rev": "ecca847657d6dc78cd78a5b4f03e57d7a05f1757",
+        "type": "github"
+      },
+      "original": {
+        "owner": "qiuxiang",
+        "repo": "flutter-fish-completions",
+        "type": "github"
+      }
+    },
     "git-hooks-nix": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -466,6 +482,7 @@
         "determinate-nix-src": "determinate-nix-src",
         "fisher": "fisher",
         "flake-utils": "flake-utils",
+        "flutter-fish-completions": "flutter-fish-completions",
         "home-manager": "home-manager",
         "nix-completions_fish": "nix-completions_fish",
         "nix-doom-emacs-unstraightened": "nix-doom-emacs-unstraightened",
