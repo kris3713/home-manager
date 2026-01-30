@@ -1,8 +1,8 @@
 ;;; config.el -*- lexical-binding: t; -*-
 
-;; ;; Enable lsp
-;; (after! lsp-ui
-;;   (setq lsp-ui-doc-enable t))
+;; Enable lsp
+(after! lsp-ui
+  (setq lsp-ui-doc-enable t))
 
 ;; Theme
 (setq catppuccin-flavor 'macchiato)

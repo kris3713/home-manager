@@ -6,6 +6,7 @@
     doomDir = ./.;
     extraPackages = epkgs: with epkgs; [
       catppuccin-theme
+      nix-mode
     ];
   };
 }

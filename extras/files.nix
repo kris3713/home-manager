@@ -14,19 +14,6 @@
   userBinDir = "${homeDirectory}/.local/bin";
   userConfigDir = "${homeDirectory}/.config";
 in {
-  nix = {
-    package = pkgs.nix;
-    settings = {
-      extra-substituters = [
-        "https://cache.nixos-cuda.org"
-      ];
-
-      extra-trusted-public-keys = [
-        "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
-      ];
-    };
-  };
-
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = with inputs; {
