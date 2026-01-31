@@ -102,8 +102,8 @@
       moor
       navi
       neofetch
-      neovim-unwrapped
-      neovim-qt-unwrapped
+      # neovim-unwrapped
+      # neovim-qt-unwrapped
       netscanner
       nh
       nil
