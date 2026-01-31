@@ -90,8 +90,6 @@
       lnav
       lsd
       lua-language-server
-      lua5_4
-      lua54Packages.luarocks
       lurk
       ltex-ls-plus
       macchina
