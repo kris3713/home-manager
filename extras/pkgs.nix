@@ -37,7 +37,7 @@
       biome
       bit
       broot
-      cobra-cli
+      bottom
       cachix
       # cargo-binstall
       cargo-cache
