@@ -63,6 +63,8 @@ in {
       XDG_DATA_HOME = userDataDir;
       # XDG_STATE_HOME
       XDG_STATE_HOME = userStateDir;
+      # EZA_ICONS_AUTO
+      EZA_ICONS_AUTO = "always";
     };
   };
 
