@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   # DOOM Emacs
   programs.doom-emacs = {
-    enable = true;
+    enable = false;
     emacs = pkgs.emacs-pgtk;
     doomDir = ./.;
     extraPackages = epkgs: with epkgs; [
