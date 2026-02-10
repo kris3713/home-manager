@@ -153,7 +153,7 @@
       uv
       vimv
       vtracer
-      watchman
+      # watchman
       xdg-terminal-exec-mkhl
       xxh
       yazi-unwrapped
