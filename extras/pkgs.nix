@@ -150,7 +150,6 @@
       update-nix-fetchgit
       usql
       uncrustify
-      uv
       vimv
       vtracer
       # watchman
