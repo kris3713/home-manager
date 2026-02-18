@@ -63,7 +63,6 @@
       emmylua-ls
       eza
       f2
-      fcp
       ferron
       fh # FlakeHub CLI
       fx
