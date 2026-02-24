@@ -17,12 +17,11 @@ in {
   # Manage the fish shell using Nix and Home Manager.
   programs.fish = {
     enable = true;
-    interactiveShellInit = ''
+    shellInit = ''
       ## key bindings/key maps
       bind ctrl-h 'backward-kill-word'
       ## end of key bindings/key maps
-    '';
-    shellInit = ''
+
       # source other fish config
       source '${fishDir}/config.backup.fish'
 
