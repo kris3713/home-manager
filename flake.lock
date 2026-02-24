@@ -15,11 +15,11 @@
         "sf-pro": "sf-pro"
       },
       "locked": {
-        "lastModified": 1771901030,
-        "narHash": "sha256-S2rPEkY5ww2wKVAsFn5JinTV8SHA0RluqK/vGW0EZP0=",
+        "lastModified": 1771911255,
+        "narHash": "sha256-RxjuY+VpK0G740qMLIZ3rQCqrcj9rRTPNjEhDcWp04U=",
         "owner": "Lyndeno",
         "repo": "apple-fonts.nix",
-        "rev": "68737b6021a91db4cd398201364d5dbda9e898c3",
+        "rev": "917a2287989d915c730a07a20d218ffe3c93c21b",
         "type": "github"
       },
       "original": {
