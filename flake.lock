@@ -15,11 +15,11 @@
         "sf-pro": "sf-pro"
       },
       "locked": {
-        "lastModified": 1771783847,
-        "narHash": "sha256-BdbD8Ds8xHkFKMZYPFxCB2waYiQenL7uNzc8+wwueqQ=",
+        "lastModified": 1771901030,
+        "narHash": "sha256-S2rPEkY5ww2wKVAsFn5JinTV8SHA0RluqK/vGW0EZP0=",
         "owner": "Lyndeno",
         "repo": "apple-fonts.nix",
-        "rev": "7856b9ce3844271948ac03c124bd008fa17be042",
+        "rev": "68737b6021a91db4cd398201364d5dbda9e898c3",
         "type": "github"
       },
       "original": {
@@ -127,11 +127,11 @@
     "completions_fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1770856532,
-        "narHash": "sha256-fZ5lsLsK3Us2dfkLtTZavR5PxbCxDU0wHfadO2yOw1Y=",
+        "lastModified": 1771893222,
+        "narHash": "sha256-8/orJCHF+/HyFkNG0arWM4EL8eWZzRqZFfhqJv/ndw0=",
         "owner": "kidonng",
         "repo": "completions.fish",
-        "rev": "03e806bf1dba1dabd0be376f37900c1f8052287a",
+        "rev": "058a66e3b9fe9635b0778f7e8d75958491994639",
         "type": "github"
       },
       "original": {
@@ -149,12 +149,12 @@
         "nixpkgs-regression": "nixpkgs-regression"
       },
       "locked": {
-        "lastModified": 1771795612,
-        "narHash": "sha256-UAvzXk5s7y6RPYB7isRFDe/Y20U9iK8f0NH+sfV7yPU=",
-        "rev": "358fb43e8c8df9718182b4ea17a335915261a8ef",
-        "revCount": 24671,
+        "lastModified": 1771889406,
+        "narHash": "sha256-JzcklsiAWkuFkQYteYMTsoc3TkHoasjwXwnMLi4SGQg=",
+        "rev": "1ffadb01af2fe429381f4a455aba56684868c106",
+        "revCount": 24681,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nix-src/3.16.1/019c8765-f403-7aae-ade5-5c697b3c3cad/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nix-src/3.16.2/019c8d05-97ec-7d2f-8788-2b94ad1424b2/source.tar.gz"
       },
       "original": {
         "type": "tarball",
