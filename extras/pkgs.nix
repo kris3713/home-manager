@@ -107,7 +107,6 @@
       nix-init
       nix-your-shell
       niv
-      nmap
       obs-cmd
       ookla-speedtest
       ov
