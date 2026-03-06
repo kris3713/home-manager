@@ -97,7 +97,6 @@
       most
       moor
       navi
-      neofetch
       # neovim-unwrapped
       # neovim-qt-unwrapped
       netscanner
