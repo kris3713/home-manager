@@ -101,6 +101,8 @@
       # neovim-qt-unwrapped
       netscanner
       nh
+      nickel
+      nls
       nil
       nix-info
       nix-init
