@@ -19,7 +19,10 @@
   userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
 in {
-  nixpkgs.config.allowUnfree = true;
+  # Ensure that non-free packages are allowed
+  nixpkgs = {
+    config.allowUnfree = true;
+  };
 
   home = {
     # Home Manager needs a bit of information about you and the paths it should

@@ -1,10 +1,16 @@
 {
   ## user-defined variables
   pkgs,
+  nurRepos,
   appleFonts,
   determinateNix,
   ...
-}: {
+}: let
+  inherit
+    (nurRepos)
+    charmbracelet
+    ;
+in {
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages =
@@ -19,6 +25,11 @@
     (with determinateNix; [
       # determinate-nix man pages
       nix.man
+    ])
+    ++
+    ## charmbracelet packages
+    (with charmbracelet; [
+      crush
     ])
     ++
     ## other packages

@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Apple Fonts
     apple-fonts = {
       url = "github:Lyndeno/apple-fonts.nix";
@@ -91,14 +96,17 @@
     inherit
       (inputs)
       nixpkgs
+      nur
       determinate-nix-src
       apple-fonts
-      home-manager;
+      home-manager
+      ;
 
     system = "x86_64-linux";
     username = "kris";
 
     pkgs = nixpkgs.legacyPackages.${system};
+    nurRepos = nur.legacyPackages.${system}.repos;
     determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
 
@@ -124,8 +132,9 @@
           ## extras
           inputs
           ## user-defined variables
-          appleFonts
+          nurRepos
           determinateNix
+          appleFonts
           ;
       };
     };
