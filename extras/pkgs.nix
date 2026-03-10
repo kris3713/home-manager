@@ -1,20 +1,20 @@
 {
   ## user-defined variables
   pkgs,
-  # appleFonts,
+  appleFonts,
   determinateNix,
   ...
 }: {
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages =
-    # ## fonts
-    # (with appleFonts; [
-    #   sf-compact
-    #   sf-pro
-    #   ny
-    # ])
-    # ++
+    ## fonts
+    (with appleFonts; [
+      sf-compact.out
+      sf-pro.out
+      ny.out
+    ])
+    ++
     ## determinate-nix src packages
     (with determinateNix; [
       # determinate-nix man pages
@@ -23,11 +23,11 @@
     ++
     ## other packages
     (with pkgs; [
-      source-sans
-      source-sans-pro
-      source-serif
-      source-serif-pro
-      twitter-color-emoji
+      source-sans.out
+      source-sans-pro.out
+      source-serif.out
+      source-serif-pro.out
+      twitter-color-emoji.out
 
       ## others
       adbtuifm

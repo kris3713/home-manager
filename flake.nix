@@ -93,9 +93,7 @@
       nixpkgs
       determinate-nix-src
       apple-fonts
-      home-manager
-      nix-doom-emacs-unstraightened
-      ;
+      home-manager;
 
     system = "x86_64-linux";
     username = "kris";
@@ -113,8 +111,6 @@
       # Specify your home configuration modules here, for example,
       # the path to your `home.nix`
       modules = [
-        nix-doom-emacs-unstraightened.homeModule
-        ./doom/config.nix
         ./extras/files.nix
         ./extras/fish.nix
         ./extras/pkgs.nix
