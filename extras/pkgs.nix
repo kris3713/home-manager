@@ -89,11 +89,11 @@ in {
       gut
       hadolint
       impl
-      # intelli-shell
       jless
       ktlint
       lazygit
       lazysql
+      llama-cpp-vulkan
       librespeed-cli
       linux_logo
       lnav
