@@ -93,6 +93,7 @@ in {
       ktlint
       lazygit
       lazysql
+      # (llama-cpp.override { cudaSupport = true; })
       librespeed-cli
       linux_logo
       lnav
