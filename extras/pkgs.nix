@@ -93,7 +93,6 @@ in {
       ktlint
       lazygit
       lazysql
-      llama-cpp-vulkan
       librespeed-cli
       linux_logo
       lnav
