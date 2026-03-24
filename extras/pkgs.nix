@@ -157,7 +157,7 @@ in {
       tre-command
       ty
       update-nix-fetchgit
-      usql
+      # usql
       uncrustify
       vimv
       vtracer
