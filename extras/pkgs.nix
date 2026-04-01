@@ -108,7 +108,7 @@ in {
       most
       moor
       navi
-      neovim-unwrapped
+      # neovim-unwrapped
       netscanner
       nh
       nickel
