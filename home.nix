@@ -4,7 +4,7 @@
   lib,
   # user-defined variables
   # pkgs,
-  determinateNix,
+  # determinateNix,
   ...
 }: let
   # important variables

@@ -98,6 +98,7 @@
     inherit
       (inputs)
       nixpkgs
+      llm-agents
       # nur
       determinate-nix-src
       apple-fonts
@@ -108,12 +109,15 @@
     username = "kris";
 
     pkgs = nixpkgs.legacyPackages.${system};
+    llmAgents = llm-agents.legacyPackages.${system};
     # nurRepos = nur.legacyPackages.${system}.repos;
     determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
 
-    homeManagerLib = home-manager.lib;
-    inherit (homeManagerLib) homeManagerConfiguration;
+    inherit
+      (home-manager.lib)
+      homeManagerConfiguration
+      ;
   in {
     homeConfigurations.${username} = homeManagerConfiguration {
       inherit pkgs;
@@ -134,6 +138,7 @@
           ## extras
           inputs
           ## user-defined variables
+          llmAgents
           # nurRepos
           determinateNix
           appleFonts
