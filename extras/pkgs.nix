@@ -32,15 +32,15 @@
       codex
       code
       crush
+      claude-code
       eca
       forge
       goose-cli
       hermes-agent
-      iflow-cli
       junie
       kilocode-cli
       localgpt
-      oh-my-opencode
+      # oh-my-opencode
       opencode
       omp
     ])
