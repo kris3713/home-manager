@@ -109,7 +109,7 @@
     username = "kris";
 
     pkgs = nixpkgs.legacyPackages.${system};
-    llmAgents = llm-agents.legacyPackages.${system};
+    llmAgents = llm-agents.packages.${system};
     # nurRepos = nur.legacyPackages.${system}.repos;
     determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
