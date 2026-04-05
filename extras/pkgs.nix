@@ -42,7 +42,7 @@
       localgpt
       oh-my-opencode
       opencode
-      oh-my-pi
+      omp
     ])
     ++
     ## other packages
