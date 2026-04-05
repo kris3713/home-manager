@@ -4,7 +4,7 @@
   lib,
   # user-defined variables
   # pkgs,
-  # determinateNix,
+  determinateNix,
   ...
 }: let
   # important variables
@@ -19,6 +19,16 @@
   userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
 in {
+  nix = {
+    package = determinateNix.nix;
+    settings = {
+      extra-substituters = [ "https://cache.numtide.com" ];
+      extra-trusted-public-keys = [
+        "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
+      ];
+    };
+  };
+
   # Ensure that non-free packages are allowed
   nixpkgs = {
     config.allowUnfree = true;
