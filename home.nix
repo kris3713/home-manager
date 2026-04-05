@@ -11,26 +11,25 @@
   # hm = lib.hm;
   inherit (lib) mkForce;
 
-  configHome = config.home;
-  inherit (configHome) username homeDirectory;
+  inherit (config.home) username homeDirectory;
 
   # other variables
   userDataDir = "${homeDirectory}/.local/share";
   userStateDir = "${homeDirectory}/.local/state";
   userConfigDir = "${homeDirectory}/.config";
 in {
-  nix = {
-    package = determinateNix.nix;
-    settings = {
-      always-allow-substitutes = true;
-      extra-allowed-users = [ username ];
-      extra-substituters = [ "https://cache.numtide.com" ];
-      extra-trusted-public-keys = [
-        "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
-      ];
-      extra-trusted-users = [ username ];
-    };
-  };
+  # nix = {
+  #   package = determinateNix.nix;
+  #   settings = {
+  #     always-allow-substitutes = true;
+  #     extra-allowed-users = [ username ];
+  #     extra-substituters = [ "https://cache.numtide.com" ];
+  #     extra-trusted-public-keys = [
+  #       "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
+  #     ];
+  #     extra-trusted-users = [ username ];
+  #   };
+  # };
 
   # Ensure that non-free packages are allowed
   nixpkgs = {
