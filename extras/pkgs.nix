@@ -27,7 +27,22 @@
     ++
     ## llmAgents packages
     (with llmAgents; [
+      amp
+      droid
+      codex
+      code
       crush
+      eca
+      forge
+      goose-cli
+      hermes-agent
+      iflow-cli
+      junie
+      kilocode-cli
+      localgpt
+      oh-my-opencode
+      opencode
+      oh-my-pi
     ])
     ++
     ## other packages
