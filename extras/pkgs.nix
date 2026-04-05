@@ -36,7 +36,6 @@
       eca
       forge
       goose-cli
-      hermes-agent
       junie
       kilocode-cli
       localgpt
