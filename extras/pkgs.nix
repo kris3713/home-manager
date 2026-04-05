@@ -1,11 +1,18 @@
 {
+  ## extras
+  inputs,
   ## user-defined variables
   pkgs,
   # nurRepos,
   appleFonts,
   determinateNix,
   ...
-}: {
+}: let
+  inherit
+    (inputs)
+    llm-agents
+    ;
+in {
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages =
@@ -22,8 +29,8 @@
       nix.man
     ])
     ++
-    ### charmbracelet packages
-    #(with charmbracelet; [
+    ### llmAgents packages
+    #(with llm-agents; [
     #  crush
     #])
     #++

@@ -7,17 +7,19 @@
 
     determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/*";
 
-    flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
+    # flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
+
+    llm-agents.url = "github:numtide/llm-agents.nix";
 
     home-manager = {
       url = "https://flakehub.com/f/nix-community/home-manager/0.1.*";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nur = {
+    #   url = "github:nix-community/NUR";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # Apple Fonts
     apple-fonts = {
@@ -96,7 +98,7 @@
     inherit
       (inputs)
       nixpkgs
-      nur
+      # nur
       determinate-nix-src
       apple-fonts
       home-manager
@@ -106,7 +108,7 @@
     username = "kris";
 
     pkgs = nixpkgs.legacyPackages.${system};
-    nurRepos = nur.legacyPackages.${system}.repos;
+    # nurRepos = nur.legacyPackages.${system}.repos;
     determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
 
@@ -132,7 +134,7 @@
           ## extras
           inputs
           ## user-defined variables
-          nurRepos
+          # nurRepos
           determinateNix
           appleFonts
           ;
