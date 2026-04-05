@@ -22,11 +22,12 @@ in {
   nix = {
     package = determinateNix.nix;
     settings = {
+      always-allow-substitutes = true;
+      extra-allowed-users = [ username ];
       extra-substituters = [ "https://cache.numtide.com" ];
       extra-trusted-public-keys = [
         "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g="
       ];
-      extra-allowed-users = [ username ];
       extra-trusted-users = [ username ];
     };
   };
