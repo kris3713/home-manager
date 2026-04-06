@@ -32,12 +32,10 @@
       crush
       claude-code
       eca
-      forge
       goose-cli
       junie
       kilocode-cli
       localgpt
-      # oh-my-opencode
       opencode
       omp
     ])
