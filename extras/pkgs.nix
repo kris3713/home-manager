@@ -29,8 +29,6 @@
     (with llmAgents; [
       amp
       droid
-      codex
-      code
       crush
       claude-code
       eca
