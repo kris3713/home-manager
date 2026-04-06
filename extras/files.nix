@@ -41,7 +41,7 @@ in {
 
     # kilocode alias
     "${userBinDir}/kilo" = {
-      source = "${llmAgents.kilocode-cli}/bin/doge";
+      source = "${llmAgents.kilocode-cli}/bin/kilocode";
     };
 
     ## others
