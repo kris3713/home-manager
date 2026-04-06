@@ -27,7 +27,6 @@
     ++
     ## llmAgents packages
     (with llmAgents; [
-      amp
       droid
       crush
       claude-code
