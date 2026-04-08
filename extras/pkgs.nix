@@ -41,6 +41,7 @@
     ++
     ## other packages
     (with pkgs; [
+      ## typefaces/fonts
       source-sans.out
       source-sans-pro.out
       source-serif.out
@@ -50,6 +51,7 @@
       ## others
       adbtuifm
       alejandra
+      aichat
       argc
       babelfish
       biome
