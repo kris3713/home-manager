@@ -102,7 +102,7 @@
       ktlint
       lazygit
       lazysql
-      # (llama-cpp.override { cudaSupport = true; })
+      (llama-cpp.override { cudaSupport = true; })
       librespeed-cli
       linux_logo
       lnav
@@ -133,9 +133,6 @@
       pdfcpu
       peco
       pfetch-rs
-      php
-      php84Packages.composer
-      php84Packages.phan
       # pixi
       powershell
       powershell-editor-services
