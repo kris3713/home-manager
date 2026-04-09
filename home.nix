@@ -32,14 +32,16 @@ in {
     };
   };
 
-  # Ensure that non-free packages are allowed
+  # Ensure that non-free packages are allowed,
+  # and CUDA support is enabled
   nixpkgs = {
-    config.allowUnfree = true;
+    config = {
+      allowUnfree = true;
+      cudaSupport = true;
+    };
   };
 
   home = {
-    # Home Manager needs a bit of information about you and the paths it should
-    # manage.
     username = "kris";
     homeDirectory = "/home/${username}";
 
