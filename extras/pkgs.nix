@@ -32,6 +32,7 @@
       claude-code
       eca
       goose-cli
+      hermes-agent
       junie
       kilocode-cli
       localgpt
