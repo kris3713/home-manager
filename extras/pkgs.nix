@@ -37,7 +37,6 @@
       kilocode-cli
       localgpt
       opencode
-      omp
     ])
     ++
     ## other packages
