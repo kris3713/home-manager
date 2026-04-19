@@ -30,7 +30,6 @@
       droid
       crush
       claude-code
-      eca
       goose-cli
       hermes-agent
       junie
