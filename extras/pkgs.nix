@@ -78,7 +78,6 @@
       duf
       dust
       editorconfig-checker
-      emmylua-ls
       eza
       f2
       ferron
