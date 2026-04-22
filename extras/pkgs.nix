@@ -105,7 +105,6 @@
       linux_logo
       lnav
       lsd
-      lua-language-server
       lurk
       ltex-ls-plus
       macchina
