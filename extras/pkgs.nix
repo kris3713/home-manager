@@ -51,6 +51,7 @@
       alejandra
       aichat
       argc
+      ast-grep
       babelfish
       biome
       bit
