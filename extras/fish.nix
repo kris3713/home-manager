@@ -58,11 +58,11 @@ in {
       ++
       ## fish plugins not packaged in nixpkgs
       (with inputs; [
-        {
-          # completions.fish
-          name = "completions";
-          src = completions_fish;
-        }
+        # {
+        #   # completions.fish
+        #   name = "completions";
+        #   src = completions_fish;
+        # }
         {
           # fisher
           name = "fisher";
