@@ -324,12 +324,12 @@
         ]
       },
       "locked": {
-        "lastModified": 1777518431,
-        "narHash": "sha256-SwgiG2T5pbyo33Vz7/vUCAhEMgwCK8Pa2nDSx5a6/WE=",
-        "rev": "2e54a938cdd4c8e414b2518edc3d82308027c670",
-        "revCount": 6645,
+        "lastModified": 1777594677,
+        "narHash": "sha256-h90sHwoRJLRvaTpZroTvU2JRHDFj0czUafM8eqLe1RI=",
+        "rev": "899c08a15beae5da51a5cecd6b2b994777a948da",
+        "revCount": 6646,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.1.6645%2Brev-2e54a938cdd4c8e414b2518edc3d82308027c670/019ddd0d-ef7d-7c92-aab8-057310dfe4eb/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.1.6646%2Brev-899c08a15beae5da51a5cecd6b2b994777a948da/019de23a-fd0f-79c3-84f8-3a84489d9499/source.tar.gz"
       },
       "original": {
         "type": "tarball",
@@ -346,11 +346,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1777598424,
-        "narHash": "sha256-bH5HdhGv/rjO+aiAVilTdXkwA/vtGVwI5ZUM9rrxwtc=",
+        "lastModified": 1777621191,
+        "narHash": "sha256-HUHZC30WrXricbbLSuvmmKUZKtNTItOy86ndYiCGdCw=",
         "owner": "numtide",
         "repo": "llm-agents.nix",
-        "rev": "cfb336e0fd05ba630cf7e3ab92598fa61f237078",
+        "rev": "8979c77d3771f2b57c1c61b1c0c91d73b0f979e8",
         "type": "github"
       },
       "original": {
