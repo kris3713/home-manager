@@ -85,7 +85,7 @@
       fh # FlakeHub CLI
       fx
       gh
-      git-machete
+      # git-machete
       git-town
       gofumpt
       golangci-lint
