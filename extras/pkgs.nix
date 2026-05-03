@@ -154,6 +154,7 @@
       tailspin
       tealdeer
       termscp
+      termshot
       tinyxxd
       ttop
       tre-command
