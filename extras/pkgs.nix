@@ -159,6 +159,7 @@
       tinyxxd
       ttop
       tre-command
+      tsgolint
       ty
       update-nix-fetchgit
       # usql
