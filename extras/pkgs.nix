@@ -79,6 +79,7 @@
       duf
       dust
       editorconfig-checker
+      emacs-pgtk
       eza
       f2
       ferron
@@ -114,7 +115,7 @@
       most
       moor
       navi
-      # neovim-unwrapped
+      neovim-unwrapped
       netscanner
       nh
       nickel
