@@ -3,7 +3,8 @@
 
   inputs = {
     ### Flakes
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/*";
 
