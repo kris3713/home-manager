@@ -68,7 +68,6 @@
       curlFull
       deadnix
       delve
-      deno
       dnslookup
       dragon-drop
       docker-language-server
