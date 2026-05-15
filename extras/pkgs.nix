@@ -145,7 +145,6 @@
       selene
       shfmt
       shellcheck
-      smap
       static-web-server
       statix
       stylua
@@ -169,8 +168,6 @@
       xxh
       yazi-unwrapped
       yq-go
-      yt-dlp
-      zigfetch
     ]);
 
   # # Adds the 'hello' command to your environment. It prints a friendly
