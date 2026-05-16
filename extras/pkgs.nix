@@ -95,6 +95,7 @@
       grex
       gut
       hadolint
+      harper
       impl
       jless
       ktlint
