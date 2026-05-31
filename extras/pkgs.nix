@@ -164,7 +164,7 @@
       uncrustify
       vimv
       vtracer
-      # watchman
+      witr
       xxh
       yazi-unwrapped
       yq-go
