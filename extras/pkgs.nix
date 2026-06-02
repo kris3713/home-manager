@@ -152,7 +152,6 @@
       systemd-lsp
       tailspin
       tealdeer
-      termscp
       termshot
       tinyxxd
       ttop
