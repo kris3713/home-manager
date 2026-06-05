@@ -87,6 +87,7 @@
       gh
       # git-machete
       git-town
+      go
       gofumpt
       golangci-lint
       golangci-lint-langserver
