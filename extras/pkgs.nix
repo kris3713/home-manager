@@ -91,6 +91,7 @@
       golangci-lint
       golangci-lint-langserver
       gomodifytags
+      goimports-reviser
       gopls
       grex
       gut
