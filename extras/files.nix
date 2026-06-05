@@ -5,7 +5,6 @@
   inputs,
   ## user-defined variables
   pkgs,
-  llmAgents,
   # determinateNix,
   ...
 }: let
@@ -37,11 +36,6 @@ in {
     # doge alias
     "${userBinDir}/dog" = {
       source = "${pkgs.dogedns}/bin/doge";
-    };
-
-    # kilocode alias
-    "${userBinDir}/kilo" = {
-      source = "${llmAgents.kilocode-cli}/bin/kilocode";
     };
 
     ## others
