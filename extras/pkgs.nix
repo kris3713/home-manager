@@ -27,13 +27,8 @@
     ++
     ## llmAgents packages
     (with llmAgents; [
-      droid
-      crush
       claude-code
-      goose-cli
       hermes-agent
-      kilocode-cli
-      localgpt
       opencode
     ])
     ++
