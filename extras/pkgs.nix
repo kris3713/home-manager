@@ -132,6 +132,7 @@
       powershell-editor-services
       pyrefly
       quickemu
+      rage
       ramfetch
       resvg
       ripdrag
