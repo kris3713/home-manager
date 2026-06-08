@@ -48,7 +48,7 @@
       argc
       ast-grep
       babelfish
-      biome
+      # biome
       bit
       broot
       bottom
