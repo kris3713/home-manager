@@ -90,7 +90,6 @@
       goimports-reviser
       gopls
       grex
-      gut
       hadolint
       harper
       impl
