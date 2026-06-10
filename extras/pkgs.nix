@@ -28,7 +28,6 @@
     ## llmAgents packages
     (with llmAgents; [
       claude-code
-      copilot-cli
       hermes-agent
       opencode
     ])
