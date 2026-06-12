@@ -44,7 +44,6 @@
       ## others
       adbtuifm
       alejandra
-      aichat
       argc
       ast-grep
       babelfish
