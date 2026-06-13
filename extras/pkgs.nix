@@ -27,6 +27,7 @@
     ++
     ## llmAgents packages
     (with llmAgents; [
+      codex
       claude-code
       hermes-agent
       opencode
