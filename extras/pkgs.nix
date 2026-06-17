@@ -136,6 +136,7 @@
       resvg
       ripdrag
       ripgrep
+      ruff
       sad
       screenfetch
       sd
