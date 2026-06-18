@@ -30,6 +30,7 @@
       codex
       claude-code
       hermes-agent
+      mimo-code
       opencode
     ])
     ++
