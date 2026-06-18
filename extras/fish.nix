@@ -20,11 +20,6 @@ in {
     shellInit = ''
       # source other fish config
       source '${fishDir}/config.backup.fish'
-
-      ## Shell completions creation
-      # gut
-      gut completion fish | source
-      ## end of Shell completions creation
     '';
 
     plugins =
