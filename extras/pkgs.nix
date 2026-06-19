@@ -14,8 +14,6 @@
   home.packages =
     ## fonts
     (with appleFonts; [
-      sf-compact.out
-      sf-pro.out
       ny.out
     ])
     ++
