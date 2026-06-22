@@ -29,14 +29,10 @@ in {
     # '';
 
     # lazygit alias
-    "${userBinDir}/lg" = {
-      source = "${pkgs.lazygit}/bin/lazygit";
-    };
+    "${userBinDir}/lg".source = "${pkgs.lazygit}/bin/lazygit";
 
     # doge alias
-    "${userBinDir}/dog" = {
-      source = "${pkgs.dogedns}/bin/doge";
-    };
+    "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
     ## others
     "${userConfigDir}/ghostty/themes" = {
@@ -60,13 +56,9 @@ in {
       "--style=numbers"
     '';
 
-    "${userConfigDir}/lsd/colors.yaml" = {
-      source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
-    };
+    "${userConfigDir}/lsd/colors.yaml".source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
 
-    "${homeDirectory}/catppuccin-delta-theme.gitconfig" = {
-      source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
-    };
+    "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
 
     "${userConfigDir}/micro/colorschemes" = {
       recursive = true;
