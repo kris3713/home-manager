@@ -40,6 +40,7 @@ in {
       executable = true;
     };
 
+    ## Aliases
     # lazygit alias
     "${userBinDir}/lg".source = "${pkgs.lazygit}/bin/lazygit";
 
