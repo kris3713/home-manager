@@ -56,6 +56,10 @@ in {
       "--style=numbers"
     '';
 
+    "${userConfigDir}/lsd/config.yml".text = ''
+      color:
+        theme: custom
+    '';
     "${userConfigDir}/lsd/colors.yaml".source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
 
     "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
