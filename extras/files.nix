@@ -28,13 +28,25 @@ in {
     #   org.gradle.daemon.idletimeout=3600000
     # '';
 
+    ## Scripts
+    # llama-gguf-downloader
+    "${userBinDir}/llama-gguf-downloader" = {
+      text = /* sh */ ''
+        #!/usr/bin/env sh
+
+        env LLAMA_CACHE="$HOME/llama-swap/models" \
+          llama-cli -p '/exit' -n 1 --no-display-prompt -hf  "$@"
+      '';
+      executable = true;
+    };
+
     # lazygit alias
     "${userBinDir}/lg".source = "${pkgs.lazygit}/bin/lazygit";
 
     # doge alias
     "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
-    ## others
+    ## Others
     "${userConfigDir}/ghostty/themes" = {
       recursive = true;
       source = "${catppuccin-ghostty-theme}/themes";
@@ -56,7 +68,7 @@ in {
       "--style=numbers"
     '';
 
-    "${userConfigDir}/lsd/config.yml".text = ''
+    "${userConfigDir}/lsd/config.yml".text = /*yaml*/ ''
       color:
         theme: custom
     '';
