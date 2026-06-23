@@ -46,6 +46,7 @@
       alejandra
       argc
       ast-grep
+      atomicparsley
       babelfish
       # biome
       bit
