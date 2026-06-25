@@ -138,6 +138,7 @@
       ripgrep
       ruff
       rustup
+      rustlings
       sad
       screenfetch
       sd
