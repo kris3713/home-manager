@@ -156,6 +156,7 @@
       xxh
       yazi-unwrapped
       yq-go
+      zoxide
     ]);
 
   # # Adds the 'hello' command to your environment. It prints a friendly
