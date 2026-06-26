@@ -48,28 +48,24 @@
       ast-grep
       atomicparsley
       babelfish
-      # biome
       bit
       broot
       bottom
       cachix
-      # cargo-binstall
       cargo-cache
       cargo-update
       checkstyle
       cheat
       cht-sh
-      complgen
       curlFull
       deadnix
       delve
       dnslookup
       dragon-drop
-      docker-language-server
       dogedns
       doggo
       doxx
-      dprint
+      # dprint
       duf
       dust
       editorconfig-checker
@@ -80,7 +76,6 @@
       fh # FlakeHub CLI
       fx
       gh
-      # git-machete
       git-town
       go
       gofumpt
@@ -97,13 +92,11 @@
       ktlint
       lazygit
       lazysql
-      # (llama-cpp.override { cudaSupport = true; })
       librespeed-cli
       lnav
       lsd
       lurk
       ltex-ls-plus
-      macchina
       marksman
       mc # Midnight Commander
       micro
@@ -124,8 +117,7 @@
       ookla-speedtest
       ov
       pdfcpu
-      peco
-      pfetch-rs
+      # peco
       # pixi
       powershell
       powershell-editor-services
@@ -138,8 +130,6 @@
       ripgrep
       ruff
       rustup
-      sad
-      screenfetch
       sd
       selene
       shfmt
