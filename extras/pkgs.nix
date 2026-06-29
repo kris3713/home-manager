@@ -142,6 +142,7 @@
       sshpass
       systemd-lsp
       tailspin
+      tcc
       tealdeer
       termshot
       tinyxxd
