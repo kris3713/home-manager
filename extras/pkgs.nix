@@ -57,6 +57,7 @@
       checkstyle
       cheat
       cht-sh
+      cppcheck
       curlFull
       deadnix
       delve
