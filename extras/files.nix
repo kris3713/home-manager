@@ -40,6 +40,16 @@ in {
       executable = true;
     };
 
+    # restart-plasmashell
+    "${userBinDir}/restart-plasmashell" = {
+      text = /* sh */ ''
+        #!/usr/bin/env sh
+
+        systemctl --user restart plasma-plasmashell.service
+      '';
+      executable = true;
+    };
+
     ## Aliases
     # lazygit alias
     "${userBinDir}/lg".source = "${pkgs.lazygit}/bin/lazygit";
