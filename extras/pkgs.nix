@@ -109,7 +109,6 @@
       niv
       obs-cmd
       ookla-speedtest
-      ov
       # pixi
       powershell
       powershell-editor-services
