@@ -48,7 +48,6 @@
       cachix
       cargo-cache
       cargo-update
-      checkstyle
       # cheat
       # cht-sh
       cppcheck
@@ -59,7 +58,6 @@
       # dragon-drop
       dogedns
       doggo
-      doxx
       # dprint
       duf
       dust
