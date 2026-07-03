@@ -22,12 +22,6 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    # Apple Fonts
-    apple-fonts = {
-      url = "github:Lyndeno/apple-fonts.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     ### Non-Flakes
     ## FISH plugins
     completions_fish = {

@@ -5,18 +5,12 @@
   pkgs,
   llmAgents,
   # nurRepos,
-  appleFonts,
   determinateNix,
   ...
 }: {
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages =
-    ## fonts
-    (with appleFonts; [
-      ny.out
-    ])
-    ++
     ## determinate-nix src packages
     (with determinateNix; [
       # determinate-nix man pages
