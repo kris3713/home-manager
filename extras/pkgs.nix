@@ -73,7 +73,6 @@
       emacs-pgtk
       eza
       f2
-      ferron
       fh # FlakeHub CLI
       fx
       gh
@@ -103,7 +102,7 @@
       micro
       most
       moor
-      navi
+      # navi
       neocmakelsp
       neovim-unwrapped
       netscanner
