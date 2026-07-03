@@ -110,7 +110,6 @@
       obs-cmd
       ookla-speedtest
       ov
-      pdfcpu
       # pixi
       powershell
       powershell-editor-services
