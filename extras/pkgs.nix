@@ -56,7 +56,7 @@
       deadnix
       delve
       dnslookup
-      dragon-drop
+      # dragon-drop
       dogedns
       doggo
       doxx
@@ -74,7 +74,6 @@
       go
       gofumpt
       golangci-lint
-      golangci-lint-langserver
       gomodifytags
       goimports-reviser
       gopls
@@ -117,7 +116,6 @@
       powershell-editor-services
       pyrefly
       quickemu
-      rage
       ramfetch
       resvg
       ripdrag
@@ -130,7 +128,6 @@
       static-web-server
       statix
       stylua
-      sshpass
       systemd-lsp
       tailspin
       tinycc # tcc
