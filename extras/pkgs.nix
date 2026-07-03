@@ -55,8 +55,8 @@
       cargo-cache
       cargo-update
       checkstyle
-      cheat
-      cht-sh
+      # cheat
+      # cht-sh
       cppcheck
       curlFull
       deadnix
@@ -99,7 +99,7 @@
       lurk
       ltex-ls-plus
       marksman
-      mc # Midnight Commander
+      # mc # Midnight Commander
       micro
       most
       moor
@@ -119,7 +119,6 @@
       ookla-speedtest
       ov
       pdfcpu
-      # peco
       # pixi
       powershell
       powershell-editor-services
@@ -133,7 +132,6 @@
       ruff
       rustup
       sd
-      selene
       shfmt
       shellcheck
       static-web-server
