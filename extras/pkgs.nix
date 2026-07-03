@@ -84,7 +84,6 @@
       jless
       ktlint
       lazygit
-      lazysql
       librespeed-cli
       lnav
       lsd
