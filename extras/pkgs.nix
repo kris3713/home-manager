@@ -48,6 +48,7 @@
       cachix
       cargo-cache
       cargo-update
+      chezmoi
       # cheat
       # cht-sh
       cppcheck
