@@ -58,10 +58,14 @@ in {
     "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
     ## Others
-    "${userConfigDir}/ghostty/themes" = {
-      recursive = true;
-      source = "${catppuccin-ghostty-theme}/themes";
-    };
+    "${userConfigDir}/containers/containers.conf".text = /* toml */ ''
+      runtime = 'crun'
+    '';
+
+    "${userConfigDir}/containers/storage.conf".text = /* toml */ ''
+      graphroot="''${HOME}/.local/share/containers/storage"
+      runroot="''${XDG_RUNTIME_DIR}/containers"
+    '';
 
     "${userConfigDir}/btop/themes" = {
       recursive = true;
@@ -78,6 +82,11 @@ in {
       "--theme=Catppuccin Macchiato"
       "--style=numbers"
     '';
+
+    "${userConfigDir}/ghostty/themes" = {
+      recursive = true;
+      source = "${catppuccin-ghostty-theme}/themes";
+    };
 
     "${userConfigDir}/lsd/config.yml".text = /*yaml*/ ''
       color:
