@@ -80,6 +80,7 @@
       harper
       impl
       jless
+      just
       ktlint
       lazygit
       librespeed-cli
