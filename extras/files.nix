@@ -147,6 +147,8 @@ in {
 
     "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
 
+    "${homeDirectory}/.icons/capitaine-cursors".source = "${pkgs.capitaine-cursors}/share/icons/capitaine-cursors";
+
     "${userDataDir}/applications" = {
       recursive = true;
       source = ./.local/share/applications;
