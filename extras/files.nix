@@ -145,8 +145,6 @@ in {
 
     "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
 
-    "${userDataDir}/user-places.xbel".source = ./.local/share/user-places.xbel;
-
     "${userDataDir}/applications" = {
       recursive = true;
       source = ./.local/share/applications;
