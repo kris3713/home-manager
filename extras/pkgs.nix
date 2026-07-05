@@ -19,6 +19,7 @@
     ++
     ## llmAgents packages
     (with llmAgents; [
+      agent-browser
       codex
       claude-code
       hermes-agent
