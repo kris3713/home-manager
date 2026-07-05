@@ -8,8 +8,7 @@
   # determinateNix,
   ...
 }: let
-  configHome = config.home;
-  inherit (configHome) homeDirectory;
+  inherit (config.home) homeDirectory;
 
   userBinDir = "${homeDirectory}/.local/bin";
   userConfigDir = "${homeDirectory}/.config";
@@ -121,6 +120,7 @@ in {
     "${userConfigDir}/lsd/colors.yaml".source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
 
     "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
+    "${homeDirectory}/llama-swap/config.yaml".source = ./llama-swap/config.yaml;
 
     "${userConfigDir}/micro/colorschemes" = {
       recursive = true;
