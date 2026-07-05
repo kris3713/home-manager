@@ -58,17 +58,17 @@ in {
 
         distrobox-create -Y -i ghcr.io/ultramarine-linux/ultramarine:43 -n fedora_distrobox \
           -ap 'rpmdevtools @development-tools xclip wl-clipboard dnf-plugins-core' \
-          --init-hooks "$(cat << 'sh'
+          --init-hooks "$(cat << 'SH'
 
         if [ ! -f /bin/cls ]; then
           sudo ln -sf "$(command -v clear)" /bin/cls;
         fi;
 
         if ! cat /etc/dnf/dnf.conf | grep -qF 'install_weak_deps=False'; then
-          echo -e 'install_weak_deps=False\nbest=True' | sudo tee -a /etc/dnf/dnf.conf &> /dev/null;
+          echo -e "install_weak_deps=False\nbest=True" | sudo tee -a /etc/dnf/dnf.conf &> /dev/null;
         fi;
 
-        sh
+        SH
         )"
       '';
       executable = true;
