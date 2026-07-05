@@ -50,6 +50,30 @@ in {
       executable = true;
     };
 
+    # create-distrobox
+    "${userBinDir}/create-distrobox" = {
+      text = /* sh */ ''
+        #!/usr/bin/env sh
+        # shellcheck disable=1009,1073,1003
+
+        distrobox-create -Y -i ghcr.io/ultramarine-linux/ultramarine:43 -n fedora_distrobox \
+          -ap 'rpmdevtools @development-tools xclip wl-clipboard dnf-plugins-core' \
+          --init-hooks "$(cat << 'sh'
+
+        if [ ! -f /bin/cls ]; then
+          sudo ln -sf "$(command -v clear)" /bin/cls;
+        fi;
+
+        if ! cat /etc/dnf/dnf.conf | grep -qF 'install_weak_deps=False'; then
+          echo -e 'install_weak_deps=False\nbest=True' | sudo tee -a /etc/dnf/dnf.conf &> /dev/null;
+        fi;
+
+        sh
+        )"
+      '';
+      executable = true;
+    };
+
     ## Aliases
     # lazygit alias
     "${userBinDir}/lg".source = "${pkgs.lazygit}/bin/lazygit";
