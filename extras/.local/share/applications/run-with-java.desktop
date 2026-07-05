@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Run with Java
+NoDisplay=true
+Icon=applications-java
+Exec=java -jar %U
+MimeType=application/java-archive;
+StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -12,6 +12,7 @@
 
   userBinDir = "${homeDirectory}/.local/bin";
   userConfigDir = "${homeDirectory}/.config";
+  userDataDir = "${homeDirectory}/.local/share";
 in {
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -143,5 +144,12 @@ in {
     "${userConfigDir}/topgrade.toml".source = ./.config/topgrade.toml;
 
     "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
+
+    "${userDataDir}/applications/user-places.xbel".source = ./.local/share/user-places.xbel;
+
+    "${userDataDir}/applications" = {
+      recursive = true;
+      source = ./.local/share/applications;
+    };
   };
 }
