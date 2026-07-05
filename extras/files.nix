@@ -126,5 +126,7 @@ in {
       recursive = true;
       source = "${catppuccin-micro-theme}/themes";
     };
+
+    "${userConfigDir}/topgrade.toml".source = ./.config/topgrade.toml;
   };
 }
