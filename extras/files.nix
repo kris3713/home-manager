@@ -141,6 +141,8 @@ in {
 
     "${userConfigDir}/opencode/opencode.jsonc".source = ./.config/opencode/opencode.jsonc;
 
+    "${userConfigDir}/ov/config.yaml".source = ./.config/ov/config.yaml;
+
     "${userConfigDir}/topgrade.toml".source = ./.config/topgrade.toml;
 
     "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
