@@ -1,3 +1,4 @@
 disabled = [
-  'manual_inherit_from'
+  'manual_inherit_from',
+  'empty_pattern'
 ]

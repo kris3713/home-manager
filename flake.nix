@@ -123,6 +123,7 @@
         ./extras/files.nix
         ./extras/fish.nix
         ./extras/pkgs.nix
+        ./extras/services.nix
         ./home.nix
       ];
 
