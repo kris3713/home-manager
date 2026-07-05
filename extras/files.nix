@@ -30,46 +30,52 @@ in {
     ## Scripts
     # llama-gguf-downloader
     "${userBinDir}/llama-gguf-downloader" = {
-      text = /* sh */ ''
-        #!/usr/bin/env sh
+      text =
+        # sh
+        ''
+          #!/usr/bin/env sh
 
-        env LLAMA_CACHE="$HOME/llama-swap/models" \
-          llama-cli -p '/exit' -n 1 --no-display-prompt -hf  "$@"
-      '';
+          env LLAMA_CACHE="$HOME/llama-swap/models" \
+            llama-cli -p '/exit' -n 1 --no-display-prompt -hf  "$@"
+        '';
       executable = true;
     };
 
     # restart-plasmashell
     "${userBinDir}/restart-plasmashell" = {
-      text = /* sh */ ''
-        #!/usr/bin/env sh
+      text =
+        # sh
+        ''
+          #!/usr/bin/env sh
 
-        systemctl --user restart plasma-plasmashell.service
-      '';
+          systemctl --user restart plasma-plasmashell.service
+        '';
       executable = true;
     };
 
     # create-distrobox
     "${userBinDir}/create-distrobox" = {
-      text = /* sh */ ''
-        #!/usr/bin/env sh
-        # shellcheck disable=1009,1073,1003
+      text =
+        # sh
+        ''
+          #!/usr/bin/env sh
+          # shellcheck disable=1009,1073,1003
 
-        distrobox-create -Y -i ghcr.io/ultramarine-linux/ultramarine:43 -n fedora_distrobox \
-          -ap 'rpmdevtools @development-tools xclip wl-clipboard dnf-plugins-core' \
-          --init-hooks "$(cat << 'SH'
+          distrobox-create -Y -i ghcr.io/ultramarine-linux/ultramarine:43 -n fedora_distrobox \
+            -ap 'rpmdevtools @development-tools xclip wl-clipboard dnf-plugins-core' \
+            --init-hooks "$(cat << 'SH'
 
-        if [ ! -f /bin/cls ]; then
-          sudo ln -sf "$(command -v clear)" /bin/cls;
-        fi;
+          if [ ! -f /bin/cls ]; then
+            sudo ln -sf "$(command -v clear)" /bin/cls;
+          fi;
 
-        if ! cat /etc/dnf/dnf.conf | grep -qF 'install_weak_deps=False'; then
-          echo -e "install_weak_deps=False\nbest=True" | sudo tee -a /etc/dnf/dnf.conf &> /dev/null;
-        fi;
+          if ! cat /etc/dnf/dnf.conf | grep -qF 'install_weak_deps=False'; then
+            echo -e "install_weak_deps=False\nbest=True" | sudo tee -a /etc/dnf/dnf.conf &> /dev/null;
+          fi;
 
-        SH
-        )"
-      '';
+          SH
+          )"
+        '';
       executable = true;
     };
 
@@ -81,14 +87,18 @@ in {
     "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
     ## Others
-    "${userConfigDir}/containers/containers.conf".text = /* toml */ ''
-      runtime = 'crun'
-    '';
+    "${userConfigDir}/containers/containers.conf".text =
+      # toml
+      ''
+        runtime = 'crun'
+      '';
 
-    "${userConfigDir}/containers/storage.conf".text = /* toml */ ''
-      graphroot="''${HOME}/.local/share/containers/storage"
-      runroot="''${XDG_RUNTIME_DIR}/containers"
-    '';
+    "${userConfigDir}/containers/storage.conf".text =
+      # toml
+      ''
+        graphroot="''${HOME}/.local/share/containers/storage"
+        runroot="''${XDG_RUNTIME_DIR}/containers"
+      '';
 
     "${userConfigDir}/btop/themes" = {
       recursive = true;
@@ -113,10 +123,12 @@ in {
 
     "${userConfigDir}/ghostty/config".source = ./.config/ghostty/config;
 
-    "${userConfigDir}/lsd/config.yml".text = /*yaml*/ ''
-      color:
-        theme: custom
-    '';
+    "${userConfigDir}/lsd/config.yml".text =
+      # yaml
+      ''
+        color:
+          theme: custom
+      '';
     "${userConfigDir}/lsd/colors.yaml".source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
 
     "${userConfigDir}/micro/colorschemes" = {
