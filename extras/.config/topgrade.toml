@@ -44,7 +44,7 @@ disable = [
   'cursor',
   'claude_code',
   'flutter',
-  # 'flatpak',
+  'flatpak',
   'atom',
   'chezmoi'
 ]
