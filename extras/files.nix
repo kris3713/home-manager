@@ -100,6 +100,8 @@ in {
         runroot="''${XDG_RUNTIME_DIR}/containers"
       '';
 
+    "${userConfigDir}/beets/config.yaml".source = ./.config/beets/config.yaml;
+
     "${userConfigDir}/btop/themes" = {
       recursive = true;
       source = "${catppuccin-btop-theme}/themes";
