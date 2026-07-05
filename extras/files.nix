@@ -119,13 +119,15 @@ in {
     '';
     "${userConfigDir}/lsd/colors.yaml".source = "${catppuccin-lsd-theme}/themes/catppuccin-macchiato/colors.yaml";
 
-    "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
-
     "${userConfigDir}/micro/colorschemes" = {
       recursive = true;
       source = "${catppuccin-micro-theme}/themes";
     };
 
+    "${userConfigDir}/opencode/opencode.jsonc".source = ./.config/opencode/opencode.jsonc;
+
     "${userConfigDir}/topgrade.toml".source = ./.config/topgrade.toml;
+
+    "${homeDirectory}/catppuccin-delta-theme.gitconfig".source = "${catppuccin-delta-theme}/catppuccin.gitconfig";
   };
 }
