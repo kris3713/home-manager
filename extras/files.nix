@@ -11,8 +11,8 @@
   inherit (config.home) homeDirectory;
 
   userBinDir = "${homeDirectory}/.local/bin";
-  userConfigDir = "${homeDirectory}/.config";
   userDataDir = "${homeDirectory}/.local/share";
+  userConfigDir = "${homeDirectory}/.config";
 in {
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -150,6 +150,11 @@ in {
     "${userDataDir}/applications" = {
       recursive = true;
       source = ./.local/share/applications;
+    };
+
+    "${userDataDir}/kio/servicemenus" = {
+      recursive = true;
+      source = ./.local/share/kio/servicemenus;
     };
   };
 }

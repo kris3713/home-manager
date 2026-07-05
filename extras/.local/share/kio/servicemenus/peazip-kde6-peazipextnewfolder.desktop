@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+MimeType=application/octet-stream;inode/directory
+Actions=peazipextnewfolder
+X-KDE-Submenu=PeaZip
+X-KDE-Priority=TopLevel
+
+[Desktop Action peazipextnewfolder]
+Name=Extract here to a new folder (Non-Smart)
+Icon=peazip_extract
+Exec=peazip -ext2newfolder %F

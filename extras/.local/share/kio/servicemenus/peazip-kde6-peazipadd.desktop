@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+MimeType=inode/directory
+Actions=peazipextnewfolder
+X-KDE-Submenu=PeaZip
+X-KDE-Priority=TopLevel
+
+[Desktop Action peazipadd]
+Name=Archive...
+Icon=peazip
+Exec=peazip -add2archive %F
