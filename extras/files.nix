@@ -30,17 +30,17 @@ in {
 
     ## Scripts
     # llama-gguf-downloader
-    "${userBinDir}/llama-gguf-downloader" = {
-      text =
-        # sh
-        ''
-          #!/usr/bin/env sh
-
-          env LLAMA_CACHE="$HOME/llama-swap/models" \
-            llama-cli -p '/exit' -n 1 --no-display-prompt -hf  "$@"
-        '';
-      executable = true;
-    };
+    # "${userBinDir}/llama-gguf-downloader" = {
+    #   text =
+    #     # sh
+    #     ''
+    #       #!/usr/bin/env sh
+    #
+    #       env LLAMA_CACHE="$HOME/llama-swap/models" \
+    #         llama-cli -p '/exit' -n 1 --no-display-prompt -hf  "$@"
+    #     '';
+    #   executable = true;
+    # };
 
     # restart-plasmashell
     "${userBinDir}/restart-plasmashell" = {
