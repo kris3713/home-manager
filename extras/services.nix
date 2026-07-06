@@ -12,7 +12,9 @@ in {
         Type = "simple";
         Restart = "always";
         ExecStart = ''
-          /home/linuxbrew/.linuxbrew/bin/llama-swap -config '${homeDirectory}/llama-swap/config.yaml' watch-config --listen 0.0.0.0:1234
+          /home/linuxbrew/.linuxbrew/bin/llama-swap \
+            -config '${homeDirectory}/llama-swap/config.yaml' \
+            -watch-config --listen 0.0.0.0:1234
         '';
       };
       Install = {
