@@ -1,4 +1,6 @@
-{...}: {
+{config, ...}: let
+  inherit (config.home) homeDirectory;
+in {
   systemd.user.services = {
     llama-swap = {
       Unit = {
@@ -10,8 +12,7 @@
         Type = "simple";
         Restart = "always";
         ExecStart = ''
-          /home/linuxbrew/.linuxbrew/bin/llama-swap \
-            -config "$HOME/llama-swap/config.yaml" watch-config --listen 0.0.0.0:1234
+          /home/linuxbrew/.linuxbrew/bin/llama-swap -config '${homeDirectory}/llama-swap/config.yaml' watch-config --listen 0.0.0.0:1234
         '';
       };
       Install = {
