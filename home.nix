@@ -3,8 +3,7 @@
   config,
   lib,
   ## user-defined variables
-  # pkgs,
-  determinateNix,
+  pkgs,
   ...
 }: let
   # important variables
@@ -19,7 +18,7 @@
   userConfigDir = "${homeDirectory}/.config";
 in {
   nix = {
-    package = determinateNix.nix;
+    package = pkgs.nix;
     settings = {
       extra-substituters = [
         "https://cache.numtide.com"
