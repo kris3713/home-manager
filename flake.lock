@@ -470,7 +470,8 @@
         "nix-completions_fish": "nix-completions_fish",
         "nix_fish": "nix_fish",
         "nixpkgs": "nixpkgs_3",
-        "replay_fish": "replay_fish"
+        "replay_fish": "replay_fish",
+        "willow_theme": "willow_theme"
       }
     },
     "systems": {
@@ -506,6 +507,22 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "willow_theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1700808252,
+        "narHash": "sha256-kUrUGgNlOdQ8IOfpTZA+1O1cqVW6q78pfzpFp+BHU6k=",
+        "owner": "doncsugar",
+        "repo": "willow-theme",
+        "rev": "bbe8db547b76012a64dbdff730256cf7517b541d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "doncsugar",
+        "repo": "willow-theme",
         "type": "github"
       }
     }

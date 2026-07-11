@@ -158,5 +158,10 @@ in {
       recursive = true;
       source = ./.local/share/kio/servicemenus;
     };
+
+    "${userDataDir}/color-schemes" = {
+      recursive = true;
+      source = "${willow_theme}/color-schemes";
+    };
   };
 }

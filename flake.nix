@@ -87,6 +87,13 @@
       flake = false;
     };
     ## end of Catppuccin themes
+
+    ## KDE Plasma
+    willow_theme = {
+      url = "github:doncsugar/willow-theme";
+      flake = false;
+    };
+    ## end of KDE Plasma themes
   };
 
   outputs = inputs: let
