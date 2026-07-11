@@ -89,8 +89,15 @@
     ## end of Catppuccin themes
 
     ## KDE Plasma
-    willow_theme = {
+    # willow-theme
+    willow-theme = {
       url = "github:doncsugar/willow-theme";
+      flake = false;
+    };
+
+    # ChromeOS KDE
+    chromeos-kde = {
+      url = "github:vinceliuice/ChromeOS-kde";
       flake = false;
     };
     ## end of KDE Plasma themes

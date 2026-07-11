@@ -154,6 +154,22 @@
         "type": "github"
       }
     },
+    "chromeos-kde": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761415393,
+        "narHash": "sha256-/5fkLZjoUPfJKaRoFlhlhorngKPc2A8MTuxQehvHSp0=",
+        "owner": "vinceliuice",
+        "repo": "ChromeOS-kde",
+        "rev": "f3c111ad412ecd81aecb3592cee2f9c1bf67cc86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vinceliuice",
+        "repo": "ChromeOS-kde",
+        "type": "github"
+      }
+    },
     "completions_fish": {
       "flake": false,
       "locked": {
@@ -462,6 +478,7 @@
         "catppuccin-ghostty-theme": "catppuccin-ghostty-theme",
         "catppuccin-lsd-theme": "catppuccin-lsd-theme",
         "catppuccin-micro-theme": "catppuccin-micro-theme",
+        "chromeos-kde": "chromeos-kde",
         "completions_fish": "completions_fish",
         "determinate-nix-src": "determinate-nix-src",
         "fisher": "fisher",
@@ -471,7 +488,7 @@
         "nix_fish": "nix_fish",
         "nixpkgs": "nixpkgs_3",
         "replay_fish": "replay_fish",
-        "willow_theme": "willow_theme"
+        "willow-theme": "willow-theme"
       }
     },
     "systems": {
@@ -510,7 +527,7 @@
         "type": "github"
       }
     },
-    "willow_theme": {
+    "willow-theme": {
       "flake": false,
       "locked": {
         "lastModified": 1700808252,

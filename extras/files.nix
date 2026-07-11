@@ -161,7 +161,12 @@ in {
 
     "${userDataDir}/color-schemes" = {
       recursive = true;
-      source = "${willow_theme}/color-schemes";
+      source = "${willow-theme}/color-schemes";
+    };
+
+    "${userDataDir}/aurorae/themes" = {
+      recursive = true;
+      source = "${chromeos-kde}/aurorae";
     };
   };
 }
