@@ -14,7 +14,7 @@
     ## determinate-nix src packages
     (with determinateNix; [
       # determinate-nix man pages
-      nix.man
+      nix-manual-manpages-only
     ])
     ++
     ## llmAgents packages
