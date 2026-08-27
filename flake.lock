@@ -148,11 +148,11 @@
     "completions_fish": {
       "flake": false,
       "locked": {
-        "lastModified": 1786070702,
-        "narHash": "sha256-PomWBOr7315Tmtsl+7lTuitf5Rw9VCKxM4CoMFzt33Q=",
+        "lastModified": 1787818153,
+        "narHash": "sha256-AjaGKD4fsOXpWVsDEm0grWunttYGn3XYBr4/QW9R0QU=",
         "owner": "kidonng",
         "repo": "completions.fish",
-        "rev": "0811c639cf47163b2f1c7c196e2659ecd07ecdd9",
+        "rev": "4f26f51d4f10a55b2c4d00d31ee66c16c8db5594",
         "type": "github"
       },
       "original": {
@@ -304,11 +304,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1787796554,
-        "narHash": "sha256-E+c3jYuxbjMNdNiU0dan71VOu8nE88fhEpZ9YbZTzzg=",
+        "lastModified": 1787841814,
+        "narHash": "sha256-cAY2KaZSqc5lW9hYHWgnVL1Z/K49p9eKPxbJ8jEla0Y=",
         "owner": "numtide",
         "repo": "llm-agents.nix",
-        "rev": "4a9441120caf6c6aff273af68995267a35c20fcd",
+        "rev": "f18e879662c83037f9c8d6ff1965058eb194e0d1",
         "type": "github"
       },
       "original": {
