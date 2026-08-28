@@ -84,11 +84,11 @@
     "catppuccin-ghostty-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1767812061,
-        "narHash": "sha256-Y6RFften1/6+1xdhIzEh/E7FBJTwY5a8NH4301HbgOM=",
+        "lastModified": 1787934293,
+        "narHash": "sha256-XwUwWdBLyFwfyL9/kUhJaztTj+s3JShyc15YAA2HPaY=",
         "owner": "catppuccin",
         "repo": "ghostty",
-        "rev": "5a58926563ddacbde4a12b4a347464c2c6945393",
+        "rev": "b0b03ccee7ae8f16b13bd4fdfe267616defdb2b7",
         "type": "github"
       },
       "original": {
@@ -304,11 +304,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1787901029,
-        "narHash": "sha256-hS4KfOSDbV6QErkm2b1kMPl9me3SeWUBcyrznb9XfoU=",
+        "lastModified": 1787955847,
+        "narHash": "sha256-nNJNX7HhYlVZp7mfiqyLwHxzfGKl+70gz4RLhN0YAU4=",
         "owner": "numtide",
         "repo": "llm-agents.nix",
-        "rev": "1c66a00ce5a9a98e7bfc94647cfbd49e1b8d30cd",
+        "rev": "355b60552df63e8265baadca456e70ba5b481d77",
         "type": "github"
       },
       "original": {
