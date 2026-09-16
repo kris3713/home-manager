@@ -69,6 +69,7 @@
       f2
       fh # FlakeHub CLI
       fx
+      gping
       gh
       git-town
       go
