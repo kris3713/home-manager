@@ -129,7 +129,6 @@
       stylua
       systemd-lsp
       tailspin
-      tinycc # tcc
       tealdeer
       termshot
       tinyxxd
