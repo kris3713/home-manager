@@ -45,7 +45,7 @@ disable = [
   'claude_code',
   'hermes_agent',
   'flutter',
-  'flatpak',
+  # 'flatpak',
   'atom',
   'chezmoi'
 ]
