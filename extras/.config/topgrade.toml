@@ -124,8 +124,8 @@ no_self_update = true
 # Custom commands
 [commands]
 'nix flake update for home-manager' = '$HOME/.config/home-manager/sync'
-# 'home-manager (with nix helper)' = 'nh home switch "$HOME/.config/home-manager" -L --impure'
-home-manager = 'home-manager switch -L --impure'
+'home-manager (with nix helper)' = 'nh home switch "$HOME/.config/home-manager" -L --impure'
+# home-manager = 'home-manager switch -L --impure'
 rubygems = 'gem update --system'
 # 'Update FISH completions' = 'env SHELL=fish fish -c fish_update_completions'
 # fisher = "env SHELL=fish fish -c 'fisher update'"
