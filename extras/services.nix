@@ -2,6 +2,7 @@
   inherit (config.home) homeDirectory;
 in {
   systemd.user = {
+    # Prevents services from being auto-started
     startServices = false;
     services = {
       llama-swap = {
