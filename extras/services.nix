@@ -21,5 +21,20 @@ in {
         WantedBy = ["default.target"];
       };
     };
+    jellyfin = {
+      Unit = {
+        Description = "jellyfin service";
+        Wants = "network-online.target";
+        After = "network-online.target";
+      };
+      Service = {
+        Type = "simple";
+        Restart = "always";
+        ExecStart = "/home/kris/.nix-profile/bin/jellyfin";
+      };
+      Install = {
+        WantedBy = ["default.target"];
+      };
+    };
   };
 }
