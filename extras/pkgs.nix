@@ -83,6 +83,7 @@
       harper
       impl
       jless
+      jellyfin
       just
       ktlint
       lazygit
