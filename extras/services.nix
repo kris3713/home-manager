@@ -57,7 +57,6 @@ in {
       environment = {
         PODMAN_SYSTEMD_UNIT = "%n";
       };
-      extraConfig.Container.User = 1000;
       labels = {
         "io.containers.autoupdate" = "registry";
         PODMAN_SYSTEMD_UNIT = "%n";
