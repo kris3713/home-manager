@@ -53,7 +53,9 @@ in {
       autoUpdate = "registry";
       image = "ghcr.io/jellyfin/jellyfin:latest";
       description = "Podman jellyfin container service";
-      extraPodmanArgs = "--gpus=all";
+      extraPodmanArgs = [
+        "--gpus=all"
+      ];
       environment = {
         PODMAN_SYSTEMD_UNIT = "%n";
       };
