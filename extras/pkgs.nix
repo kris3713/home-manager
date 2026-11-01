@@ -109,6 +109,7 @@
       obs-cmd
       ookla-speedtest
       # pixi
+      podman-compose
       powershell
       powershell-editor-services
       pyrefly
