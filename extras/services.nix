@@ -55,7 +55,7 @@ in {
         PODMAN_SYSTEMD_UNIT = "%n";
       };
       network = "host";
-      user = 1000;
+      # user = 1000;
       volumes = [
         "${homeDirectory}/.config/jellyfin:/config"
         "${homeDirectory}/.cache:/cache"
