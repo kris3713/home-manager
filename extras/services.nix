@@ -40,7 +40,7 @@ in {
     };
     enable = true;
     containers.jellyfin = {
-      autoStart = false;
+      autoStart = true;
       autoUpdate = "registry";
       image = "ghcr.io/jellyfin/jellyfin:latest";
       description = "Podman jellyfin container service";
