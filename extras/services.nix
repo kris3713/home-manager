@@ -6,18 +6,28 @@
   inherit (config.home) homeDirectory;
   inherit (pkgs) runCommandLocal;
 
-  userConfigDir = "${homeDirectory}/.config";
-  userCacheDir = "${homeDirectory}/.cache";
-
-  coprPodman = builtins.path {
+  nativePodmanBin = builtins.path {
     path = /usr/bin/podman;
-    name = "podman-copr";
+    name = "native-podman-bin";
   };
 
-  nativePodman = runCommandLocal "podman-copr" {} ''
+  nativePodmanQuadletBin = builtins.path {
+    path = /usr/libexec/podman/quadlet;
+    name = "native-podman-quadlet-bin";
+  };
+
+  customPodman = runCommandLocal "native-podman-bin" {} ''
+    set -x
+    # Copy podman
     mkdir -p "$out/bin"
-    cp -a "${coprPodman}" "$out/bin/podman"
+    cp -a '${nativePodmanBin}' "$out/bin/podman"
     chmod 0755 "$out/bin/podman"
+
+    # Copy podman-quadlet
+    mkdir -p "$out/libexec/podman" "$out/lib/systemd/user-generators"
+    cp -a '${nativePodmanQuadletBin}' "$out/libexec/podman/quadlet"
+    chmod 0755 "$out/libexec/podman/quadlet"
+    ln -s "$out/libexec/podman/quadlet" "$out/lib/systemd/user-generators/podman-user-generator"
   '';
 in {
   systemd.user = {
@@ -47,7 +57,7 @@ in {
   };
   services.podman = {
     enable = true;
-    package = nativePodman;
+    package = customPodman;
     containers.jellyfin = {
       autoStart = false;
       autoUpdate = "registry";
