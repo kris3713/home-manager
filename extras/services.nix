@@ -57,8 +57,7 @@ in {
       network = "host";
       # user = 1000;
       volumes = [
-        "${homeDirectory}/.config/jellyfin:/config/config"
-        "${userDataDir}/jellyfin:/config"
+        "${homeDirectory}/.jellyfin:/config"
         "${homeDirectory}/.cache:/cache"
         "${homeDirectory}/Videos:/media/Videos"
       ];
