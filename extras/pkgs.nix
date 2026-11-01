@@ -22,8 +22,6 @@
       agent-browser
       codex
       claude-code
-      hermes-agent
-      mimo-code
       opencode
     ])
     ++
@@ -83,7 +81,6 @@
       harper
       impl
       jless
-      jellyfin
       just
       ktlint
       lazygit
