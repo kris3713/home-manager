@@ -1,34 +1,7 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{config, ...}: let
   inherit (config.home) homeDirectory;
-  inherit (pkgs) runCommandLocal;
 
-  nativePodmanBin = builtins.path {
-    path = /usr/bin/podman;
-    name = "native-podman-bin";
-  };
-
-  nativePodmanQuadletBin = builtins.path {
-    path = /usr/libexec/podman/quadlet;
-    name = "native-podman-quadlet-bin";
-  };
-
-  customPodman = runCommandLocal "native-podman-bin" {} ''
-    set -x
-    # Copy podman
-    mkdir -p "$out/bin"
-    cp -a '${nativePodmanBin}' "$out/bin/podman"
-    chmod 0755 "$out/bin/podman"
-
-    # Copy podman-quadlet
-    mkdir -p "$out/libexec/podman" "$out/lib/systemd/user-generators"
-    cp -a '${nativePodmanQuadletBin}' "$out/libexec/podman/quadlet"
-    chmod 0755 "$out/libexec/podman/quadlet"
-    ln -s "$out/libexec/podman/quadlet" "$out/lib/systemd/user-generators/podman-user-generator"
-  '';
+  userDataDir = "${homeDirectory}/.local/share";
 in {
   systemd.user = {
     # Prevents services from being auto-started
@@ -56,8 +29,16 @@ in {
     };
   };
   services.podman = {
+    settings = {
+      containers = {
+        runtime = "crun";
+      };
+      storage = {
+        graphroot = "${userDataDir}/containers/storage";
+        runroot = "\${XDG_RUNTIME_DIR}/containers";
+      };
+    };
     enable = true;
-    package = customPodman;
     containers.jellyfin = {
       autoStart = false;
       autoUpdate = "registry";
