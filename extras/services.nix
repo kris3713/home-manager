@@ -30,9 +30,7 @@ in {
   };
   services.podman = {
     settings = {
-      containers = {
-        runtime = "crun";
-      };
+      containers.runtime = "crun";
       storage = {
         graphroot = "${userDataDir}/containers/storage";
         runroot = "\${XDG_RUNTIME_DIR}/containers";
@@ -47,15 +45,12 @@ in {
       extraPodmanArgs = [
         "--gpus=all"
       ];
-      environment = {
-        PODMAN_SYSTEMD_UNIT = "%n";
-      };
+      environment.PODMAN_SYSTEMD_UNIT = "%n";
       labels = {
         "io.containers.autoupdate" = "registry";
         PODMAN_SYSTEMD_UNIT = "%n";
       };
       network = "host";
-      # user = 1000;
       volumes = [
         "${homeDirectory}/.jellyfin:/config"
         "${homeDirectory}/.jellyfin/cache:/cache"
