@@ -42,7 +42,7 @@ in {
     containers.jellyfin = {
       autoStart = true;
       autoUpdate = "registry";
-      image = "ghcr.io/jellyfin/jellyfin:latest";
+      image = "docker.io/jellyfin/jellyfin:latest";
       description = "Podman jellyfin container service";
       extraPodmanArgs = [
         "--gpus=all"
@@ -58,7 +58,7 @@ in {
       # user = 1000;
       volumes = [
         "${homeDirectory}/.jellyfin:/config"
-        "${homeDirectory}/.cache:/cache"
+        "${homeDirectory}/.jellyfin/cache:/cache"
         "${homeDirectory}/Videos:/media/Videos"
       ];
     };
