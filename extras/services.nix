@@ -50,9 +50,9 @@ in {
       };
       network = "host";
       volumes = [
-        "${homeDirectory}/.jellyfin:/config"
-        "${homeDirectory}/.jellyfin/cache:/cache"
-        "${homeDirectory}/Videos:/media/Videos"
+        "${homeDirectory}/.jellyfin:/config:rw"
+        "${homeDirectory}/.jellyfin/cache:/cache:rw"
+        "${homeDirectory}/Videos:/media/Videos:rw"
       ];
     };
   };
