@@ -95,6 +95,7 @@
       nickel
       nls
       nil
+      nix.man
       nix-info
       nix-init
       nix-your-shell
