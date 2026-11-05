@@ -5,18 +5,11 @@
   pkgs,
   llmAgents,
   # nurRepos,
-  determinateNix,
   ...
 }: {
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages =
-    ## determinate-nix src packages
-    (with determinateNix; [
-      # determinate-nix man pages
-      nix-manual-manpages-only
-    ])
-    ++
     ## llmAgents packages
     (with llmAgents; [
       agent-browser

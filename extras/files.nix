@@ -5,7 +5,6 @@
   inputs,
   ## user-defined variables
   pkgs,
-  # determinateNix,
   ...
 }: let
   inherit (config.home) homeDirectory;

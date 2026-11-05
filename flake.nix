@@ -6,8 +6,6 @@
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
     # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
-    determinate-nix-src.url = "https://flakehub.com/f/DeterminateSystems/nix-src/*";
-
     # flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
 
     llm-agents.url = "github:numtide/llm-agents.nix";
@@ -109,7 +107,6 @@
       nixpkgs
       llm-agents
       # nur
-      determinate-nix-src
       apple-fonts
       home-manager
       ;
@@ -120,7 +117,6 @@
     pkgs = nixpkgs.legacyPackages.${system};
     llmAgents = llm-agents.packages.${system};
     # nurRepos = nur.legacyPackages.${system}.repos;
-    determinateNix = determinate-nix-src.packages.${system};
     appleFonts = apple-fonts.packages.${system};
 
     inherit
@@ -150,7 +146,6 @@
           ## user-defined variables
           llmAgents
           # nurRepos
-          determinateNix
           appleFonts
           ;
       };
