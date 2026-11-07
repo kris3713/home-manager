@@ -12,7 +12,6 @@
   home.packages =
     ## llmAgents packages
     (with llmAgents; [
-      agent-browser
       codex
       claude-code
       opencode
@@ -95,6 +94,7 @@
       nickel
       nls
       nil
+      # Nix manual pages
       nix.man
       nix-info
       nix-init
