@@ -16,17 +16,6 @@ in {
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = with inputs; {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
-
     ## Scripts
     # llama-gguf-downloader
     # "${userBinDir}/llama-gguf-downloader" = {
@@ -40,6 +29,35 @@ in {
     #     '';
     #   executable = true;
     # };
+
+    # create_freshdock_container
+    "${userBinDir}/create_freshdock_container" = {
+      text =
+        # sh
+        ''
+          #!/usr/bin/env sh
+
+          set -ex
+
+          if [ -z "$SUDO_USER" ]; then
+            sudo -v
+          fi
+
+          HOURS=8
+          SECS=$(python -c "print($HOURS * 3600)")
+
+          sudo docker stop freshdock -t 2
+          sudo docker rm freshdock
+          sudo docker run -d --name freshdock \
+            --restart unless-stopped \
+            --pull always \
+            -e FRESHDOCK_WATCH_ALL=true \
+            -v /var/run/docker.sock:/var/run/docker.sock \
+            ghcr.io/turbootzz/freshdock:latest \
+            run --interval "$SECS"
+        '';
+      executable = true;
+    };
 
     # restart-plasmashell
     "${userBinDir}/restart-plasmashell" = {
