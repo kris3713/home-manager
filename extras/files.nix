@@ -48,7 +48,7 @@ in {
 
           sudo docker stop freshdock -t 2 || :
           sudo docker rm freshdock || :
-          sudo docker run -d --name freshdock \
+          sudo docker create --name freshdock \
             --restart unless-stopped \
             --pull always \
             -e FRESHDOCK_WATCH_ALL=true \
