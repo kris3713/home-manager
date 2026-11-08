@@ -46,7 +46,7 @@ in {
           HOURS=8
           SECS=$(python -c "print($HOURS * 3600)")
 
-          sudo docker stop freshdock -t 2
+          sudo docker stop freshdock -t 2 || :
           sudo docker rm freshdock
           sudo docker run -d --name freshdock \
             --restart unless-stopped \
