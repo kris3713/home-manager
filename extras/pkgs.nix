@@ -114,7 +114,6 @@
       sd
       shfmt
       shellcheck
-      static-web-server
       statix
       stylua
       systemd-lsp
