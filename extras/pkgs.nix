@@ -90,7 +90,6 @@
       neovim-unwrapped
       netscanner
       nh
-      nickel
       nls
       nil
       # Nix manual pages
@@ -105,7 +104,6 @@
       podman-compose
       powershell
       powershell-editor-services
-      pyrefly
       quickemu
       ramfetch
       resvg
