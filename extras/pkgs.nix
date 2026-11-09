@@ -87,7 +87,6 @@
       most
       moor
       # navi
-      neocmakelsp
       neovim-unwrapped
       netscanner
       nh
