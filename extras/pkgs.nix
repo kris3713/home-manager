@@ -123,7 +123,6 @@
       systemd-lsp
       tailspin
       tealdeer
-      termshot
       tinyxxd
       ttop
       tre-command
