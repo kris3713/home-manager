@@ -79,7 +79,7 @@ in {
           #!/usr/bin/env sh
           # shellcheck disable=1009,1073,1003
 
-          distrobox-create -Y -i ghcr.io/ultramarine-linux/ultramarine:43 -n fedora_distrobox \
+          distrobox-create -Y -i ghcr.io/ultramarine-linux/ultramarine:44 -n fedora_distrobox \
             -ap 'rpmdevtools @development-tools xclip wl-clipboard dnf-plugins-core' \
             --init-hooks "$(cat << 'SH'
 
