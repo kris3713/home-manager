@@ -4,8 +4,7 @@
   userDataDir = "${homeDirectory}/.local/share";
 in {
   systemd.user = {
-    # Prevents services from being auto-started
-    startServices = false;
+    startServices = true;
     services = {
       llama-swap = {
         Unit = {
