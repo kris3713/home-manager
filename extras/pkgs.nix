@@ -90,6 +90,8 @@
       neovim-unwrapped
       netscanner
       nh
+      (nls.overrideAttrs (old: {nativeBuildInputs = (old.nativeBuildInputs or []) ++ [pkg-config];}))
+      (nickel.overrideAttrs (old: {nativeBuildInputs = (old.nativeBuildInputs or []) ++ [pkg-config];}))
       nil
       # Nix manual pages
       nix.man
