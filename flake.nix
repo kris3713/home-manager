@@ -3,8 +3,8 @@
 
   inputs = {
     ### Flakes
-    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # flake-utils.url = "https://flakehub.com/f/numtide/flake-utils/0.*";
 
