@@ -90,8 +90,8 @@
       neovim-unwrapped
       netscanner
       nh
-      # nls
-      # nickel
+      nls
+      nickel
       nil
       # Nix manual pages
       nix.man
