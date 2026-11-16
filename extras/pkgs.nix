@@ -105,7 +105,6 @@
       podman-compose
       powershell
       powershell-editor-services
-      quickemu
       ramfetch
       resvg
       ripdrag
