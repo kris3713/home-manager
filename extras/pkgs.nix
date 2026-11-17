@@ -74,6 +74,7 @@
       impl
       jless
       just
+      just-lsp
       ktlint
       lazygit
       librespeed-cli
