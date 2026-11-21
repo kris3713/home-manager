@@ -17,48 +17,6 @@ in {
   # plain files is through 'home.file'.
   home.file = with inputs; {
     ## Scripts
-    # llama-gguf-downloader
-    # "${userBinDir}/llama-gguf-downloader" = {
-    #   text =
-    #     # sh
-    #     ''
-    #       #!/usr/bin/env sh
-    #
-    #       env LLAMA_CACHE="$HOME/llama-swap/models" \
-    #         llama-cli -p '/exit' -n 1 --no-display-prompt -hf  "$@"
-    #     '';
-    #   executable = true;
-    # };
-
-    # # create_freshdock_container
-    # "${userBinDir}/create_freshdock_container" = {
-    #   text =
-    #     # sh
-    #     ''
-    #       #!/usr/bin/env sh
-    #
-    #       set -ex
-    #
-    #       if [ -z "$SUDO_USER" ]; then
-    #         sudo -v
-    #       fi
-    #
-    #       HOURS=8
-    #       SECS=$(python -c "print($HOURS * 3600)")
-    #
-    #       sudo docker stop freshdock -t 2 || :
-    #       sudo docker rm freshdock || :
-    #       sudo docker create --name freshdock \
-    #         --restart unless-stopped \
-    #         --pull always \
-    #         -e FRESHDOCK_WATCH_ALL=true \
-    #         -v /var/run/docker.sock:/var/run/docker.sock \
-    #         ghcr.io/turbootzz/freshdock:latest \
-    #         run --interval "$SECS"
-    #     '';
-    #   executable = true;
-    # };
-
     # restart-plasmashell
     "${userBinDir}/restart-plasmashell" = {
       text =
@@ -127,7 +85,7 @@ in {
 
       --paths ~/Downloads/yt-dlp
       --paths temp:~/Downloads/yt-dlp
-      -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(title)s.%(ext)s"
+      -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(artists) - %(title)s.%(ext)s"
 
       --convert-thumbnails png
       --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v png -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
