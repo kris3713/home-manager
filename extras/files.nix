@@ -105,6 +105,39 @@ in {
     "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
     ## Others
+    "${userConfigDir}/yt-dlp/config".text = ''
+      # vim:ft=conf
+      --verbose
+      --no-warnings
+      --progress
+      --windows-filenames
+
+      -f bestaudio
+      --audio-quality 0
+      --extract-audio
+      --format-sort '+acodec:mp4a,quality'
+
+      --progress-delta .75
+      -t sleep
+      --no-mtime
+      --no-embed-info-json
+
+      --ffmpeg-location /usr/bin/ffmpeg
+      --js-runtimes deno:~/.local/share/deno
+
+      --paths ~/Downloads/yt-dlp
+      --paths temp:~/Downloads/yt-dlp
+      -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(title)s.%(ext)s"
+
+      --convert-thumbnails png
+      --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v png -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
+      --embed-thumbnail
+
+      --embed-metadata
+
+      --force-overwrites
+    '';
+
     # "${userConfigDir}/containers/containers.conf".text =
     #   # toml
     #   ''
