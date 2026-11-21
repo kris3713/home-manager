@@ -138,19 +138,6 @@ in {
       --force-overwrites
     '';
 
-    # "${userConfigDir}/containers/containers.conf".text =
-    #   # toml
-    #   ''
-    #     runtime = 'crun'
-    #   '';
-
-    # "${userConfigDir}/containers/storage.conf".text =
-    #   # toml
-    #   ''
-    #     graphroot="''${HOME}/.local/share/containers/storage"
-    #     runroot="''${XDG_RUNTIME_DIR}/containers"
-    #   '';
-
     "${userConfigDir}/beets/config.yaml".source = ./.config/beets/config.yaml;
 
     "${userConfigDir}/btop/themes" = {
