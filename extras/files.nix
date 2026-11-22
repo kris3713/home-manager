@@ -87,8 +87,9 @@ in {
       --paths temp:~/Downloads/yt-dlp
       -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(artists) - %(title)s.%(ext)s"
 
-      --convert-thumbnails png
-      --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v png -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
+      --write-thumbnail
+      --convert-thumbnails jpg
+      --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
       --embed-thumbnail
 
       --embed-metadata
