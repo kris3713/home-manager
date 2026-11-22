@@ -63,39 +63,41 @@ in {
     "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
     ## Others
-    "${userConfigDir}/yt-dlp/config".text = ''
-      # vim:ft=conf
-      --verbose
-      --no-warnings
-      --progress
-      --windows-filenames
+    "${userConfigDir}/yt-dlp/config".text =
+      # sh
+      ''
+        # vim:ft=conf
+        --verbose
+        --no-warnings
+        --progress
+        --windows-filenames
 
-      -f bestaudio
-      --audio-quality 0
-      --extract-audio
-      --format-sort '+acodec:mp4a,quality'
+        -f bestaudio
+        --audio-quality 0
+        --extract-audio
+        --format-sort '+acodec:mp4a,quality'
 
-      --progress-delta .75
-      -t sleep
-      --no-mtime
-      --no-embed-info-json
+        --progress-delta .75
+        -t sleep
+        --no-mtime
+        --no-embed-info-json
 
-      --ffmpeg-location /usr/bin/ffmpeg
-      --js-runtimes deno:~/.local/share/deno
+        --ffmpeg-location /usr/bin/ffmpeg
+        --js-runtimes deno:~/.local/share/deno
 
-      --paths ~/Downloads/yt-dlp
-      --paths temp:~/Downloads/yt-dlp
-      -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(artists) - %(title)s.%(ext)s"
+        --paths ~/Downloads/yt-dlp
+        --paths temp:~/Downloads/yt-dlp
+        -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(artists)s - %(title)s.%(ext)s"
 
-      --write-thumbnail
-      --convert-thumbnails jpg
-      --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
-      --embed-thumbnail
+        --write-thumbnail
+        --convert-thumbnails jpg
+        --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
+        --embed-thumbnail
 
-      --embed-metadata
+        --embed-metadata
 
-      --force-overwrites
-    '';
+        --force-overwrites
+      '';
 
     "${userConfigDir}/beets/config.yaml".source = ./.config/beets/config.yaml;
 
