@@ -87,7 +87,7 @@ in {
 
         --paths ~/Downloads/yt-dlp
         --paths temp:~/Downloads/yt-dlp
-        -o "%(album,playlist_title)s/%(track_number,playlist_index)02d - %(artists)s - %(title)s.%(ext)s"
+        -o "%(album,playlist_title)s/%(artists)s - %(title)s [%(id)s].%(ext)s"
 
         --write-thumbnail
         --convert-thumbnails jpg
