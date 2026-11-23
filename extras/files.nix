@@ -63,42 +63,7 @@ in {
     "${userBinDir}/dog".source = "${pkgs.dogedns}/bin/doge";
 
     ## Others
-    "${userConfigDir}/yt-dlp/config".text =
-      # sh
-      ''
-        # vim:ft=conf
-        --verbose
-        --no-warnings
-        --progress
-        --windows-filenames
-
-        -f 'bestaudio[ext=m4a]/bestaudio'
-        --audio-quality 0
-        --extract-audio
-
-        --progress-delta .75
-        -t sleep
-        --no-mtime
-        --no-embed-info-json
-
-        --ffmpeg-location /usr/bin/ffmpeg
-        --js-runtimes deno:~/.local/share/mise/installs/deno/latest/bin/deno
-        --js-runtimes node:~/.local/share/mise/installs/node/latest/bin/node
-        --js-runtimes bun:/home/linuxbrew/.linuxbrew/bin/bun
-
-        --paths ~/Downloads/yt-dlp
-        --paths temp:~/Downloads/yt-dlp
-        -o "%(album,playlist_title)s/%(artists)s - %(title)s [%(id)s].%(ext)s"
-
-        --write-thumbnail
-        --convert-thumbnails jpg
-        --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
-        --embed-thumbnail
-
-        --embed-metadata
-
-        --force-overwrites
-      '';
+    "${userConfigDir}/yt-dlp/config".source = ./.config/yt-dlp/config;
 
     "${userConfigDir}/beets/config.yaml".source = ./.config/beets/config.yaml;
 
