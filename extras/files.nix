@@ -72,10 +72,9 @@ in {
         --progress
         --windows-filenames
 
-        -f bestaudio
+        -f 'bestaudio[ext=m4a]/bestaudio'
         --audio-quality 0
         --extract-audio
-        --format-sort '+acodec:mp4a,quality'
 
         --progress-delta .75
         -t sleep
@@ -83,7 +82,9 @@ in {
         --no-embed-info-json
 
         --ffmpeg-location /usr/bin/ffmpeg
-        --js-runtimes deno:~/.local/share/deno
+        --js-runtimes deno:~/.local/share/mise/installs/deno/latest/bin/deno
+        --js-runtimes node:~/.local/share/mise/installs/node/latest/bin/node
+        --js-runtimes bun:/home/linuxbrew/.linuxbrew/bin/bun
 
         --paths ~/Downloads/yt-dlp
         --paths temp:~/Downloads/yt-dlp
