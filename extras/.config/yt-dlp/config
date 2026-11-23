@@ -8,10 +8,9 @@
 --audio-quality 0
 --extract-audio
 
---progress-delta .75
+--progress-delta 0.75
 -t sleep
 --no-mtime
---no-embed-info-json
 
 --ffmpeg-location /usr/bin/ffmpeg
 --js-runtimes "deno:$HOME/.local/share/mise/installs/deno/latest/bin/deno"
