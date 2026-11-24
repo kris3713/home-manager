@@ -94,6 +94,7 @@
       nls
       nickel
       nil
+      nixd
       # Nix manual pages
       nix.man
       nix-info
