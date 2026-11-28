@@ -41,7 +41,10 @@ in {
       autoUpdate = "registry";
       image = "docker.io/jellyfin/jellyfin:latest";
       description = "Podman jellyfin container service";
-      extraPodmanArgs = ["--gpus=all"];
+      extraPodmanArgs = [
+        "--pull=always"
+        "--gpus=all"
+      ];
       environment.PODMAN_SYSTEMD_UNIT = "%n";
       labels = {
         "io.containers.autoupdate" = "registry";
