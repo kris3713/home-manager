@@ -21,9 +21,7 @@ in {
               -watch-config --listen 0.0.0.0:1234
           '';
         };
-        Install = {
-          WantedBy = ["default.target"];
-        };
+        Install.WantedBy = ["default.target"];
       };
     };
   };
